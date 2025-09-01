@@ -94,6 +94,11 @@ export const de = {
         },
       ],
     },
+    LocationsSection: {
+      title: "Unsere Standorte",
+      openingHours: "Öffnungszeiten",
+      clickToOpenMaps: "Klicken Sie, um in Google Maps zu öffnen",
+    },
     Footer: {
       copyright: "Copyright © ",
       companyName: "Choi TCM",
@@ -101,6 +106,7 @@ export const de = {
       locations: {
         luzern: {
           title: "Choi TCM Luzern",
+          address: "Im Wygart 3, 6205 Eich",
           openingHours: [
             "Montag: 9:00 - 18:00",
             "Dienstag: 9:00 - 18:00",
@@ -113,6 +119,7 @@ export const de = {
         },
         zurich: {
           title: "Choi TCM Zürich",
+          address: "Kreuzstrasse 60, 8032 Zürich",
           openingHours: [
             "Montag: 9:00 - 18:00",
             "Dienstag: 9:00 - 18:00",

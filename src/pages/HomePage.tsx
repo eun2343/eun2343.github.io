@@ -4,6 +4,7 @@ import FertilityCareSection from "../components/FertilityCareSection";
 import PrePostnatalCareSection from "../components/PrePostnatalCareSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import GynecologySection from "../components/GynecologySection";
+import LocationsSection from "../components/LocationsSection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       <PrePostnatalCareSection />
       <TestimonialsSection />
       <GynecologySection />
+      <LocationsSection />
       <Footer />
     </>
   );
