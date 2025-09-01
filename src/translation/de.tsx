@@ -98,6 +98,32 @@ export const de = {
       copyright: "Copyright © ",
       companyName: "Choi TCM",
       companyLink: "https://mui.com/",
+      locations: {
+        luzern: {
+          title: "Choi TCM Luzern",
+          openingHours: [
+            "Montag: 9:00 - 18:00",
+            "Dienstag: 9:00 - 18:00",
+            "Mittwoch: 9:00 - 18:00",
+            "Donnerstag: 9:00 - 18:00",
+            "Freitag: 9:00 - 18:00",
+            "Samstag: 9:00 - 14:00",
+            "Sonntag: Geschlossen",
+          ],
+        },
+        zurich: {
+          title: "Choi TCM Zürich",
+          openingHours: [
+            "Montag: 9:00 - 18:00",
+            "Dienstag: 9:00 - 18:00",
+            "Mittwoch: 9:00 - 18:00",
+            "Donnerstag: 9:00 - 18:00",
+            "Freitag: 9:00 - 18:00",
+            "Samstag: 9:00 - 14:00",
+            "Sonntag: Geschlossen",
+          ],
+        },
+      },
     },
     AboutPage: {
       title: "Über Dr. Eunkyeong Choi",
