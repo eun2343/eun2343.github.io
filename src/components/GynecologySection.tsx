@@ -1,9 +1,10 @@
 import { Container, Typography, Grid } from "@mui/material";
 import CardWithContent from "./cardWithContent";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 
 const GynecologySection = () => {
-  const gynoCardContent = en.app.GynecologySection.content;
+  const { translations } = useLanguage();
+  const gynoCardContent = translations.app.GynecologySection.content;
 
   return (
     <div
@@ -22,7 +23,7 @@ const GynecologySection = () => {
           align="center"
           sx={{ marginBottom: 4 }}
         >
-          {en.app.GynecologySection.title}
+          {translations.app.GynecologySection.title}
         </Typography>
         <Grid container spacing={4} sx={{ marginTop: 4 }}>
           {gynoCardContent.map((item, index) => (

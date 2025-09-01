@@ -8,10 +8,11 @@ import {
   IconButton,
 } from "@mui/material";
 import { useState } from "react";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 
 const TestimonialsSection = () => {
-  const testimonials = en.app.TestimonialsSection.testimonials;
+  const { translations } = useLanguage();
+  const testimonials = translations.app.TestimonialsSection.testimonials;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
@@ -44,7 +45,7 @@ const TestimonialsSection = () => {
           align="center"
           sx={{ marginBottom: 6 }}
         >
-          {en.app.TestimonialsSection.title}
+          {translations.app.TestimonialsSection.title}
         </Typography>
 
         <Box

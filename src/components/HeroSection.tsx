@@ -1,7 +1,9 @@
 import { Container, Typography, Button } from "@mui/material";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 
 const HeroSection = () => {
+  const { translations } = useLanguage();
+
   return (
     <div className="hero-section" style={{ padding: "20px 0" }}>
       <Container
@@ -14,12 +16,14 @@ const HeroSection = () => {
           gutterBottom
           align="center"
         >
-          {en.app.HeroSection.title.split(" | ").map((part, index, array) => (
-            <span key={index}>
-              {part}
-              {index < array.length - 1 && <br />}
-            </span>
-          ))}
+          {translations.app.HeroSection.title
+            .split(" | ")
+            .map((part: string, index: number, array: string[]) => (
+              <span key={index}>
+                {part}
+                {index < array.length - 1 && <br />}
+              </span>
+            ))}
         </Typography>
 
         <Typography
@@ -29,9 +33,9 @@ const HeroSection = () => {
           gutterBottom
           align="center"
         >
-          {en.app.HeroSection.subtitle
+          {translations.app.HeroSection.subtitle
             .split(" | ")
-            .map((part, index, array) => (
+            .map((part: string, index: number, array: string[]) => (
               <span key={index}>
                 {part}
                 {index < array.length - 1 && <br />}
@@ -43,7 +47,7 @@ const HeroSection = () => {
           color="primary"
           sx={{ width: "200px", margin: "0 auto", display: "block" }}
         >
-          {en.app.HeroSection.bookAppointment}
+          {translations.app.HeroSection.bookAppointment}
         </Button>
       </Container>
     </div>

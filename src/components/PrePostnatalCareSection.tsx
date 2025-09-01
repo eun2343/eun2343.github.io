@@ -1,8 +1,10 @@
 import { Container, Typography, Grid, Card, CardContent } from "@mui/material";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 
 const PrePostnatalCareSection = () => {
-  const prePostnatalServices = en.app.PrePostnatalCareSection.services;
+  const { translations } = useLanguage();
+  const prePostnatalServices =
+    translations.app.PrePostnatalCareSection.services;
 
   return (
     <div
@@ -21,7 +23,7 @@ const PrePostnatalCareSection = () => {
           align="center"
           sx={{ marginBottom: 4 }}
         >
-          {en.app.PrePostnatalCareSection.title}
+          {translations.app.PrePostnatalCareSection.title}
         </Typography>
         <Grid container spacing={2} sx={{ marginTop: 4 }}>
           {prePostnatalServices.map((service, index) => (

@@ -1,9 +1,11 @@
 import { Container, Typography, Box } from "@mui/material";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
+  const { translations } = useLanguage();
+
   return (
     <>
       <Navigation />
@@ -14,24 +16,26 @@ const AboutPage = () => {
           gutterBottom
           sx={{ marginBottom: 6, fontWeight: 700 }}
         >
-          {en.app.AboutPage.title}
+          {translations.app.AboutPage.title}
         </Typography>
 
         <Box sx={{ maxWidth: 800, margin: "0 auto" }}>
-          {en.app.AboutPage.content.map((paragraph, index) => (
-            <Typography
-              key={index}
-              variant="h6"
-              paragraph
-              sx={{
-                lineHeight: 1.8,
-                marginBottom: 3,
-                color: "#555",
-              }}
-            >
-              {paragraph}
-            </Typography>
-          ))}
+          {translations.app.AboutPage.content.map(
+            (paragraph: string, index: number) => (
+              <Typography
+                key={index}
+                variant="h6"
+                paragraph
+                sx={{
+                  lineHeight: 1.8,
+                  marginBottom: 3,
+                  color: "#555",
+                }}
+              >
+                {paragraph}
+              </Typography>
+            )
+          )}
         </Box>
       </Container>
       <Footer />

@@ -1,7 +1,9 @@
 import { Container, Typography, Link } from "@mui/material";
-import { en } from "../translation/en";
+import { useLanguage } from "../translation/useLanguage";
 
 const Footer = () => {
+  const { translations } = useLanguage();
+
   return (
     <footer
       style={{
@@ -14,9 +16,9 @@ const Footer = () => {
     >
       <Container>
         <Typography variant="body2" color="text.secondary" align="center">
-          {en.app.Footer.copyright}
-          <Link color="inherit" href={en.app.Footer.companyLink}>
-            {en.app.Footer.companyName}
+          {translations.app.Footer.copyright}
+          <Link color="inherit" href={translations.app.Footer.companyLink}>
+            {translations.app.Footer.companyName}
           </Link>{" "}
           {new Date().getFullYear()}
           {"."}
