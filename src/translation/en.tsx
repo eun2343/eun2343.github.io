@@ -132,80 +132,85 @@ export const en = {
     },
     AboutPage: {
       title: "About Dr. Eunkyeong Choi",
-      content: [
-        "Dr. Eunkyeong Choi is a licensed Doctor of Korean Traditional Medicine with extensive experience in fertility and women's health care.",
-        "She studied Korean medicine in Busan, where she developed a deep understanding of traditional healing methods and their applications in modern healthcare.",
-        "Following her studies, Dr. Choi worked for several years in specialized fertility clinics, gaining valuable experience in helping couples achieve their dreams of parenthood.",
-        "In 2021, she made the significant move to Switzerland, where she obtained all necessary local permits to practice traditional medicine.",
-        "Currently, she works closely with Dr. Rika Kasahara of Kasahara TCM in Zurich, combining her Korean medicine expertise with Swiss healthcare standards.",
-        "Dr. Choi's approach integrates traditional Korean medicine principles with modern fertility treatments, offering patients a comprehensive and personalized path to wellness.",
+      profileImage: "https://choi-tcm.ch/index_logo_tmp.png?1694983122",
+      qualifications: [
+        "Licensed doctor of Traditional Medicine, South Korea",
+        "Specialised in Fertility and Reproductive health",
+        "Member of the society of Korean Medicine Obstetric and Gynecology",
+        "Eidgenössischem Diplom in TCM, Höhere Fachprüfung, Switzerland",
+        "Approved from Kanton Zürich and Luzern (Praxisbewilligung from Kanton Zürich und Luzern)",
+        "EMR certificate ZSR - J121064",
+      ],
+      experience: [
+        "Since 2025  Private clinic,Choi TCM, Luzern",
+        "Since 2022  Private clinic Choi TCM (in partner with Kasahara TCM), Zurich",
+        "2011 - 2022 Practiced as a Doctor of traditional medicine in clinics, Seoul and Busan, South Korea",
+        "2005 - 2011 Completed a 6-year full-time medical study in Traditional Korean Medicine, Dong-Eui University, South Korea",
       ],
     },
     WhyChoiTCMPage: {
       title: "Why Choose Choi TCM",
       reasons: [
         {
-          title: "Holistic Approach",
+          title: "I'm a Fertility specialist",
           description:
-            "We treat the whole person, not just symptoms, addressing root causes of health issues.",
+            "I work with fertility cases every single day and it's the sole focus of my work. || Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. I'm a committed member of the Society of Korean Medicine Obstetrics and Gynecology, and I continuously engage in advanced training and research to stay at the forefront of fertility care.",
         },
         {
-          title: "Proven Results",
+          title: "You'll receive personalized treatment",
           description:
-            "Over 85% success rate in fertility treatments with thousands of healthy babies born.",
+            "Fertility is complex and one-size-fits-all doesn't work. || I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
         },
         {
-          title: "Personalized Care",
+          title:
+            "Evidence-based TCM treatments with a thorough understanding of reproductive health",
           description:
-            "Every treatment plan is customized to your unique needs and health condition.",
+            "I don't rely on vague or abstract concepts. I stay up to date with the latest research on TCM fertility treatments. | Grounded in both TCM and the latest clinical insights, my goal is to optimize your reproductive health at every level.",
         },
         {
-          title: "Safe & Natural",
+          title: "Compassionate support and respect",
           description:
-            "Traditional medicine methods with minimal side effects and natural healing processes.",
+            "Each fertility journey is deeply personal. || Whether you're exploring options, facing uncertainty, or celebrating milestones, my role is not only to guide you medically, but to walk with you with respect, care, and unwavering support—every step of the way.",
         },
         {
-          title: "Expert Knowledge",
+          title: "Clinical expertise from advanced Korean practices",
           description:
-            "15+ years of experience combining Eastern and Western medical approaches.",
-        },
-        {
-          title: "Comprehensive Support",
-          description:
-            "From consultation to treatment and ongoing care, we support you every step.",
+            "I completed 6 years of full-time intensive medical study (both western and traditional) and I have over a decade of clinical experience in Korea where the field features highly advanced and innovative treatment methods. | This extensive background allows me to bring cutting-edge, effective therapies to my patients.",
         },
       ],
     },
     FeePage: {
       title: "Treatment Fees",
-      subtitle: "Transparent pricing for quality care",
+      subtitle:
+        "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung). Please check with your insurer in advance.",
       services: [
         {
-          name: "Initial Consultation",
-          price: "€120",
+          name: "Initial Appointment",
+          price: "261 CHF",
           duration: "90 minutes",
-          description: "Comprehensive health assessment and treatment plan",
+          description:
+            "Includes a comprehensive fertility and health history review, assessment of any previous test results, tongue and pulse diagnosis, and a full acupuncture treatment.",
         },
         {
-          name: "Follow-up Treatment",
-          price: "€80",
+          name: "Follow-Up Acupuncture Sessions",
+          price: "174 CHF",
           duration: "60 minutes",
-          description: "Acupuncture and ongoing care",
+          description:
+            "Includes ongoing evaluation and personalized acupuncture treatment.",
         },
         {
-          name: "Fertility Package",
-          price: "€450",
-          duration: "6 sessions",
-          description: "Complete fertility enhancement program",
-        },
-        {
-          name: "Pregnancy Support",
-          price: "€90",
-          duration: "60 minutes",
-          description: "Pre and postnatal care sessions",
+          name: "Herbal Medicine Prescription",
+          price: "33 – 99 CHF",
+          duration: "",
+          description:
+            "Customized herbal formulas may be recommended as part of your treatment plan. The prescription fee varies depending on whether it's a new formula, a refill, or a modification to an existing prescription.",
         },
       ],
-      note: "Insurance coverage may be available. Please contact us for more information.",
+      cancellationPolicy: {
+        title: "Cancellation policy",
+        description:
+          "48 hours for new patients and 24 hours for established patients, your appointment is subject to the full fee if missed or cancelled within this time.",
+      },
     },
   },
 };

@@ -1,4 +1,4 @@
-import { Container, Typography, Grid, Card, CardContent } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import type { Reason } from "../translation/types";
 import Navigation from "../components/Navigation";
@@ -10,7 +10,7 @@ const WhyChoiTCMPage = () => {
   return (
     <>
       <Navigation />
-      <Container sx={{ marginTop: 8, marginBottom: 8, minHeight: "60vh" }}>
+      <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
         <Typography
           variant="h2"
           align="center"
@@ -20,31 +20,45 @@ const WhyChoiTCMPage = () => {
           {translations.app.WhyChoiTCMPage.title}
         </Typography>
 
-        <Grid container spacing={4} sx={{ marginTop: 4 }}>
+        <Box sx={{ maxWidth: "100%", marginTop: 8 }}>
           {translations.app.WhyChoiTCMPage.reasons.map(
             (reason: Reason, index: number) => (
-              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-                <Card sx={{ height: "100%", padding: 2 }}>
-                  <CardContent>
-                    <Typography
-                      variant="h5"
-                      gutterBottom
-                      sx={{ fontWeight: 600, color: "#1976d2" }}
-                    >
-                      {reason.title}
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      sx={{ lineHeight: 1.6, color: "#555" }}
-                    >
-                      {reason.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+              <Box key={index} sx={{ marginBottom: 8 }}>
+                <Typography
+                  variant="h4"
+                  gutterBottom
+                  sx={{
+                    fontWeight: 600,
+                    color: "#1976d2",
+                    marginBottom: 2,
+                    textAlign: "left",
+                  }}
+                >
+                  {reason.title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    lineHeight: 1.7,
+                    color: "#555",
+                    fontSize: "1.6rem",
+                    textAlign: "left",
+                  }}
+                >
+                  {reason.description
+                    .split("|")
+                    .map((line: string, lineIndex: number) => (
+                      <span key={lineIndex}>
+                        {line}
+                        {lineIndex <
+                          reason.description.split("|").length - 1 && <br />}
+                      </span>
+                    ))}
+                </Typography>
+              </Box>
             )
           )}
-        </Grid>
+        </Box>
       </Container>
       <Footer />
     </>

@@ -1,12 +1,4 @@
-import {
-  Container,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Box,
-  Divider,
-} from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import type { Service } from "../translation/types";
 import Navigation from "../components/Navigation";
@@ -21,7 +13,7 @@ const FeePage = () => {
       <Container sx={{ marginTop: 8, marginBottom: 8, minHeight: "60vh" }}>
         <Typography
           variant="h2"
-          align="center"
+          align="left"
           gutterBottom
           sx={{ marginBottom: 2, fontWeight: 700 }}
         >
@@ -30,66 +22,101 @@ const FeePage = () => {
 
         <Typography
           variant="h5"
-          align="center"
-          sx={{ marginBottom: 6, color: "#666" }}
+          align="left"
+          sx={{ marginBottom: 6, color: "#666", lineHeight: 1.6 }}
         >
-          {translations.app.FeePage.subtitle}
+          {translations.app.FeePage.subtitle
+            .split("|")
+            .map((line: string, lineIndex: number) => (
+              <span key={lineIndex}>
+                {line}
+                {lineIndex <
+                  translations.app.FeePage.subtitle.split("|").length - 1 && (
+                  <br />
+                )}
+              </span>
+            ))}
         </Typography>
 
-        <Grid container spacing={4} sx={{ marginTop: 4 }}>
+        <Box sx={{ maxWidth: "100%", marginTop: 4 }}>
           {translations.app.FeePage.services.map(
             (service: Service, index: number) => (
-              <Grid size={{ xs: 12, sm: 6, md: 6 }} key={index}>
-                <Card sx={{ height: "100%", padding: 3, textAlign: "center" }}>
-                  <CardContent>
-                    <Typography
-                      variant="h4"
-                      gutterBottom
-                      sx={{ fontWeight: 700, color: "#1976d2" }}
-                    >
-                      {service.price}
-                    </Typography>
-                    <Typography
-                      variant="h5"
-                      gutterBottom
-                      sx={{ fontWeight: 600 }}
-                    >
-                      {service.name}
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "#888", marginBottom: 2 }}
-                    >
-                      {service.duration}
-                    </Typography>
-                    <Divider sx={{ marginY: 2 }} />
-                    <Typography
-                      variant="body1"
-                      sx={{ lineHeight: 1.6, color: "#555" }}
-                    >
-                      {service.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+              <Box key={index} sx={{ marginBottom: 5 }}>
+                <Typography
+                  variant="h4"
+                  gutterBottom
+                  sx={{
+                    fontWeight: 600,
+                    color: "#1976d2",
+                    marginBottom: 2,
+                    textAlign: "left",
+                  }}
+                >
+                  {service.name}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontWeight: 700,
+                    color: "#1976d2",
+                    marginBottom: 1,
+                    textAlign: "left",
+                  }}
+                >
+                  {service.price}
+                </Typography>
+                {service.duration && (
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "#888",
+                      marginBottom: 2,
+                      textAlign: "left",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {service.duration}
+                  </Typography>
+                )}
+                <Typography
+                  variant="body1"
+                  sx={{
+                    lineHeight: 1.8,
+                    color: "#555",
+                    fontSize: "1.1rem",
+                    textAlign: "left",
+                  }}
+                >
+                  {service.description}
+                </Typography>
+              </Box>
             )
           )}
-        </Grid>
+        </Box>
 
-        <Box
-          sx={{
-            marginTop: 6,
-            padding: 3,
-            backgroundColor: "#f5f5f5",
-            borderRadius: 2,
-          }}
-        >
+        <Box sx={{ marginTop: 6, marginBottom: 5 }}>
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{
+              fontWeight: 600,
+              color: "#1976d2",
+              marginBottom: 2,
+              textAlign: "left",
+            }}
+          >
+            {translations.app.FeePage.cancellationPolicy.title}
+          </Typography>
           <Typography
             variant="body1"
-            align="center"
-            sx={{ fontStyle: "italic", color: "#666" }}
+            sx={{
+              lineHeight: 1.8,
+              color: "#555",
+              fontSize: "1.1rem",
+              textAlign: "left",
+            }}
           >
-            {translations.app.FeePage.note}
+            {translations.app.FeePage.cancellationPolicy.description}
           </Typography>
         </Box>
       </Container>

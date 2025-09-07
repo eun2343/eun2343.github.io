@@ -134,47 +134,49 @@ export const de = {
     },
     AboutPage: {
       title: "Über Dr. Eunkyeong Choi",
-      content: [
-        "Dr. Eunkyeong Choi ist eine lizenzierte Ärztin für koreanische traditionelle Medizin mit umfangreicher Erfahrung in der Fruchtbarkeits- und Frauengesundheitspflege.",
-        "Sie studierte koreanische Medizin in Busan, wo sie ein tiefes Verständnis für traditionelle Heilmethoden und deren Anwendung in der modernen Gesundheitsversorgung entwickelte.",
-        "Nach ihrem Studium arbeitete Dr. Choi mehrere Jahre in spezialisierten Fruchtbarkeitskliniken und sammelte wertvolle Erfahrungen dabei, Paaren zu ihrem Traum der Elternschaft zu verhelfen.",
-        "2021 wagte sie den bedeutsamen Schritt in die Schweiz, wo sie alle notwendigen lokalen Genehmigungen zur Ausübung traditioneller Medizin erhielt.",
-        "Derzeit arbeitet sie eng mit Dr. Rika Kasahara von Kasahara TCM in Zürich zusammen und verbindet ihre koreanische Medizinexpertise mit schweizerischen Gesundheitsstandards.",
-        "Dr. Chois Ansatz integriert traditionelle koreanische Medizinprinzipien mit modernen Fruchtbarkeitsbehandlungen und bietet Patienten einen umfassenden und personalisierten Weg zur Gesundheit.",
+      profileImage: "https://choi-tcm.ch/index_logo_tmp.png?1694983122",
+      qualifications: [
+        "Lizenzierte Ärztin für traditionelle Medizin, Südkorea",
+        "Spezialisiert auf Fruchtbarkeit und Reproduktionsgesundheit",
+        "Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie",
+        "Eidgenössisches Diplom in TCM, Höhere Fachprüfung, Schweiz",
+        "Genehmigt von Kanton Zürich und Luzern (Praxisbewilligung vom Kanton Zürich und Luzern)",
+        "EMR-Zertifikat ZSR - J121064",
+      ],
+      experience: [
+        "Seit 2025  Privatpraxis, Choi TCM, Luzern",
+        "Seit 2022  Privatpraxis Choi TCM, Zürich (in Partnerschaft mit Kasahara TCM)",
+        "2011 - 2022 Praktizierte als Ärztin für traditionelle Medizin in Kliniken, Seoul und Busan, Südkorea",
+        "2005 - 2011 Abschluss eines 6-jährigen Vollzeitstudiums in traditioneller koreanischer Medizin, Dong-Eui Universität, Südkorea",
       ],
     },
     WhyChoiTCMPage: {
       title: "Warum Choi TCM wählen",
       reasons: [
         {
-          title: "Ganzheitlicher Ansatz",
+          title: "I’m a Fertility specialist",
           description:
-            "Wir behandeln den ganzen Menschen, nicht nur Symptome, und gehen den Grundursachen von Gesundheitsproblemen auf den Grund.",
+            "Dr. Choi bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
         },
         {
-          title: "Bewährte Ergebnisse",
+          title: "Spezialisiert auf Fruchtbarkeit & Reproduktionsgesundheit",
           description:
-            "Über 85% Erfolgsrate bei Fruchtbarkeitsbehandlungen mit Tausenden von gesunden Babys.",
+            "Als lizenzierte Spezialistin für Fruchtbarkeit und Reproduktionsgesundheit konzentriert sich Dr. Choi ausschließlich darauf, Paaren zu helfen, schwanger zu werden. | Sie ist zertifiziertes Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie. | Ihre Behandlungen behandeln sowohl männliche als auch weibliche Fruchtbarkeitsprobleme mit bewährten Erfolgsraten.",
         },
         {
-          title: "Personalisierte Betreuung",
+          title: "Schweizer Lizenz & zertifizierte Praxis",
           description:
-            "Jeder Behandlungsplan wird individuell auf Ihre einzigartigen Bedürfnisse und Ihren Gesundheitszustand zugeschnitten.",
+            "Dr. Choi besitzt ein Eidgenössisches Diplom in TCM und ist offiziell zur Praxis in den Kantonen Zürich und Luzern zugelassen. | Sie verfügt über eine EMR-Zertifizierung (ZSR - J121064), die höchste Schweizer Gesundheitsstandards gewährleistet. | Ihre Praxis erfüllt alle regulatorischen Anforderungen für traditionelle Medizin in der Schweiz.",
         },
         {
-          title: "Sicher & Natürlich",
+          title: "Ganzheitlicher & personalisierter Behandlungsansatz",
           description:
-            "Traditionelle Medizinmethoden mit minimalen Nebenwirkungen und natürlichen Heilungsprozessen.",
+            "Jeder Behandlungsplan wird individuell auf Ihren einzigartigen Gesundheitszustand und Ihre Fruchtbarkeitsreise zugeschnitten. | Dr. Choi behandelt den ganzen Menschen, nicht nur Symptome, und konzentriert sich auf Grundursachen und allgemeines Wohlbefinden. | Ihr Ansatz integriert traditionelle koreanische Medizin mit modernen Fruchtbarkeitsunterstützungsmethoden.",
         },
         {
-          title: "Expertenwissen",
+          title: "Umfassende Betreuung & Unterstützung",
           description:
-            "15+ Jahre Erfahrung in der Kombination von östlichen und westlichen medizinischen Ansätzen.",
-        },
-        {
-          title: "Umfassende Unterstützung",
-          description:
-            "Von der Beratung über die Behandlung bis zur fortlaufenden Betreuung unterstützen wir Sie bei jedem Schritt.",
+            "Von der ersten Beratung über die Schwangerschaft bis darüber hinaus bietet Dr. Choi kontinuierliche Unterstützung während Ihrer gesamten Reise. | Sie bietet Präkonzeptionsbetreuung, Fruchtbarkeitssteigerung, Schwangerschaftsunterstützung und postnatale Erholungsbehandlungen an. | Patienten erhalten detaillierte Anleitung und emotionale Unterstützung in jeder Phase ihrer Fruchtbarkeitsreise.",
         },
       ],
     },

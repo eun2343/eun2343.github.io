@@ -9,7 +9,6 @@ import {
   CardContent,
 } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
-import { zurichMapImage, luzernMapImage } from "./MapImages";
 import { choiTCMLocations, openInGoogleMaps } from "../utils/mapsUtils";
 
 const imageApiKey = "AIzaSyCSa6n8Mk2pNVOk8hM1joWOwSSpnkeAiS4";

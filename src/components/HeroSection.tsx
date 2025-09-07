@@ -5,10 +5,8 @@ const HeroSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <div className="hero-section" style={{ padding: "20px 0" }}>
-      <Container
-        sx={{ marginTop: 12, alignContent: "center", marginBottom: 4 }}
-      >
+    <div className="hero-section">
+      <Container sx={{ paddingY: 11, alignContent: "center", marginBottom: 4 }}>
         <Typography
           fontWeight={700}
           paddingBottom={4}
