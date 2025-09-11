@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import WhyChoiTCMPage from "./pages/WhyChoiTCMPage";
 import FeePage from "./pages/FeePage";
+import BookAppointmentPage from "./pages/BookAppointmentPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/why-choi-tcm" element={<WhyChoiTCMPage />} />
           <Route path="/fee" element={<FeePage />} />
+          <Route path="/book-appointment" element={<BookAppointmentPage />} />
         </Routes>
       </Router>
     </LanguageProvider>

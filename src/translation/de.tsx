@@ -209,7 +209,11 @@ export const de = {
           description: "Prä- und postnatale Betreuungssitzungen",
         },
       ],
-      note: "Krankenversicherungsabdeckung könnte verfügbar sein. Bitte kontaktieren Sie uns für weitere Informationen.",
+      cancellationPolicy: {
+        title: "Stornierungsrichtlinie",
+        description:
+          "48 Stunden für neue Patienten und 24 Stunden für bestehende Patienten. Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
+      },
     },
   },
 };

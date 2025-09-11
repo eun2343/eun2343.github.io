@@ -1,4 +1,5 @@
 import { Container, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
 
 const HeroSection = () => {
@@ -53,6 +54,8 @@ const HeroSection = () => {
             ))}
         </Typography>
         <Button
+          component={Link}
+          to="/book-appointment"
           variant="contained"
           color="primary"
           sx={{

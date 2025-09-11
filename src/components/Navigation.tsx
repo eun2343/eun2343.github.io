@@ -72,7 +72,13 @@ const Navigation = () => {
           />
         </ListItem>
         <ListItem disablePadding sx={{ justifyContent: "center", pt: 2 }}>
-          <Button variant="contained" color="primary" sx={{ mx: "auto" }}>
+          <Button
+            component={Link}
+            to="/book-appointment"
+            variant="contained"
+            color="primary"
+            sx={{ mx: "auto" }}
+          >
             {translations.app.Navigation.bookAppointment}
           </Button>
         </ListItem>
@@ -148,7 +154,12 @@ const Navigation = () => {
             >
               {translations.app.Navigation.language}
             </Typography>
-            <Button variant="contained" color="primary">
+            <Button
+              component={Link}
+              to="/book-appointment"
+              variant="contained"
+              color="primary"
+            >
               {translations.app.Navigation.bookAppointment}
             </Button>
           </Box>
