@@ -2,7 +2,6 @@ import { Container, Typography, Box } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { useRef, useEffect, useState } from "react";
 
 const BookAppointmentPage = () => {
   const { translations } = useLanguage();
@@ -10,7 +9,7 @@ const BookAppointmentPage = () => {
   return (
     <>
       <Navigation />
-      <Container sx={{ py: 4, minHeight: "80vh" }}>
+      <Container sx={{ py: 4, minHeight: "88vh" }}>
         <Typography
           variant="h2"
           component="h1"
@@ -25,18 +24,11 @@ const BookAppointmentPage = () => {
           {translations.app.Navigation.bookAppointment}
         </Typography>
 
-        <Box
-          sx={{
-            width: "100%",
-            height: { xs: "600px", md: "800px" },
-
-            overflow: "hidden",
-          }}
-        >
+        <Box className="iframe-container">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSddi5BMTFKs76sAfmc1ToThQTO86wBcQza10gulEBLua8cNIQ/viewform?embedded=true"
             width="100%"
-            height="1800px"
+            height="1200px"
             title="Book Appointment Form"
             style={{
               border: "none",

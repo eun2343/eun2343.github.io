@@ -1,5 +1,43 @@
 /* Mobile Responsive Styles */
 
+/* Route-specific styling - Container class for route functionality */
+.app-container {
+  min-height: 100vh;
+}
+
+/* Remove horizontal padding from Container on book appointment page */
+.route-book-appointment .MuiContainer-root {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Style the iframe container on book appointment page */
+.route-book-appointment .iframe-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+  Active route classes are automatically applied to:
+  - document.body (e.g., body.route-home, body.route-about, etc.)
+  - .app-container (e.g., .route-home, .route-about, etc.)
+  
+  Available route classes:
+  - route-home (for /)
+  - route-about (for /about)
+  - route-why-choi-tcm (for /why-choi-tcm)
+  - route-fee (for /fee)
+  - route-book-appointment (for /book-appointment)
+  - route-unknown (fallback for unrecognized routes)
+  
+  Example usage:
+  .route-home .hero-section { background-color: #e1b09e; }
+  .route-about .page-header { color: #1976d2; }
+  body.route-fee .pricing-card { border-color: #ed6c02; }
+*/
+
 /* Base responsive typography */
 @media (max-width: 600px) {
   .MuiContainer-root {
