@@ -99,16 +99,25 @@ const Navigation = () => {
             onClick={() => (window.location.href = "/")}
           />
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Now empty center space */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
-              gap: "40px",
               flex: 1,
-              justifyContent: "center",
-              paddingTop: "30px",
             }}
           >
+            {/* Empty space for logo on left, navigation on right */}
+          </Box>
+
+          {/* Desktop Navigation, Language and Book Button - All on the right */}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              gap: "30px",
+            }}
+          >
+            {/* Navigation Links */}
             <Link to="/" style={{ textDecoration: "none" }}>
               <Typography
                 variant="h5"
@@ -141,19 +150,17 @@ const Navigation = () => {
                 {translations.app.Navigation.menuItems[2]}
               </Typography>
             </Link>
-          </Box>
 
-          {/* Desktop Language and Book Button */}
-          <Box
-            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}
-          >
+            {/* Language Toggle */}
             <Typography
               variant="h6"
-              sx={{ color: "black", cursor: "pointer", paddingRight: "20px" }}
+              sx={{ color: "black", cursor: "pointer", paddingLeft: "20px" }}
               onClick={handleLanguageToggle}
             >
               {translations.app.Navigation.language}
             </Typography>
+
+            {/* Book Appointment Button */}
             <Button
               component={Link}
               to="/book-appointment"
