@@ -1,0 +1,134 @@
+/* Mobile Responsive Styles */
+
+/* Base responsive typography */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  .MuiTypography-h1 {
+    font-size: 2rem !important;
+  }
+  
+  .MuiTypography-h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  .MuiTypography-h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 1.25rem !important;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 1.125rem !important;
+  }
+  
+  .MuiTypography-body1 {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Navigation responsive */
+@media (max-width: 768px) {
+  .MuiToolbar-root {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    min-height: 64px !important;
+  }
+  
+  .nav-logo {
+    max-height: 50px !important;
+  }
+}
+
+/* Hero section responsive */
+.hero-section {
+  background-color: #e1b09e;
+  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 16px 0;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Cards and content responsive */
+@media (max-width: 600px) {
+  .MuiCard-root {
+    margin: 8px 0 !important;
+  }
+  
+  .MuiCardContent-root {
+    padding: 16px !important;
+  }
+  
+  .content-section {
+    margin-bottom: 24px !important;
+  }
+  
+  .section-title {
+    margin-bottom: 16px !important;
+  }
+}
+
+/* List items responsive */
+@media (max-width: 600px) {
+  .MuiListItemText-root .MuiTypography-root {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Button responsive */
+@media (max-width: 600px) {
+  .MuiButton-root {
+    font-size: 0.875rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .hero-button {
+    width: 80% !important;
+    max-width: 200px !important;
+  }
+}
+
+/* Image responsive */
+@media (max-width: 600px) {
+  .profile-image {
+    max-width: 90% !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Two column layout responsive */
+@media (max-width: 768px) {
+  .two-column-container {
+    flex-direction: column !important;
+  }
+  
+  .column-left,
+  .column-right {
+    width: 100% !important;
+    flex: none !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .column-left {
+    text-align: center !important;
+  }
+}

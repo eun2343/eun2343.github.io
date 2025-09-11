@@ -10,7 +10,14 @@ const FeePage = () => {
   return (
     <>
       <Navigation />
-      <Container sx={{ marginTop: 8, marginBottom: 8, minHeight: "60vh" }}>
+      <Container
+        sx={{
+          marginTop: { xs: 4, md: 8 },
+          marginBottom: 8,
+          minHeight: "60vh",
+          px: { xs: 2, md: 3 },
+        }}
+      >
         <Typography
           variant="h2"
           align="left"

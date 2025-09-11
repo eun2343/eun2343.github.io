@@ -6,13 +6,22 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section">
-      <Container sx={{ paddingY: 11, alignContent: "center", marginBottom: 4 }}>
+      <Container
+        sx={{
+          paddingY: { xs: 6, md: 11 },
+          alignContent: "center",
+          marginBottom: { xs: 2, md: 4 },
+        }}
+      >
         <Typography
           fontWeight={700}
-          paddingBottom={4}
+          paddingBottom={{ xs: 2, md: 4 }}
           variant="h2"
           gutterBottom
           align="center"
+          sx={{
+            fontSize: { xs: "2rem", sm: "2.5rem", md: "3.75rem" },
+          }}
         >
           {translations.app.HeroSection.title
             .split(" | ")
@@ -26,10 +35,13 @@ const HeroSection = () => {
 
         <Typography
           lineHeight={1.5}
-          paddingBottom={4}
+          paddingBottom={{ xs: 2, md: 4 }}
           variant="h4"
           gutterBottom
           align="center"
+          sx={{
+            fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2.125rem" },
+          }}
         >
           {translations.app.HeroSection.subtitle
             .split(" | ")
@@ -43,7 +55,12 @@ const HeroSection = () => {
         <Button
           variant="contained"
           color="primary"
-          sx={{ width: "200px", margin: "0 auto", display: "block" }}
+          sx={{
+            width: { xs: "80%", sm: "200px" },
+            margin: "0 auto",
+            display: "block",
+            fontSize: { xs: "0.875rem", md: "1rem" },
+          }}
         >
           {translations.app.HeroSection.bookAppointment}
         </Button>

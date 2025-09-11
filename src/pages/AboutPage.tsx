@@ -16,7 +16,14 @@ const AboutPage = () => {
   return (
     <>
       <Navigation />
-      <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
+      <Container
+        sx={{
+          marginTop: { xs: 4, md: 12 },
+          marginBottom: 8,
+          minHeight: "60vh",
+          px: { xs: 2, md: 3 },
+        }}
+      >
         {/* Two-column layout for profile section */}
         <Box
           sx={{
@@ -29,13 +36,14 @@ const AboutPage = () => {
         >
           {/* Left column - Profile Image */}
           <Box
-            marginTop={16}
+            marginTop={{ xs: 4, md: 16 }}
             sx={{
               flex: { md: "0 0 30%" },
               width: { xs: "100%", md: "30%" },
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              marginBottom: { xs: 4, md: 0 },
             }}
           >
             <img
@@ -62,14 +70,24 @@ const AboutPage = () => {
             <Typography
               variant="h2"
               gutterBottom
-              sx={{ marginBottom: 3, fontWeight: 600, color: "#333" }}
+              sx={{
+                marginBottom: 3,
+                fontWeight: 600,
+                color: "#333",
+                fontSize: { xs: "2rem", md: "3.75rem" },
+              }}
             >
               Choi TCM
             </Typography>
             <Typography
               variant="h3"
               gutterBottom
-              sx={{ marginBottom: 3, fontWeight: 600, color: "#333" }}
+              sx={{
+                marginBottom: 3,
+                fontWeight: 600,
+                color: "#333",
+                fontSize: { xs: "1.5rem", md: "3rem" },
+              }}
             >
               Eunkyeong Choi
             </Typography>

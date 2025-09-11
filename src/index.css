@@ -2,28 +2,37 @@
   :root {
     color: #151515;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.hero-section {
-  background-color: #e1b09e;
-  padding: 20px 0;
+/* Global mobile improvements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+}
+
+/* Mobile typography improvements */
+@media (max-width: 600px) {
+  html {
+    font-size: 14px; /* Slightly smaller base font size on mobile */
+  }
+  
+  body {
+    line-height: 1.4;
+  }
 }
 
 a {
@@ -31,17 +40,49 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-    min-width: 320px;
-  min-height: 100vh;
+button {
+  background-color: #f9f9f9;
+  /* Improve button touch targets on mobile */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.hero-section {
+  background-color: #e1b09e;
+  padding: 20px 0;
 }
 
 .gyno-card.with-bg{
-  
   background: linear-gradient(to bottom right, #ffe3e3, #ff9898);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Improve spacing on mobile */
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  /* Better touch targets */
+  .MuiButton-root {
+    min-height: 48px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  /* Prevent text from being too small */
+  .MuiTypography-root {
+    -webkit-text-size-adjust: 100%;
+  }
 }
