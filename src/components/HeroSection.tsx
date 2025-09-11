@@ -63,6 +63,9 @@ const HeroSection = () => {
             margin: "0 auto",
             display: "block",
             fontSize: { xs: "0.875rem", md: "1rem" },
+            "&:hover": {
+              color: "white",
+            },
           }}
         >
           {translations.app.HeroSection.bookAppointment}

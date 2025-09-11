@@ -77,7 +77,12 @@ const Navigation = () => {
             to="/book-appointment"
             variant="contained"
             color="primary"
-            sx={{ mx: "auto" }}
+            sx={{
+              mx: "auto",
+              "&:hover": {
+                color: "white",
+              },
+            }}
           >
             {translations.app.Navigation.bookAppointment}
           </Button>
@@ -166,6 +171,11 @@ const Navigation = () => {
               to="/book-appointment"
               variant="contained"
               color="primary"
+              sx={{
+                "&:hover": {
+                  color: "white",
+                },
+              }}
             >
               {translations.app.Navigation.bookAppointment}
             </Button>
