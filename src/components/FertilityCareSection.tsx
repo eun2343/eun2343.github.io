@@ -1,11 +1,4 @@
-import {
-  Container,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Box,
-} from "@mui/material";
+import { Container, Typography, Grid, Card, CardContent } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 
 const FertilityCareSection = () => {
