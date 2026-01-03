@@ -50,6 +50,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <Card
+                className="card23"
                 sx={{
                   padding: 4,
                   textAlign: "center",

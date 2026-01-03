@@ -11,8 +11,6 @@ import {
 import { useLanguage } from "../translation/useLanguage";
 import { choiTCMLocations, openInGoogleMaps } from "../utils/mapsUtils";
 
-const imageApiKey = "AIzaSyCSa6n8Mk2pNVOk8hM1joWOwSSpnkeAiS4";
-
 const Footer = () => {
   const { translations } = useLanguage();
 
