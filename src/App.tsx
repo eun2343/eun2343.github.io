@@ -8,7 +8,7 @@ import {
 import { LanguageProvider } from "./translation/LanguageContext";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import WhyChoiTCMPage from "./pages/WhyChoiTCMPage";
+import TreatmentPage from "./pages/TreatmentPage";
 import FeePage from "./pages/FeePage";
 import BookAppointmentPage from "./pages/BookAppointmentPage";
 import { useEffect } from "react";
@@ -36,6 +36,8 @@ const AppWrapper = () => {
         return "route-about";
       case "/why-choi-tcm":
         return "route-why-choi-tcm";
+      case "/treatment":
+        return "route-treatment";
       case "/fee":
         return "route-fee";
       case "/book-appointment":
@@ -50,7 +52,7 @@ const AppWrapper = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/why-choi-tcm" element={<WhyChoiTCMPage />} />
+        <Route path="/treatment" element={<TreatmentPage />} />
         <Route path="/fee" element={<FeePage />} />
         <Route path="/book-appointment" element={<BookAppointmentPage />} />
       </Routes>

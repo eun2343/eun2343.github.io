@@ -1,7 +1,7 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["about", "why Choi TCM", "fee"],
+      menuItems: ["about", "why Choi TCM", "fee", "treatment"],
       language: "deutsch",
       bookAppointment: "Book Appointment",
     },
@@ -33,6 +33,22 @@ export const en = {
         "Easy and smooth Labor",
         "After delivery Care",
       ],
+    },
+    TreatmentSection: {
+      title: "Treatment Methods",
+      subtitle: "Comprehensive Traditional Chinese Medicine Services",
+      treatments: {
+        acupuncture: {
+          title: "Acupuncture",
+          description:
+            "Traditional acupuncture treatment using fine needles to stimulate specific points on the body, promoting natural healing and balance. This ancient practice helps restore the flow of vital energy (Qi) and supports the body's natural healing mechanisms.",
+        },
+        herbalMedicine: {
+          title: "Herbal Medicine",
+          description:
+            "Customized herbal formulations based on individual diagnosis and constitutional assessment, following traditional Chinese medicine principles. Each prescription is tailored to address specific health concerns and restore internal balance.",
+        },
+      },
     },
     TestimonialsSection: {
       title: "What our patients say",

@@ -1,9 +1,7 @@
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
-import FertilityCareSection from "../components/FertilityCareSection";
-import PrePostnatalCareSection from "../components/PrePostnatalCareSection";
+import WhyChoiTCMSection from "../components/WhyChoiTCMSection";
 import TestimonialsSection from "../components/TestimonialsSection";
-import GynecologySection from "../components/GynecologySection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -11,10 +9,9 @@ const HomePage = () => {
     <>
       <Navigation />
       <HeroSection />
-      <FertilityCareSection />
-      <PrePostnatalCareSection />
+      <WhyChoiTCMSection />
       <TestimonialsSection />
-      <GynecologySection />
+
       <Footer />
     </>
   );

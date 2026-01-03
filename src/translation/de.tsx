@@ -1,7 +1,7 @@
 export const de = {
   app: {
     Navigation: {
-      menuItems: ["über uns", "warum Choi TCM", "preise"],
+      menuItems: ["über uns", "warum Choi TCM", "preise", "behandlung"],
       language: "english",
       bookAppointment: "Termin buchen",
     },
@@ -35,6 +35,22 @@ export const de = {
         "Einfache und sanfte Geburt",
         "Nachsorge nach der Geburt",
       ],
+    },
+    TreatmentSection: {
+      title: "Behandlungsmethoden",
+      subtitle: "Umfassende Traditionelle Chinesische Medizin Leistungen",
+      treatments: {
+        acupuncture: {
+          title: "Akupunktur",
+          description:
+            "Traditionelle Akupunkturbehandlung mit feinen Nadeln zur Stimulation spezifischer Körperpunkte, die natürliche Heilung und Balance fördern. Diese alte Praxis hilft dabei, den Fluss der Lebensenergie (Qi) wiederherzustellen und unterstützt die natürlichen Heilungsmechanismen des Körpers.",
+        },
+        herbalMedicine: {
+          title: "Kräutermedizin",
+          description:
+            "Individuell angepasste Kräuterrezepturen basierend auf individueller Diagnose und konstitutioneller Bewertung, nach den Prinzipien der traditionellen chinesischen Medizin. Jede Verschreibung ist maßgeschneidert, um spezifische Gesundheitsprobleme anzugehen und das innere Gleichgewicht wiederherzustellen.",
+        },
+      },
     },
     TestimonialsSection: {
       title: "Was unsere Patientinnen sagen",
