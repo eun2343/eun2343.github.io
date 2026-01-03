@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
-import WhyChoiTCMSection from "../components/WhyChoiTCMSection";
+import FertilitySpecialistSection from "../components/FertilitySpecialistSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import Footer from "../components/Footer";
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <Navigation />
       <HeroSection />
-      <WhyChoiTCMSection />
+      <FertilitySpecialistSection />
       <TestimonialsSection />
 
       <Footer />
