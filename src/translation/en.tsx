@@ -1,7 +1,7 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["about", "why Choi TCM", "fee", "treatment"],
+      menuItems: ["about", "treatment"],
       language: "deutsch",
       bookAppointment: "Book Appointment",
     },
@@ -196,7 +196,7 @@ export const en = {
       ],
     },
     FeePage: {
-      title: "Treatment Fees",
+      title: "Price",
       subtitle:
         "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung). Please check with your insurer in advance.",
       services: [

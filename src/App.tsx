@@ -9,7 +9,6 @@ import { LanguageProvider } from "./translation/LanguageContext";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
-import FeePage from "./pages/FeePage";
 import BookAppointmentPage from "./pages/BookAppointmentPage";
 import { useEffect } from "react";
 
@@ -38,8 +37,6 @@ const AppWrapper = () => {
         return "route-why-choi-tcm";
       case "/treatment":
         return "route-treatment";
-      case "/fee":
-        return "route-fee";
       case "/book-appointment":
         return "route-book-appointment";
       default:
@@ -53,7 +50,6 @@ const AppWrapper = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/treatment" element={<TreatmentPage />} />
-        <Route path="/fee" element={<FeePage />} />
         <Route path="/book-appointment" element={<BookAppointmentPage />} />
       </Routes>
     </div>

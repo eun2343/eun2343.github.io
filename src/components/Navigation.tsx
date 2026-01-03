@@ -29,11 +29,7 @@ const Navigation = () => {
   const menuItems = [
     { path: "/", label: "home" },
     { path: "/about", label: translations.app.Navigation.menuItems[0] },
-    {
-      path: "/treatment",
-      label: translations.app.Navigation.menuItems[3] || "Treatment",
-    },
-    { path: "/fee", label: translations.app.Navigation.menuItems[2] },
+    { path: "/treatment", label: translations.app.Navigation.menuItems[1] },
   ];
 
   const renderDesktopNavLink = (item: { path: string; label: string }) => (
