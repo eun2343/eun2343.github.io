@@ -22,30 +22,6 @@ const FertilityCareSection = () => {
       }}
     >
       <Container>
-        {/* Hero Image */}
-        <Box
-          sx={{
-            width: "100%",
-            marginBottom: 6,
-            display: "flex",
-            justifyContent: "center",
-            overflow: "hidden",
-            borderRadius: 2,
-          }}
-        >
-          <img
-            src="/images/fertility.jpg"
-            alt="Fertility Care Treatment"
-            style={{
-              width: "100%",
-              height: "auto",
-              maxHeight: "300px",
-              objectFit: "cover",
-              objectPosition: "center",
-            }}
-          />
-        </Box>
-
         <Typography
           variant="h4"
           padding={4}
