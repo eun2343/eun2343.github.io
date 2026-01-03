@@ -2,7 +2,7 @@ export const en = {
   app: {
     Navigation: {
       menuItems: ["about", "why Choi TCM", "fee"],
-      language: "DE",
+      language: "deutsch",
       bookAppointment: "Book Appointment",
     },
     HeroSection: {

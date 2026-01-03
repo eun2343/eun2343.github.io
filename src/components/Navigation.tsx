@@ -33,29 +33,41 @@ const Navigation = () => {
     { path: "/fee", label: translations.app.Navigation.menuItems[2] },
   ];
 
+  const renderDesktopNavLink = (item: { path: string; label: string }) => (
+    <Link
+      className="navlink"
+      key={item.path}
+      to={item.path}
+      style={{ textDecoration: "none" }}
+    >
+      <Typography variant="h5" sx={{ color: "black", cursor: "pointer" }}>
+        {item.label}
+      </Typography>
+    </Link>
+  );
+
+  const renderMobileNavLink = (item: { path: string; label: string }) => (
+    <ListItem key={item.path} disablePadding>
+      <Link to={item.path} style={{ textDecoration: "none", width: "100%" }}>
+        <ListItemText
+          primary={item.label}
+          sx={{
+            textAlign: "center",
+            "& .MuiTypography-root": {
+              color: "black",
+              fontSize: "1.1rem",
+              py: 1,
+            },
+          }}
+        />
+      </Link>
+    </ListItem>
+  );
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", pt: 2 }}>
       <List>
-        {menuItems.map((item) => (
-          <ListItem key={item.path} disablePadding>
-            <Link
-              to={item.path}
-              style={{ textDecoration: "none", width: "100%" }}
-            >
-              <ListItemText
-                primary={item.label}
-                sx={{
-                  textAlign: "center",
-                  "& .MuiTypography-root": {
-                    color: "black",
-                    fontSize: "1.1rem",
-                    py: 1,
-                  },
-                }}
-              />
-            </Link>
-          </ListItem>
-        ))}
+        {menuItems.map(renderMobileNavLink)}
         <ListItem disablePadding>
           <ListItemText
             primary={translations.app.Navigation.language}
@@ -123,38 +135,7 @@ const Navigation = () => {
             }}
           >
             {/* Navigation Links */}
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <Typography
-                variant="h5"
-                sx={{ color: "black", cursor: "pointer" }}
-              >
-                home
-              </Typography>
-            </Link>
-            <Link to="/about" style={{ textDecoration: "none" }}>
-              <Typography
-                variant="h5"
-                sx={{ color: "black", cursor: "pointer" }}
-              >
-                {translations.app.Navigation.menuItems[0]}
-              </Typography>
-            </Link>
-            <Link to="/why-choi-tcm" style={{ textDecoration: "none" }}>
-              <Typography
-                variant="h5"
-                sx={{ color: "black", cursor: "pointer" }}
-              >
-                {translations.app.Navigation.menuItems[1]}
-              </Typography>
-            </Link>
-            <Link to="/fee" style={{ textDecoration: "none" }}>
-              <Typography
-                variant="h5"
-                sx={{ color: "black", cursor: "pointer" }}
-              >
-                {translations.app.Navigation.menuItems[2]}
-              </Typography>
-            </Link>
+            {menuItems.map(renderDesktopNavLink)}
 
             {/* Language Toggle */}
             <Typography
