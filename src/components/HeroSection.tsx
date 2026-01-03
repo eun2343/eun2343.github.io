@@ -59,6 +59,8 @@ const HeroSection = () => {
           variant="contained"
           color="primary"
           sx={{
+            whiteSpace: "nowrap",
+            textAlign: "center",
             width: { xs: "80%", sm: "200px" },
             margin: "0 auto",
             display: "block",

@@ -75,10 +75,7 @@ const Footer = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image={
-                  "https://maps.googleapis.com/maps/api/staticmap?center=Im+Wygart+3,6205+Eich,Switzerland&zoom=16&size=600x200&maptype=roadmap&markers=color:red|Im+Wygart+3,6205+Eich,Switzerland&key=" +
-                  imageApiKey
-                }
+                image="/images/eich.jpg"
                 alt="Choi TCM Luzern Location Map"
                 sx={{
                   objectFit: "cover",
@@ -159,10 +156,7 @@ const Footer = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image={
-                  "https://maps.googleapis.com/maps/api/staticmap?center=Kreuzstrasse+60,Zürich,Switzerland&zoom=16&size=600x200&maptype=roadmap&markers=color:red|Kreuzstrasse+60,Zürich,Switzerland&key=" +
-                  imageApiKey
-                }
+                image="/images/kasahara.jpg"
                 alt="Choi TCM Zürich Location Map"
                 sx={{
                   objectFit: "cover",

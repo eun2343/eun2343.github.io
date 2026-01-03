@@ -1,5 +1,8 @@
 /* Mobile Responsive Styles */
 
+/* Swiper Styles */
+@import 'swiper/swiper.css';
+
 /* Route-specific styling - Container class for route functionality */
 .app-container {
   min-height: 100vh;

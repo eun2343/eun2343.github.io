@@ -2,7 +2,7 @@ export const de = {
   app: {
     Navigation: {
       menuItems: ["über uns", "warum Choi TCM", "preise"],
-      language: "EN",
+      language: "DE / EN",
       bookAppointment: "Termin buchen",
     },
     HeroSection: {

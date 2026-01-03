@@ -19,7 +19,7 @@ const CardWithContent = (props: CardWithContentProps): React.ReactElement => {
           <ul>
             {points.map((point) => (
               <li key={point}>
-                <Typography variant="body2">{point}</Typography>
+                <Typography variant="body1">{point}</Typography>
               </li>
             ))}
           </ul>
