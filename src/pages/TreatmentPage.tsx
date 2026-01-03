@@ -9,10 +9,10 @@ const TreatmentPage = () => {
   return (
     <>
       <Navigation />
+      <TreatmentSection />
       <FertilityCareSection />
       <PrePostnatalCareSection />
       <GynecologySection />
-      <TreatmentSection />
       <Footer />
     </>
   );

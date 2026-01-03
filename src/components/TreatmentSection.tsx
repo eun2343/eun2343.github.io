@@ -6,6 +6,30 @@ const TreatmentSection = () => {
 
   return (
     <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
+      {/* Hero Image */}
+      <Box
+        sx={{
+          width: "100%",
+          marginBottom: 6,
+          display: "flex",
+          justifyContent: "center",
+          overflow: "hidden",
+          borderRadius: 2,
+        }}
+      >
+        <img
+          src="/images/akupunktur1.png"
+          alt="Acupuncture Treatment"
+          style={{
+            width: "100%",
+            height: "auto",
+            maxHeight: "300px",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
+      </Box>
+
       <Typography
         variant="h2"
         align="center"
