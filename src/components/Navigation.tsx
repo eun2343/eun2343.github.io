@@ -99,7 +99,7 @@ const Navigation = () => {
         >
           <img
             style={{ maxHeight: "100%", width: "auto", cursor: "pointer" }}
-            src="src/assets/logo-normal.png "
+            src="/images/logo-normal.png "
             alt="Logo"
             onClick={() => (window.location.href = "/")}
           />

@@ -40,19 +40,19 @@ export const de = {
       title: "Was unsere Patientinnen sagen",
       testimonials: [
         {
-          picture: "src/assets/testimonial1.jpg",
+          picture: "/images/testimonial1.jpg",
           quote:
             "Dr. Choi hat mich mit so viel Fürsorge und Expertise durch meine Fruchtbarkeitsreise begleitet. Dank ihrer Behandlung bin ich jetzt eine stolze Mutter.",
           name: "Sarah M.",
         },
         {
-          picture: "src/assets/testimonial2.jpg",
+          picture: "/images/testimonial2.jpg",
           quote:
             "Der traditionelle Medizinansatz war genau das, was ich brauchte. Die ganzheitliche Betreuung machte den ganzen Unterschied in meiner Schwangerschaft.",
           name: "Jennifer L.",
         },
         {
-          picture: "src/assets/testimonial3.jpg",
+          picture: "/images/testimonial3.jpg",
           quote:
             "Professionell, fürsorglich und kompetent. Dr. Choi hat mich mit Geduld und Verständnis durch jeden Schritt geführt.",
           name: "Maria K.",
@@ -134,7 +134,7 @@ export const de = {
     },
     AboutPage: {
       title: "Über Dr. Eunkyeong Choi",
-      profileImage: "https://choi-tcm.ch/index_logo_tmp.png?1694983122",
+      profileImage: "https://choi-tcm.ch/images/index_logo_tmp.png",
       qualifications: [
         "Lizenzierte Ärztin für traditionelle Medizin, Südkorea",
         "Spezialisiert auf Fruchtbarkeit und Reproduktionsgesundheit",
