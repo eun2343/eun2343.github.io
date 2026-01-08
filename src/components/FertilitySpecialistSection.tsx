@@ -49,7 +49,7 @@ const FertilitySpecialistSection = () => {
                 gutterBottom
                 sx={{
                   fontWeight: 600,
-                  color: "#1976d2",
+                  color: "#7624f1",
                   marginBottom: 2,
                   textAlign: "left",
                 }}

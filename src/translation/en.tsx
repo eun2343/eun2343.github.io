@@ -173,6 +173,11 @@ export const en = {
             "I work with fertility cases every single day and it's the sole focus of my work. || Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. I'm a committed member of the Society of Korean Medicine Obstetrics and Gynecology, and I continuously engage in advanced training and research to stay at the forefront of fertility care.",
         },
         {
+          title: "Fertility Specialist 2",
+          description:
+            "Dr. Choi brings over 15 years of specialized experience in traditional Korean medicine. || She completed her 6-year medical degree at Dong-Eui University and practiced at leading fertility clinics in Seoul and Busan. || Her deep knowledge combines ancient wisdom with modern medical understanding.",
+        },
+        {
           title: "You'll receive personalized treatment",
           description:
             "Fertility is complex and one-size-fits-all doesn't work. || I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
