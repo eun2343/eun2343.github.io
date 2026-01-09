@@ -175,7 +175,7 @@ export const en = {
         {
           title: "Fertility Specialist 2",
           description:
-            "Dr. Choi brings over 15 years of specialized experience in traditional Korean medicine. || She completed her 6-year medical degree at Dong-Eui University and practiced at leading fertility clinics in Seoul and Busan. || Her deep knowledge combines ancient wisdom with modern medical understanding.",
+            "I bring over 15 years of specialized experience in traditional Korean medicine. || I completed her 6-year medical degree at Dong-Eui University and practiced at leading fertility clinics in Seoul and Busan. || My deep knowledge combines ancient wisdom with modern medical understanding.",
         },
         {
           title: "You'll receive personalized treatment",
