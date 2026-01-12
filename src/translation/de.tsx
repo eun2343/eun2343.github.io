@@ -195,11 +195,6 @@ export const de = {
           description:
             "Dr. Choi bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
         },
-                {
-          title: "Spezialistin 2 für die Fruchtbarkeit",
-          description:
-            "Dr. Choi  dfdff bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
-        },
         {
           title: "Spezialisiert auf Fruchtbarkeit & Reproduktionsgesundheit",
           description:
