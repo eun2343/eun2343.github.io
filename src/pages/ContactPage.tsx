@@ -69,7 +69,6 @@ const ContactPage = () => {
     }
 
     // Create form data for Basin
-    const form = event.target as HTMLFormElement;
     const formDataToSubmit = new FormData();
 
     formDataToSubmit.append("firstName", formData.firstName);
@@ -142,7 +141,7 @@ const ContactPage = () => {
 
             <Box component="form" onSubmit={handleSubmit} noValidate>
               <Grid container spacing={3}>
-                <Grid item xs={12} sm={6}>
+                <Grid size={{ xs: 12, sm: 6 }}>
                   <TextField
                     required
                     fullWidth
@@ -158,7 +157,7 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid size={{ xs: 12, sm: 6 }}>
                   <TextField
                     required
                     fullWidth
@@ -174,7 +173,7 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={{ xs: 12 }}>
                   <TextField
                     required
                     fullWidth
@@ -191,7 +190,7 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={{ xs: 12 }}>
                   <TextField
                     required
                     fullWidth
@@ -208,7 +207,7 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={{ xs: 12 }}>
                   <FormControl component="fieldset" sx={{ mt: 2 }}>
                     <FormLabel component="legend" sx={{ mb: 1 }}>
                       {translations.app.ContactPage.inquiryType}
@@ -240,7 +239,7 @@ const ContactPage = () => {
                     </RadioGroup>
                   </FormControl>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid size={{ xs: 12 }}>
                   <Button
                     type="submit"
                     fullWidth
