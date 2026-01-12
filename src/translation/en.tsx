@@ -57,20 +57,38 @@ export const en = {
         {
           picture: "images/testimonial1.jpg",
           quote:
-            "Dr. Choi helped me through my fertility journey with such care and expertise. I'm now a proud mother thanks to her treatment.",
-          name: "Sarah M.",
+            "I was extremely satisfied with the care and support I received. Choi was always warm, supportive, and made sure to personalize each session and TCM herb to what I needed at that particular stage, whether it was preparing for transfer, easing pregnancy symptoms, or helping my body get ready for birth.",
+          name: "K.B.",
         },
         {
           picture: "images/testimonial2.jpg",
           quote:
-            "The traditional medicine approach was exactly what I needed. The holistic care made all the difference in my pregnancy.",
-          name: "Jennifer L.",
+            "I am happy to confirm that the spermiogram results have improved and are encouraging.",
+          name: "H.T.",
         },
         {
           picture: "images/testimonial3.jpg",
           quote:
-            "Professional, caring, and knowledgeable. Dr. Choi guided me through every step with patience and understanding.",
-          name: "Maria K.",
+            "After only the first session with Choi, I felt something in me that was burdening me for years release. I followed up with taking regularly the TCM prescribed herbs, and acupuncture appointment for 2 months, and somehow without even trying I got pregnant.",
+          name: "H.F.",
+        },
+        {
+          picture: "images/testimonial4.jpg",
+          quote:
+            "My body responded really well to the treatments, and after around four months, I became pregnant. I began to feel improvements almost immediately, I had more energy, less pain during my period, and just felt better overall. Choi also offered valuable guidance on breathing techniques, relaxation and nutrition, which helped me connect with my body in a new way.",
+          name: "B.P.",
+        },
+        {
+          picture: "images/testimonial5.jpg",
+          quote:
+            "Three months ago this result was unthinkable. Sperm test result came out way better than I expected and looks like the treatment is working as expected.",
+          name: "A.T.",
+        },
+        {
+          picture: "images/testimonial6.jpg",
+          quote:
+            "I will definitely come back here before having my second child. I had a PCOS, one time miscarriage and long-term infertility despite of my young age, so it was expected that my quality of egg can be poor. Thanks to the regular treatment, I could have a successful result of my first FET.",
+          name: "M.K.",
         },
       ],
     },
