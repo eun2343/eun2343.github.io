@@ -43,6 +43,11 @@ const TestimonialsSection = () => {
             clickable: true,
             dynamicBullets: true,
           }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           loop={true}
           centeredSlides={true}
           style={{ paddingBottom: "50px" }}
