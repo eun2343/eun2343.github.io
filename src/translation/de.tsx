@@ -4,6 +4,7 @@ export const de = {
       menuItems: ["über uns", "behandlung"],
       language: "english",
       bookAppointment: "Termin buchen",
+      contact: "Kontakt",
     },
     HeroSection: {
       title:
@@ -109,6 +110,26 @@ export const de = {
           ],
         },
       ],
+    },
+    ContactPage: {
+      title: "Kontaktieren Sie uns",
+      subtitle:
+        "Wir nehmen neue Patienten nur über dieses Kontaktformular an. Nach dem Absenden des Formulars melden wir uns innerhalb von 1–2 Werktagen bei Ihnen.",
+      firstName: "Vorname",
+      lastName: "Nachname",
+      email: "E-Mail-Adresse",
+      phone: "Telefonnummer",
+      inquiryType: "Bitte wählen Sie den Zweck Ihrer Behandlung",
+      fertility: "Fruchtbarkeit",
+      gynecology: "Gynäkologische Probleme außer Fruchtbarkeit",
+      other: "Sonstiges",
+      submit: "Nachricht senden",
+      requiredField: "Dieses Feld ist erforderlich",
+      invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      successMessage:
+        "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      errorMessage:
+        "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     },
     LocationsSection: {
       title: "Unsere Standorte",
