@@ -18,10 +18,6 @@ const Navigation = () => {
   const { translations, language, setLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleLanguageToggle = () => {
-    setLanguage(language === "en" ? "de" : "en");
-  };
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };

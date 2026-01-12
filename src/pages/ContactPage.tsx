@@ -140,6 +140,38 @@ const ContactPage = () => {
             </Typography>
 
             <Box component="form" onSubmit={handleSubmit} noValidate>
+              <Grid size={{ xs: 12 }}>
+                <FormControl component="fieldset" sx={{ mt: 2 }}>
+                  <FormLabel component="legend" sx={{ mb: 1 }}>
+                    {translations.app.ContactPage.inquiryType}
+                  </FormLabel>
+                  <RadioGroup
+                    value={formData.inquiryType}
+                    onChange={(event) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        inquiryType: event.target.value,
+                      }))
+                    }
+                  >
+                    <FormControlLabel
+                      value="fertility"
+                      control={<Radio />}
+                      label={translations.app.ContactPage.fertility}
+                    />
+                    <FormControlLabel
+                      value="gynecology"
+                      control={<Radio />}
+                      label={translations.app.ContactPage.gynecology}
+                    />
+                    <FormControlLabel
+                      value="other"
+                      control={<Radio />}
+                      label={translations.app.ContactPage.other}
+                    />
+                  </RadioGroup>
+                </FormControl>
+              </Grid>
               <Grid container spacing={3}>
                 <Grid size={{ xs: 12, sm: 6 }}>
                   <TextField
@@ -207,38 +239,7 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
-                <Grid size={{ xs: 12 }}>
-                  <FormControl component="fieldset" sx={{ mt: 2 }}>
-                    <FormLabel component="legend" sx={{ mb: 1 }}>
-                      {translations.app.ContactPage.inquiryType}
-                    </FormLabel>
-                    <RadioGroup
-                      value={formData.inquiryType}
-                      onChange={(event) =>
-                        setFormData((prev) => ({
-                          ...prev,
-                          inquiryType: event.target.value,
-                        }))
-                      }
-                    >
-                      <FormControlLabel
-                        value="fertility"
-                        control={<Radio />}
-                        label={translations.app.ContactPage.fertility}
-                      />
-                      <FormControlLabel
-                        value="gynecology"
-                        control={<Radio />}
-                        label={translations.app.ContactPage.gynecology}
-                      />
-                      <FormControlLabel
-                        value="other"
-                        control={<Radio />}
-                        label={translations.app.ContactPage.other}
-                      />
-                    </RadioGroup>
-                  </FormControl>
-                </Grid>
+
                 <Grid size={{ xs: 12 }}>
                   <Button
                     type="submit"
