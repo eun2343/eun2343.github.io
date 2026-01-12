@@ -4,6 +4,7 @@ export const en = {
       menuItems: ["about", "treatment"],
       language: "deutsch",
       bookAppointment: "Book Appointment",
+      contact: "Contact",
     },
     HeroSection: {
       title: "Enhanced Fertility Program to | help you conceive",
@@ -107,6 +108,26 @@ export const en = {
           ],
         },
       ],
+    },
+    ContactPage: {
+      title: "Contact Us",
+      subtitle:
+        "We accept new patients through this contact form only. Once you submit the form, we’ll get back to you within 1–2 business days.",
+      firstName: "First Name",
+      lastName: "Last Name",
+      email: "Email Address",
+      phone: "Phone Number",
+      inquiryType: "Please choose the purpose of your treatment",
+      fertility: "Fertility",
+      gynecology: "Gynecology issues other than fertility",
+      other: "Other",
+      submit: "Send Message",
+      requiredField: "This field is required",
+      invalidEmail: "Please enter a valid email address",
+      successMessage:
+        "Thank you for your message! We will get back to you soon.",
+      errorMessage:
+        "Sorry, there was an error sending your message. Please try again.",
     },
     LocationsSection: {
       title: "Our Locations",

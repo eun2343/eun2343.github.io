@@ -85,7 +85,7 @@ const Navigation = () => {
         <ListItem disablePadding sx={{ justifyContent: "center", pt: 2 }}>
           <Button
             component={Link}
-            to="/book-appointment"
+            to="/contact"
             variant="contained"
             color="primary"
             sx={{
@@ -148,7 +148,7 @@ const Navigation = () => {
             {/* Book Appointment Button */}
             <Button
               component={Link}
-              to="/book-appointment"
+              to="/contact"
               variant="contained"
               color="primary"
               sx={{

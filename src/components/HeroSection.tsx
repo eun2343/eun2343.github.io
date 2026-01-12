@@ -55,7 +55,7 @@ const HeroSection = () => {
         </Typography>
         <Button
           component={Link}
-          to="/book-appointment"
+          to="/contact"
           variant="contained"
           color="primary"
           sx={{
