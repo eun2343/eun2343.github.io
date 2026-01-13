@@ -18,7 +18,7 @@ const TreatmentSection = () => {
         }}
       >
         <img
-          src="/images/akupunktur1.png"
+          src="/images/akupunktur1.jpg"
           alt="Acupuncture Treatment"
           style={{
             width: "100%",

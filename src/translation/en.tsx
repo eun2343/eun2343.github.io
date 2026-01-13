@@ -4,6 +4,7 @@ export const en = {
       menuItems: ["about", "fertility & gynecology"],
       language: "de",
       bookAppointment: "Book Appointment",
+      contact: "Contact",
     },
     HeroSection: {
       title: "Enhanced Fertility Program | to help you conceive",
@@ -56,20 +57,38 @@ export const en = {
         {
           picture: "images/testimonial1.jpg",
           quote:
-            "Dr. Choi helped me through my fertility journey with such care and expertise. I'm now a proud mother thanks to her treatment.",
-          name: "Sarah M.",
+            "I was extremely satisfied with the care and support I received. Choi was always warm, supportive, and made sure to personalize each session and TCM herb to what I needed at that particular stage, whether it was preparing for transfer, easing pregnancy symptoms, or helping my body get ready for birth.",
+          name: "K.B.",
         },
         {
           picture: "images/testimonial2.jpg",
           quote:
-            "The traditional medicine approach was exactly what I needed. The holistic care made all the difference in my pregnancy.",
-          name: "Jennifer L.",
+            "I am happy to confirm that the spermiogram results have improved and are encouraging.",
+          name: "H.T.",
         },
         {
           picture: "images/testimonial3.jpg",
           quote:
-            "Professional, caring, and knowledgeable. Dr. Choi guided me through every step with patience and understanding.",
-          name: "Maria K.",
+            "After only the first session with Choi, I felt something in me that was burdening me for years release. I followed up with taking regularly the TCM prescribed herbs, and acupuncture appointment for 2 months, and somehow without even trying I got pregnant.",
+          name: "H.F.",
+        },
+        {
+          picture: "images/testimonial4.jpg",
+          quote:
+            "My body responded really well to the treatments, and after around four months, I became pregnant. I began to feel improvements almost immediately, I had more energy, less pain during my period, and just felt better overall. Choi also offered valuable guidance on breathing techniques, relaxation and nutrition, which helped me connect with my body in a new way.",
+          name: "B.P.",
+        },
+        {
+          picture: "images/testimonial5.jpg",
+          quote:
+            "Three months ago this result was unthinkable. Sperm test result came out way better than I expected and looks like the treatment is working as expected.",
+          name: "A.T.",
+        },
+        {
+          picture: "images/testimonial6.jpg",
+          quote:
+            "I will definitely come back here before having my second child. I had a PCOS, one time miscarriage and long-term infertility despite of my young age, so it was expected that my quality of egg can be poor. Thanks to the regular treatment, I could have a successful result of my first FET.",
+          name: "M.K.",
         },
       ],
     },
@@ -107,6 +126,26 @@ export const en = {
           ],
         },
       ],
+    },
+    ContactPage: {
+      title: "Contact Us",
+      subtitle:
+        "We accept new patients through this contact form only. Once you submit the form, we’ll get back to you within 1–2 business days.",
+      firstName: "First Name",
+      lastName: "Last Name",
+      email: "Email Address",
+      phone: "Phone Number",
+      inquiryType: "Please choose the purpose of your treatment",
+      fertility: "Fertility",
+      gynecology: "Gynecology issues other than fertility",
+      other: "Other",
+      submit: "Send Message",
+      requiredField: "This field is required",
+      invalidEmail: "Please enter a valid email address",
+      successMessage:
+        "Thank you for your message! We will get back to you soon.",
+      errorMessage:
+        "Sorry, there was an error sending your message. Please try again.",
     },
     LocationsSection: {
       title: "Our Locations",
@@ -175,7 +214,7 @@ export const en = {
         {
           title: "Fertility Specialist 2",
           description:
-            "Dr. Choi brings over 15 years of specialized experience in traditional Korean medicine. || She completed her 6-year medical degree at Dong-Eui University and practiced at leading fertility clinics in Seoul and Busan. || Her deep knowledge combines ancient wisdom with modern medical understanding.",
+            "I bring over 15 years of specialized experience in traditional Korean medicine. || I completed her 6-year medical degree at Dong-Eui University and practiced at leading fertility clinics in Seoul and Busan. || My deep knowledge combines ancient wisdom with modern medical understanding.",
         },
         {
           title: "You'll receive personalized treatment",

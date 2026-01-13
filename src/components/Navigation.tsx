@@ -18,10 +18,6 @@ const Navigation = () => {
   const { translations, language, setLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleLanguageToggle = () => {
-    setLanguage(language === "en" ? "de" : "en");
-  };
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -68,24 +64,45 @@ const Navigation = () => {
       <List>
         {menuItems.map(renderMobileNavLink)}
         <ListItem disablePadding>
-          <ListItemText
-            primary={translations.app.Navigation.language}
-            onClick={handleLanguageToggle}
-            sx={{
-              textAlign: "center",
-              cursor: "pointer",
-              "& .MuiTypography-root": {
+          <Box sx={{ textAlign: "center", width: "100%", py: 1 }}>
+            <Typography
+              component="span"
+              sx={{
+                color: language === "en" ? "black" : "#666",
+                cursor: language === "en" ? "default" : "pointer",
+                fontSize: "1.1rem",
+              }}
+              onClick={language === "en" ? undefined : () => setLanguage("en")}
+            >
+              en
+            </Typography>
+            <Typography
+              component="span"
+              sx={{
                 color: "black",
                 fontSize: "1.1rem",
-                py: 1,
-              },
-            }}
-          />
+                mx: 1,
+              }}
+            >
+              |
+            </Typography>
+            <Typography
+              component="span"
+              sx={{
+                color: language === "de" ? "black" : "#666",
+                cursor: language === "de" ? "default" : "pointer",
+                fontSize: "1.1rem",
+              }}
+              onClick={language === "de" ? undefined : () => setLanguage("de")}
+            >
+              de
+            </Typography>
+          </Box>
         </ListItem>
         <ListItem disablePadding sx={{ justifyContent: "center", pt: 2 }}>
           <Button
             component={Link}
-            to="/book-appointment"
+            to="/contact"
             variant="contained"
             color="primary"
             sx={{
@@ -137,18 +154,49 @@ const Navigation = () => {
             {menuItems.map(renderDesktopNavLink)}
 
             {/* Language Toggle */}
-            <Typography
-              variant="h6"
-              sx={{ color: "black", cursor: "pointer", paddingLeft: "20px" }}
-              onClick={handleLanguageToggle}
-            >
-              {translations.app.Navigation.language}
-            </Typography>
+            <Box sx={{ paddingLeft: "20px" }}>
+              <Typography
+                component="span"
+                variant="h6"
+                sx={{
+                  color: language === "en" ? "black" : "#666",
+                  cursor: language === "en" ? "default" : "pointer",
+                }}
+                onClick={
+                  language === "en" ? undefined : () => setLanguage("en")
+                }
+              >
+                en
+              </Typography>
+              <Typography
+                component="span"
+                variant="h6"
+                sx={{
+                  color: "black",
+                  mx: 1,
+                }}
+              >
+                |
+              </Typography>
+              <Typography
+                component="span"
+                variant="h6"
+                sx={{
+                  color: language === "de" ? "black" : "#666",
+                  cursor: language === "de" ? "default" : "pointer",
+                }}
+                onClick={
+                  language === "de" ? undefined : () => setLanguage("de")
+                }
+              >
+                de
+              </Typography>
+            </Box>
 
             {/* Book Appointment Button */}
             <Button
               component={Link}
-              to="/book-appointment"
+              to="/contact"
               variant="contained"
               color="primary"
               sx={{

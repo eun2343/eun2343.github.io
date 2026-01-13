@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
 import BookAppointmentPage from "./pages/BookAppointmentPage";
+import ContactPage from "./pages/ContactPage";
 import { useEffect } from "react";
 
 // Component to handle route-based styling
@@ -39,6 +40,8 @@ const AppWrapper = () => {
         return "route-treatment";
       case "/book-appointment":
         return "route-book-appointment";
+      case "/contact":
+        return "route-contact";
       default:
         return "route-unknown";
     }
@@ -51,6 +54,7 @@ const AppWrapper = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/treatment" element={<TreatmentPage />} />
         <Route path="/book-appointment" element={<BookAppointmentPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );

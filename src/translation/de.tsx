@@ -4,6 +4,7 @@ export const de = {
       menuItems: ["über uns", "behandlung"],
       language: "english",
       bookAppointment: "Termin buchen",
+      contact: "Kontakt",
     },
     HeroSection: {
       title:
@@ -58,20 +59,38 @@ export const de = {
         {
           picture: "/images/testimonial1.jpg",
           quote:
-            "Dr. Choi hat mich mit so viel Fürsorge und Expertise durch meine Fruchtbarkeitsreise begleitet. Dank ihrer Behandlung bin ich jetzt eine stolze Mutter.",
-          name: "Sarah M.",
+            "Ich war äusserst zufrieden mit der Betreuung und Unterstützung, die ich erhalten habe. Choi war immer warm, unterstützend und sorgte dafür, dass jede Sitzung und TCM-Kräuter auf das abgestimmt waren, was ich in der jeweiligen Phase brauchte, sei es die Vorbereitung auf den Transfer, die Linderung von Schwangerschaftsbeschwerden oder die Vorbereitung meines Körpers auf die Geburt.",
+          name: "K.B.",
         },
         {
           picture: "/images/testimonial2.jpg",
           quote:
-            "Der traditionelle Medizinansatz war genau das, was ich brauchte. Die ganzheitliche Betreuung machte den ganzen Unterschied in meiner Schwangerschaft.",
-          name: "Jennifer L.",
+            "Ich freue mich, bestätigen zu können, dass sich die Spermiogramm-Ergebnisse verbessert haben und ermutigend sind.",
+          name: "H.T.",
         },
         {
           picture: "/images/testimonial3.jpg",
           quote:
-            "Professionell, fürsorglich und kompetent. Dr. Choi hat mich mit Geduld und Verständnis durch jeden Schritt geführt.",
-          name: "Maria K.",
+            "Bereits nach der ersten Sitzung mit Choi spürte ich, wie sich etwas in mir löste, was mich jahrelang belastet hatte. Ich nahm regelmäßig die verschriebenen TCM-Kräuter und ging 2 Monate lang zu Akupunktur-Terminen, und irgendwie wurde ich schwanger, ohne es überhaupt zu versuchen.",
+          name: "H.F.",
+        },
+        {
+          picture: "/images/testimonial4.jpg",
+          quote:
+            "Mein Körper reagierte sehr gut auf die Behandlungen, und nach etwa vier Monaten wurde ich schwanger. Ich spürte fast sofort Verbesserungen, hatte mehr Energie, weniger Schmerzen während meiner Periode und fühlte mich insgesamt einfach besser. Choi bot auch wertvolle Anleitung zu Atemtechniken, Entspannung und Ernährung, was mir half, eine neue Verbindung zu meinem Körper aufzubauen.",
+          name: "B.P.",
+        },
+        {
+          picture: "/images/testimonial5.jpg",
+          quote:
+            "Vor drei Monaten war dieses Ergebnis undenkbar. Das Spermatest-Ergebnis kam viel besser heraus, als ich erwartet hatte, und es sieht so aus, als würde die Behandlung wie erwartet wirken.",
+          name: "A.T.",
+        },
+        {
+          picture: "/images/testimonial6.jpg",
+          quote:
+            "Ich werde definitiv vor meinem zweiten Kind wieder hierher kommen. Ich hatte PCOS, eine Fehlgeburt und langfristige Unfruchtbarkeit trotz meines jungen Alters, daher war zu erwarten, dass meine Eiqualität schlecht sein könnte. Dank der regelmäßigen Behandlung konnte ich ein erfolgreiches Ergebnis bei meinem ersten FET erzielen.",
+          name: "M.K.",
         },
       ],
     },
@@ -109,6 +128,26 @@ export const de = {
           ],
         },
       ],
+    },
+    ContactPage: {
+      title: "Kontaktieren Sie uns",
+      subtitle:
+        "Wir nehmen neue Patienten nur über dieses Kontaktformular an. Nach dem Absenden des Formulars melden wir uns innerhalb von 1–2 Werktagen bei Ihnen.",
+      firstName: "Vorname",
+      lastName: "Nachname",
+      email: "E-Mail-Adresse",
+      phone: "Telefonnummer",
+      inquiryType: "Bitte wählen Sie den Zweck Ihrer Behandlung",
+      fertility: "Fruchtbarkeit",
+      gynecology: "Gynäkologische Probleme außer Fruchtbarkeit",
+      other: "Sonstiges",
+      submit: "Nachricht senden",
+      requiredField: "Dieses Feld ist erforderlich",
+      invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      successMessage:
+        "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      errorMessage:
+        "Entschuldigung, beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     },
     LocationsSection: {
       title: "Unsere Standorte",
@@ -173,11 +212,6 @@ export const de = {
           title: "Spezialistin für die Fruchtbarkeit",
           description:
             "Dr. Choi bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
-        },
-                {
-          title: "Spezialistin 2 für die Fruchtbarkeit",
-          description:
-            "Dr. Choi  dfdff bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
         },
         {
           title: "Spezialisiert auf Fruchtbarkeit & Reproduktionsgesundheit",
