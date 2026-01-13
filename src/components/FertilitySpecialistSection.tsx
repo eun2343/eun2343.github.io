@@ -19,7 +19,7 @@ const FertilitySpecialistSection = () => {
         }}
       >
         <img
-          src="/images/akupunktur2.png"
+          src="/images/akupunktur2.jpg"
           alt="Traditional Chinese Medicine"
           style={{
             width: "100%",
