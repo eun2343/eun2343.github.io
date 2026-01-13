@@ -64,7 +64,7 @@ const Navigation = () => {
       <List>
         {menuItems.map(renderMobileNavLink)}
         <ListItem disablePadding>
-          <Box sx={{ textAlign: "center", width: "100%", py: 1 }}>
+          <Box className="language-toggle" sx={{ textAlign: "center", width: "100%", py: 1 }}>
             <Typography
               component="span"
               sx={{
@@ -123,7 +123,7 @@ const Navigation = () => {
     <>
       <AppBar position="sticky">
         <Toolbar
-          sx={{ height: 80, bgcolor: "#fff", padding: { xs: 1, md: 2 } }}
+          sx={{ height: 80, bgcolor: "#fff", padding: { xs: 1, md: 2 }, position: "relative" }}
         >
           <img
             style={{ maxHeight: "100%", width: "auto", cursor: "pointer" }}
@@ -132,29 +132,34 @@ const Navigation = () => {
             onClick={() => (window.location.href = "/")}
           />
 
-          {/* Desktop Navigation - Now empty center space */}
+          {/* Centered Desktop Navigation */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
-              flex: 1,
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%, -50%)",
+              gap: "30px",
+              alignItems: "center",
+              zIndex: 1,
             }}
           >
-            {/* Empty space for logo on left, navigation on right */}
+            {menuItems.map(renderDesktopNavLink)}
           </Box>
 
-          {/* Desktop Navigation, Language and Book Button - All on the right */}
+          {/* Desktop Language and Book Button - on the right */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               alignItems: "center",
               gap: "30px",
+              marginLeft: "auto",
             }}
           >
-            {/* Navigation Links */}
-            {menuItems.map(renderDesktopNavLink)}
 
             {/* Language Toggle */}
-            <Box sx={{ paddingLeft: "20px" }}>
+            <Box className="language-toggle" sx={{ paddingLeft: "20px" }}>
               <Typography
                 component="span"
                 variant="h6"

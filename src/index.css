@@ -11,6 +11,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Use HK Grotesk for navigation */
+.MuiAppBar-root,
+.MuiAppBar-root .MuiToolbar-root,
+.MuiAppBar-root .MuiTypography-root,
+a.navlink > * {
+  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Apply HK Grotesk to language toggle only (desktop + mobile) */
+.language-toggle,
+.language-toggle .MuiTypography-root {
+  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 /* Global mobile improvements */
 * {
   box-sizing: border-box;
