@@ -1,12 +1,12 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["about", "treatment"],
-      language: "deutsch",
+      menuItems: ["about", "fertility & gynecology"],
+      language: "de",
       bookAppointment: "Book Appointment",
     },
     HeroSection: {
-      title: "Enhanced Fertility Program to | help you conceive",
+      title: "Enhanced Fertility Program | to help you conceive",
       subtitle:
         "Licensed Doctor of traditional medicine | Fertility and Gynecology Specialist",
       bookAppointment: "Book Appointment",
