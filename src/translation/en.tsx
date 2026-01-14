@@ -267,5 +267,13 @@ export const en = {
           "48 hours for new patients and 24 hours for established patients, your appointment is subject to the full fee if missed or cancelled within this time.",
       },
     },
+    PageTitles: {
+      home: "Choi TCM - Fertility & Traditional Chinese Medicine",
+      about: "About Choi TCM | Fertility Specialist",
+      treatment: "Treatment Methods | Choi TCM",
+      fee: "Pricing & Fees | Choi TCM",
+      bookAppointment: "Book Appointment | Choi TCM",
+      contact: "Contact Us | Choi TCM",
+    },
   },
 };

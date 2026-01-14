@@ -270,5 +270,13 @@ export const de = {
           "48 Stunden für neue Patienten und 24 Stunden für bestehende Patienten. Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
       },
     },
+    PageTitles: {
+      home: "Choi TCM - Fruchtbarkeit & Traditionelle Chinesische Medizin",
+      about: "Über Choi TCM | Fertilitätsspezialistin",
+      treatment: "Behandlungsmethoden | Choi TCM",
+      fee: "Preisgestaltung & Gebühren | Choi TCM",
+      bookAppointment: "Termin buchen | Choi TCM",
+      contact: "Kontakt | Choi TCM",
+    },
   },
 };

@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
+import { usePageTitle } from "./translation/usePageTitle";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
@@ -17,6 +18,7 @@ import { useEffect } from "react";
 // Component to handle route-based styling
 const AppWrapper = () => {
   const location = useLocation();
+  usePageTitle(); // Set page title based on route and language
 
   useEffect(() => {
     // Remove existing route classes
