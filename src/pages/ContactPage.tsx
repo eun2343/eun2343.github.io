@@ -16,6 +16,11 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { useState } from "react";
 
+// Declare gtag global function
+declare global {
+  function gtag(...args: any[]): void;
+}
+
 const ContactPage = () => {
   const { translations } = useLanguage();
   const [formData, setFormData] = useState({
@@ -84,6 +89,15 @@ const ContactPage = () => {
     })
       .then((response) => {
         if (response.ok) {
+          // Send event to Google Analytics
+          if (typeof gtag !== "undefined") {
+            gtag('event', 'form_submit', {
+              event_category: 'contact_form',
+              event_label: formData.inquiryType,
+              value: 1,
+            });
+          }
+
           alert(translations.app.ContactPage.successMessage);
           setFormData({
             firstName: "",
