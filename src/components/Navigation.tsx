@@ -10,22 +10,32 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
 import { useState } from "react";
 
 const Navigation = () => {
   const { translations, language, setLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const changeLang = (target: "en" | "de") => {
+    // strip existing lang prefix (if any) and preserve the rest
+    const stripped = location.pathname.replace(/^\/(en|de)/, "") || "/";
+    const newPath = `/${target}${stripped}${location.search}${location.hash}`;
+    navigate(newPath);
+    setLanguage(target);
+  };
+
   const menuItems = [
-    { path: "/", label: "home" },
-    { path: "/about", label: translations.app.Navigation.menuItems[0] },
-    { path: "/treatment", label: translations.app.Navigation.menuItems[1] },
+    { path: `/${language}/`, label: "home" },
+    { path: `/${language}/about`, label: translations.app.Navigation.menuItems[0] },
+    { path: `/${language}/treatment`, label: translations.app.Navigation.menuItems[1] },
   ];
 
   const renderDesktopNavLink = (item: { path: string; label: string }) => (
@@ -72,7 +82,7 @@ const Navigation = () => {
                 cursor: language === "en" ? "default" : "pointer",
                 fontSize: "1.1rem",
               }}
-              onClick={language === "en" ? undefined : () => setLanguage("en")}
+              onClick={language === "en" ? undefined : () => changeLang("en")}
             >
               en
             </Typography>
@@ -93,7 +103,7 @@ const Navigation = () => {
                 cursor: language === "de" ? "default" : "pointer",
                 fontSize: "1.1rem",
               }}
-              onClick={language === "de" ? undefined : () => setLanguage("de")}
+              onClick={language === "de" ? undefined : () => changeLang("de")}
             >
               de
             </Typography>
@@ -102,7 +112,7 @@ const Navigation = () => {
         <ListItem disablePadding sx={{ justifyContent: "center", pt: 2 }}>
           <Button
             component={Link}
-            to="/contact"
+            to={`/${language}/contact`}
             variant="contained"
             color="primary"
             sx={{
@@ -129,7 +139,7 @@ const Navigation = () => {
             style={{ maxHeight: "100%", width: "auto", cursor: "pointer" }}
             src="/images/logo-normal.png "
             alt="Logo"
-            onClick={() => (window.location.href = "/")}
+            onClick={() => navigate(`/${language}/`)}
           />
 
           {/* Centered Desktop Navigation */}
@@ -168,7 +178,7 @@ const Navigation = () => {
                   cursor: language === "en" ? "default" : "pointer",
                 }}
                 onClick={
-                  language === "en" ? undefined : () => setLanguage("en")
+                  language === "en" ? undefined : () => changeLang("en")
                 }
               >
                 en
@@ -191,7 +201,7 @@ const Navigation = () => {
                   cursor: language === "de" ? "default" : "pointer",
                 }}
                 onClick={
-                  language === "de" ? undefined : () => setLanguage("de")
+                  language === "de" ? undefined : () => changeLang("de")
                 }
               >
                 de
@@ -201,7 +211,7 @@ const Navigation = () => {
             {/* Book Appointment Button */}
             <Button
               component={Link}
-              to="/contact"
+              to={`/${language}/contact`}
               variant="contained"
               color="primary"
               sx={{

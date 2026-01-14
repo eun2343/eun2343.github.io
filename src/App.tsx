@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
 import HomePage from "./pages/HomePage";
@@ -29,7 +30,9 @@ const AppWrapper = () => {
   }, [location.pathname]);
 
   const getRouteClass = (pathname: string) => {
-    switch (pathname) {
+    // strip language prefix (/en or /de)
+    const stripped = pathname.replace(/^\/(en|de)/, "") || "/";
+    switch (stripped) {
       case "/":
         return "route-home";
       case "/about":
@@ -48,13 +51,15 @@ const AppWrapper = () => {
   };
 
   return (
-    <div className={`app-container ${getRouteClass(location.pathname)}`}>
+      <div className={`app-container ${getRouteClass(location.pathname)}`}>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/treatment" element={<TreatmentPage />} />
-        <Route path="/book-appointment" element={<BookAppointmentPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* Redirect root to default language */}
+        <Route path="/" element={<Navigate to="/en" replace />} />
+        <Route path="/:lang" element={<HomePage />} />
+        <Route path="/:lang/about" element={<AboutPage />} />
+        <Route path="/:lang/treatment" element={<TreatmentPage />} />
+        <Route path="/:lang/book-appointment" element={<BookAppointmentPage />} />
+        <Route path="/:lang/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );
@@ -62,11 +67,11 @@ const AppWrapper = () => {
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
+    <Router>
+      <LanguageProvider>
         <AppWrapper />
-      </Router>
-    </LanguageProvider>
+      </LanguageProvider>
+    </Router>
   );
 }
 

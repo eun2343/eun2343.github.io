@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
 
 const HeroSection = () => {
-  const { translations } = useLanguage();
+  const { translations, language } = useLanguage();
 
   return (
     <div className="hero-section">
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </Typography>
         <Button
           component={Link}
-          to="/contact"
+          to={`/${language}/contact`}
           variant="contained"
           color="primary"
           sx={{
