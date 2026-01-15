@@ -10,7 +10,7 @@ const HeroSection = () => {
       className="hero-section"
       style={{
         position: "relative",
-        backgroundImage: "url('/public/images/hero-bg.jpg')",
+        backgroundImage: "url('/public/images/herosection.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
