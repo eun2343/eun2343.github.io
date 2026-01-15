@@ -21,6 +21,7 @@ const HeroSection = () => {
           gutterBottom
           align="center"
           sx={{
+            fontFamily: "'Playfair Display', serif",
             fontSize: { xs: "2rem", sm: "2.5rem", md: "3.75rem" },
           }}
         >
