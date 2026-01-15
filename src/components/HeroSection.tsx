@@ -109,7 +109,7 @@ const HeroSection = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: "0.9rem",
+            fontSize: "1rem",
             "&:hover": {
               backgroundColor: "#96695e",
               color: "white",
