@@ -8,6 +8,7 @@ const FertilitySpecialistSection = () => {
   return (
     <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
       {/* Hero Image */}
+      {/*
       <Box
         sx={{
           width: "100%",
@@ -30,6 +31,7 @@ const FertilitySpecialistSection = () => {
           }}
         />
       </Box>
+      */}
 
       {/* <Typography
         variant="h2"

@@ -263,7 +263,7 @@ const ContactPage = () => {
                       backgroundColor: "#96695e",
                       textTransform: "none",
                       fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
-                      borderRadius: "12px",
+                      borderRadius: "24px",
                       padding: "12px 24px",
                       mt: 3,
                       mb: 2,

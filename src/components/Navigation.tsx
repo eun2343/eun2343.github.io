@@ -12,32 +12,13 @@ import {
 } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Navigation = () => {
   const { translations, language, setLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [showNav, setShowNav] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down
-        setShowNav(false);
-      } else {
-        // Scrolling up
-        setShowNav(true);
-      }
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -64,7 +45,7 @@ const Navigation = () => {
       to={item.path}
       style={{ textDecoration: "none" }}
     >
-      <Typography variant="h5" sx={{ color: "black", cursor: "pointer", fontSize: "1.15rem" }}>
+      <Typography variant="h5" sx={{ color: "black", cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
         {item.label}
       </Typography>
     </Link>
@@ -137,8 +118,8 @@ const Navigation = () => {
             sx={{
               backgroundColor: "#96695e",
               textTransform: "none",
-              fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
-              borderRadius: "12px",
+              fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
+              borderRadius: "24px",
               padding: "10px 24px",
               mx: "auto",
               "&:hover": {
@@ -156,13 +137,7 @@ const Navigation = () => {
 
   return (
     <>
-      <AppBar 
-        position="sticky"
-        sx={{
-          transform: showNav ? "translateY(0)" : "translateY(-100%)",
-          transition: "transform 0.3s ease-in-out",
-        }}
-      >
+      <AppBar position="sticky">
         <Toolbar
           sx={{ height: 100, bgcolor: "#fff", padding: { xs: 1, md: 2 }, position: "relative" }}
         >
@@ -251,8 +226,8 @@ const Navigation = () => {
               sx={{
                 backgroundColor: "#96695e",
                 textTransform: "none",
-                fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
-                borderRadius: "12px",
+                fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
+                borderRadius: "24px",
                 padding: "10px 24px",
                 "&:hover": {
                   backgroundColor: "#96695e",
