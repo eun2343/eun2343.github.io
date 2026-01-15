@@ -260,10 +260,18 @@ const ContactPage = () => {
                     fullWidth
                     variant="contained"
                     sx={{
+                      backgroundColor: "#96695e",
+                      textTransform: "none",
+                      fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
+                      borderRadius: "12px",
+                      padding: "12px 24px",
                       mt: 3,
                       mb: 2,
                       py: 1.5,
                       fontSize: "1.1rem",
+                      "&:hover": {
+                        backgroundColor: "#96695e",
+                      },
                     }}
                   >
                     {translations.app.ContactPage.submit}
