@@ -100,7 +100,7 @@ const HomePage = () => {
       <Navigation />
       <HeroSection />
       <div className="responsive-card-wide-container">
-        <div className="responsive-card-wide" style={{ display: 'flex', flexDirection: 'row', alignItems: 'stretch', width: '100%' }}>
+        <div className="responsive-card-wide" style={{ display: 'flex', flexDirection: 'row', alignItems: 'stretch', width: '100%', marginBottom: '20px' }}>
           <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 32px', boxSizing: 'border-box', borderRight: '1px solid #e0e0e0' }}>
             <span className="responsive-card-title">Fertility treatment to increase your chance</span>
           </div>
@@ -119,7 +119,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="responsive-card-row">
+      <div className="responsive-card-row" style={{ marginTop: '4px' }}>
         {[1,2].map((cardIdx) => (
           <div key={cardIdx} className="responsive-card">
             <div className="responsive-card-content">
