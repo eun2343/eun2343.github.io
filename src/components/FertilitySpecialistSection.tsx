@@ -34,15 +34,15 @@ const FertilitySpecialistSection = () => {
       */}
 
       <Typography
-        variant="h4"
-        align="left"
+        variant="h3"
+        align="center"
         gutterBottom
         sx={{
           marginBottom: 3,
-          fontWeight: 700,
-          color: '#96695e',
+          fontWeight: 800,
+          color: '#915446',
           fontFamily: "'Playfair Display', serif",
-          fontSize: { xs: '1.05rem', sm: '1.2rem', md: '1.4rem' },
+          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.2rem' },
         }}
       >
         {translations.app.WhyChoiTCMPage.title}

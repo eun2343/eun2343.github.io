@@ -85,7 +85,7 @@ const HeroSection = () => {
             {translations.app.HeroSection.subtitle
               .split(" | ")
               .map((part: string, index: number, array: string[]) => (
-                <span key={index} style={{ fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
+                <span key={index} style={{ fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif", color: "#1A1A1A" }}>
                   &#8226; {part}
                   {index < array.length - 1 && <br />}
                 </span>
@@ -98,7 +98,7 @@ const HeroSection = () => {
           variant="contained"
           color="primary"
           sx={{
-            backgroundColor: "#96695e",
+            backgroundColor: "#915446",
             textTransform: "none",
             fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
             borderRadius: "24px",
@@ -111,7 +111,7 @@ const HeroSection = () => {
             alignItems: "center",
             fontSize: "1rem",
             "&:hover": {
-              backgroundColor: "#96695e",
+              backgroundColor: "#915446",
               color: "white",
             },
           }}

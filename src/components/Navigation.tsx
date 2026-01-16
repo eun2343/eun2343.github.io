@@ -45,7 +45,7 @@ const Navigation = () => {
       to={item.path}
       style={{ textDecoration: "none" }}
     >
-      <Typography variant="h5" sx={{ color: "black", cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
+      <Typography variant="h5" sx={{ color: "#1A1A1A", cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
         {item.label}
       </Typography>
     </Link>
@@ -58,10 +58,10 @@ const Navigation = () => {
           primary={item.label}
           sx={{
             textAlign: "center",
-            "& .MuiTypography-root": {
-              color: "black",
-              fontSize: "1.05rem",
-              py: 1,
+                "& .MuiTypography-root": {
+                  color: "#1A1A1A",
+                  fontSize: "1.05rem",
+                  py: 1,
             },
           }}
         />
@@ -78,7 +78,7 @@ const Navigation = () => {
             <Typography
               component="span"
               sx={{
-                color: language === "en" ? "black" : "#666",
+                  color: language === "en" ? "#1A1A1A" : "#666",
                 cursor: language === "en" ? "default" : "pointer",
                 fontSize: "0.85rem",
               }}
@@ -142,7 +142,7 @@ const Navigation = () => {
           sx={{ height: 100, bgcolor: "#fff", padding: { xs: 1, md: 2 }, position: "relative" }}
         >
           <img
-            style={{ maxHeight: "100%", width: "auto", cursor: "pointer" }}
+            style={{ maxHeight: "60px", width: "auto", cursor: "pointer" }}
             src="/images/logo-normal.png "
             alt="Logo"
             onClick={() => navigate(`/${language}/`)}
@@ -224,13 +224,13 @@ const Navigation = () => {
               variant="contained"
               color="primary"
               sx={{
-                backgroundColor: "#96695e",
+                backgroundColor: "#915446",
                 textTransform: "none",
                 fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
                 borderRadius: "24px",
                 padding: "10px 24px",
                 "&:hover": {
-                  backgroundColor: "#96695e",
+                  backgroundColor: "#915446",
                   color: "white",
                 },
               }}
