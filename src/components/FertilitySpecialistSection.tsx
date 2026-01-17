@@ -34,7 +34,7 @@ const FertilitySpecialistSection = () => {
       */}
 
       <Typography
-        variant="h4"
+        variant="h2"
         align="center"
         gutterBottom
         sx={{
@@ -42,7 +42,7 @@ const FertilitySpecialistSection = () => {
           fontWeight: 700,
           color: '#915446',
           fontFamily: "'Playfair Display', serif",
-          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.3rem' },
+          fontSize: "2.3rem",
           letterSpacing: 0.2,
         }}
       >
@@ -84,7 +84,7 @@ const FertilitySpecialistSection = () => {
                       color: '#915446',
                       marginBottom: 2,
                       textAlign: "left",
-                      fontSize: { xs: '1.5rem', sm: '1.7rem', md: '2rem' },
+                      fontSize: "2rem",
                       fontFamily: "'Playfair Display', serif",
                     }}
                   >
@@ -95,7 +95,7 @@ const FertilitySpecialistSection = () => {
                     sx={{
                       lineHeight: 1.6,
                       color: '#1a1a1a',
-                      fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
+                      fontSize: "1.1rem",
                       textAlign: "left",
                     }}
                   >
