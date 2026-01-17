@@ -246,7 +246,7 @@ const Navigation = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              className="textBlack"
+              sx={{ color: "black" }}
             >
               ☰
             </IconButton>
