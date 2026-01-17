@@ -38,11 +38,11 @@ const Footer = () => {
                 className={styles.locationImage}
               />
               <CardContent>
-                <h3 className="headingMedium mb-4">{translations.app.Footer.locations.luzern.title}</h3>
+                <h3 className="headingMedium mb-4 textLight">{translations.app.Footer.locations.luzern.title}</h3>
                 <div className="mb-4 textLight fontMedium">
                   {translations.app.Footer.locations.luzern.address}
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 textLight">
                   <strong>{translations.app.LocationsSection.openingHours}:</strong>
                   <div>
                     {translations.app.Footer.locations.luzern.openingHours.map((hours, index) => (
@@ -83,9 +83,9 @@ const Footer = () => {
           </Grid>
         </Grid>
         {/* Copyright */}
-        <div className="textCenter textMuted mt-4">
+        <div className="textCenter textMuted mt-4 textLight">
           {translations.app.Footer.copyright}
-          <a href={translations.app.Footer.companyLink} className="textInherit">
+          <a href={translations.app.Footer.companyLink} className="textLight">
             {translations.app.Footer.companyName}
           </a>{" "}
           {new Date().getFullYear()}

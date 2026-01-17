@@ -9,3 +9,12 @@
 .locations {
   margin-bottom: 32px;
 }
+.locationCard {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.locationCard:hover {
+  transform: translateY(-4px);
+}

@@ -26,12 +26,12 @@ const TreatmentSection = () => {
       <div className="flex flexCol gap4">
         {/* Acupuncture */}
         <div className="card mb-4">
-          <h3 className="headingMedium mb-4 textBlue">{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
+          <h3 className="headingMedium mb-4 textPrimary">{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
           <div className="lineHeightLoose textGray">{translations.app.TreatmentSection.treatments.acupuncture.description}</div>
         </div>
         {/* Herbal Medicine */}
         <div className="card mb-4">
-          <h3 className="headingMedium mb-4 textBlue">{translations.app.TreatmentSection.treatments.herbalMedicine.title}</h3>
+          <h3 className="headingMedium mb-4 textPrimary">{translations.app.TreatmentSection.treatments.herbalMedicine.title}</h3>
           <div className="lineHeightLoose textGray">{translations.app.TreatmentSection.treatments.herbalMedicine.description}</div>
         </div>
       </div>
