@@ -34,67 +34,83 @@ const FertilitySpecialistSection = () => {
       */}
 
       <Typography
-        variant="h3"
+        variant="h4"
         align="center"
         gutterBottom
         sx={{
-          marginBottom: 3,
-          fontWeight: 800,
+          marginBottom: 10,
+          fontWeight: 700,
           color: '#915446',
           fontFamily: "'Playfair Display', serif",
-          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.2rem' },
+          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.3rem' },
+          letterSpacing: 0.2,
         }}
       >
         {translations.app.WhyChoiTCMPage.title}
       </Typography>
 
-      <Box sx={{ maxWidth: "100%", marginTop: 8 }}>
+      <Box sx={{ maxWidth: "100%", marginTop: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         {translations.app.WhyChoiTCMPage.reasons.map(
-          (reason: Reason, index: number) => {
+            (reason: Reason, index: number) => {
             // Titles to change color for
-            const highlightTitles = [
-              "I'm a Fertility specialist",
-              "You'll receive personalized treatment",
-              "Evidence-based TCM treatments with a thorough understanding of reproductive health",
-              "Compassionate support and respect",
-              "Clinical expertise from advanced Korean practices"
-            ];
-            const isHighlighted = highlightTitles.includes(reason.title);
             return (
-              <Box key={index} sx={{ marginBottom: 8 }}>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  sx={{
-                    fontWeight: 600,
-                    color: isHighlighted ? '#666' : '#7624f1',
-                    marginBottom: 1.5,
-                    textAlign: "left",
-                    fontSize: { xs: '1.05rem', sm: '1.15rem', md: '1.25rem' },
+              <Box key={index} sx={{ marginBottom: 8, display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: 3, justifyContent: 'center' }}>
+                <span
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minWidth: 80,
+                    minHeight: 80,
+                    width: 80,
+                    height: 80,
+                    borderRadius: '50%',
+                    background: '#f2ebe6',
+                    color: '#915446',
+                    fontWeight: 900,
+                    fontSize: '2.6rem',
+                    marginRight: 16,
+                    flexShrink: 0,
                   }}
                 >
-                  {reason.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{
-                    lineHeight: 1.6,
-                    color: "#555",
-                    fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
-                    textAlign: "left",
-                  }}
-                >
-                  {reason.description
-                    .split("|")
-                    .map((line: string, lineIndex: number) => (
-                      <span key={lineIndex}>
-                        {line}
-                        {lineIndex < reason.description.split("|").length - 1 && (
-                          <br />
-                        )}
-                      </span>
-                    ))}
-                </Typography>
+                  {index + 1}
+                </span>
+                  <Box sx={{ flex: 1, maxWidth: 800 }}>
+                  <Typography
+                    variant="h4"
+                    gutterBottom
+                    sx={{
+                      fontWeight: 700,
+                      color: '#915446',
+                      marginBottom: 2,
+                      textAlign: "left",
+                      fontSize: { xs: '1.5rem', sm: '1.7rem', md: '2rem' },
+                      fontFamily: "'Playfair Display', serif",
+                    }}
+                  >
+                    {reason.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      lineHeight: 1.6,
+                      color: '#1a1a1a',
+                      fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem' },
+                      textAlign: "left",
+                    }}
+                  >
+                    {reason.description
+                      .split("|")
+                      .map((line: string, lineIndex: number) => (
+                        <span key={lineIndex}>
+                          {line}
+                          {lineIndex < reason.description.split("|").length - 1 && (
+                            <br />
+                          )}
+                        </span>
+                      ))}
+                  </Typography>
+                </Box>
               </Box>
             );
           }

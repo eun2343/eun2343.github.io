@@ -203,23 +203,23 @@ export const en = {
         {
           title: "Fertility specialist",
           description:
-            "I work with fertility cases every single day and it's the sole focus of my work. || Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. I'm a committed member of the Society of Korean Medicine Obstetrics and Gynecology, and I continuously engage in advanced training and research to stay at the forefront of fertility care.",
+            "I work with fertility cases every single day. | Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. As a committed member of the Society of Korean Medicine Obstetrics and Gynecology, I continuously engage in advanced training and research to stay at the forefront of fertility care.",
         },
         {
-          title: "personalized treatment",
+          title: "Personalized treatment",
           description:
-            "Fertility is complex and one-size-fits-all doesn't work. || I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
+            "Fertility is complex and one-size-fits-all doesn't work. | I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
         },
         {
           title:
             "Evidence-based TCM treatments",
           description:
-            "I don't rely on vague or abstract concepts. I stay up to date with the latest research on TCM fertility treatments. | Grounded in both TCM and the latest clinical insights, my goal is to optimize your reproductive health at every level.",
+            "I don't rely on vague or abstract concepts. | I stay up to date with the latest research on TCM fertility treatments. Grounded in both TCM and the latest clinical insights, my goal is to optimize your reproductive health at every level.",
         },
         {
           title: "Support and respect",
           description:
-            "Each fertility journey is deeply personal. || Whether you're exploring options, facing uncertainty, or celebrating milestones, my role is not only to guide you medically, but to walk with you with respect, care, and unwavering support—every step of the way.",
+            "Each fertility journey is deeply personal. | Whether you're exploring options, facing uncertainty, or celebrating milestones, my role is not only to guide you medically, but to walk with you with respect, care, and unwavering support—every step of the way.",
         },
         {
           title: "Clinical expertise",
