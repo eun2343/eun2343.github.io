@@ -85,7 +85,7 @@ const HeroSection = () => {
             {translations.app.HeroSection.subtitle
               .split(" | ")
               .map((part: string, index: number, array: string[]) => (
-                <span key={index} style={{ fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif", color: "#1A1A1A" }}>
+                <span key={index} className="textDark" style={{ fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
                   &#8226; {part}
                   {index < array.length - 1 && <br />}
                 </span>

@@ -45,7 +45,7 @@ const Navigation = () => {
       to={item.path}
       style={{ textDecoration: "none" }}
     >
-      <Typography variant="h5" sx={{ color: "#1A1A1A", cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
+      <Typography variant="h5" className="textDark" sx={{ cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
         {item.label}
       </Typography>
     </Link>
@@ -246,7 +246,7 @@ const Navigation = () => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ color: "black" }}
+              className="textBlack"
             >
               ☰
             </IconButton>

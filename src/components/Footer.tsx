@@ -39,14 +39,14 @@ const Footer = () => {
               />
               <CardContent>
                 <h3 className="headingMedium mb-4">{translations.app.Footer.locations.luzern.title}</h3>
-                <div className="mb-4" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500 }}>
+                <div className="mb-4 textLight fontMedium">
                   {translations.app.Footer.locations.luzern.address}
                 </div>
                 <div className="mb-4">
                   <strong>{translations.app.LocationsSection.openingHours}:</strong>
                   <div>
                     {translations.app.Footer.locations.luzern.openingHours.map((hours, index) => (
-                      <div key={index} style={{ color: "rgba(255,255,255,0.9)", lineHeight: 1.4 }}>{hours}</div>
+                      <div key={index} className="textLight" style={{ lineHeight: 1.4 }}>{hours}</div>
                     ))}
                   </div>
                 </div>
@@ -66,14 +66,14 @@ const Footer = () => {
               />
               <CardContent>
                 <h3 className="headingMedium mb-4">{translations.app.Footer.locations.zurich.title}</h3>
-                <div className="mb-4" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500 }}>
+                <div className="mb-4 textLight fontMedium">
                   {translations.app.Footer.locations.zurich.address}
                 </div>
                 <div className="mb-4">
                   <strong>{translations.app.LocationsSection.openingHours}:</strong>
                   <div>
                     {translations.app.Footer.locations.zurich.openingHours.map((hours, index) => (
-                      <div key={index} style={{ color: "rgba(255,255,255,0.9)", lineHeight: 1.4 }}>{hours}</div>
+                      <div key={index} className="textLight" style={{ lineHeight: 1.4 }}>{hours}</div>
                     ))}
                   </div>
                 </div>
@@ -83,9 +83,9 @@ const Footer = () => {
           </Grid>
         </Grid>
         {/* Copyright */}
-        <div className="textCenter textMuted" style={{ marginTop: 32 }}>
+        <div className="textCenter textMuted mt-4">
           {translations.app.Footer.copyright}
-          <a href={translations.app.Footer.companyLink} style={{ color: "inherit" }}>
+          <a href={translations.app.Footer.companyLink} className="textInherit">
             {translations.app.Footer.companyName}
           </a>{" "}
           {new Date().getFullYear()}

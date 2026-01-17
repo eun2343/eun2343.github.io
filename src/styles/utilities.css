@@ -41,6 +41,11 @@
 /* Text Colors */
 .textDark { color: var(--color-dark); }
 .textAccent { color: var(--color-accent, #915446); }
+.textLight { color: rgba(255, 255, 255, 0.9); }
+.textBlue { color: #1976d2; }
+.textGray { color: #555; }
+.textBlack { color: black; }
+.textInherit { color: inherit; }
 
 /* Line Heights */
 .lineHeightNormal { line-height: 1.6; }
@@ -52,6 +57,13 @@
 .textLg { font-size: 1.125rem; }
 .textXl { font-size: 1.25rem; }
 .text2xl { font-size: 1.5rem; }
+.text3xl { font-size: 2.6rem; }
+
+/* Font Weights */
+.fontNormal { font-weight: 400; }
+.fontMedium { font-weight: 500; }
+.fontBold { font-weight: 700; }
+.fontBlack { font-weight: 900; }
 
 /* Spacing - Margins */
 .mt-2 { margin-top: 16px; }
