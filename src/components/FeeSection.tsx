@@ -15,10 +15,10 @@ const FeeSection = () => {
       }}
     >
       <Typography
-        variant="h2"
+        variant="h3"
         align="left"
         gutterBottom
-        sx={{ marginBottom: 2, fontWeight: 700 }}
+        sx={{ marginBottom: 2, fontWeight: 700, color: "#1a1a1a", fontFamily: "'Playfair Display', serif" }}
       >
         {translations.app.FeePage.title}
       </Typography>
@@ -26,7 +26,7 @@ const FeeSection = () => {
       <Typography
         variant="h5"
         align="left"
-        sx={{ marginBottom: 6, color: "#666", lineHeight: 1.6 }}
+        sx={{ marginBottom: 6, color: "#1a1a1a", lineHeight: 1.6 }}
       >
         {translations.app.FeePage.subtitle
           .split("|")
@@ -50,7 +50,7 @@ const FeeSection = () => {
                 gutterBottom
                 sx={{
                   fontWeight: 600,
-                  color: "#1976d2",
+                  color: "#1a1a1a",
                   marginBottom: 2,
                   textAlign: "left",
                 }}
@@ -61,7 +61,7 @@ const FeeSection = () => {
                 variant="h5"
                 sx={{
                   fontWeight: 700,
-                  color: "#1976d2",
+                  color: "#1a1a1a",
                   marginBottom: 1,
                   textAlign: "left",
                 }}
@@ -72,7 +72,7 @@ const FeeSection = () => {
                 <Typography
                   variant="body1"
                   sx={{
-                    color: "#888",
+                    color: "#1a1a1a",
                     marginBottom: 2,
                     textAlign: "left",
                     fontSize: "1.1rem",
@@ -85,7 +85,7 @@ const FeeSection = () => {
                 variant="body1"
                 sx={{
                   lineHeight: 1.8,
-                  color: "#555",
+                  color: "#1a1a1a",
                   fontSize: "1.1rem",
                   textAlign: "left",
                 }}
@@ -103,7 +103,7 @@ const FeeSection = () => {
           gutterBottom
           sx={{
             fontWeight: 600,
-            color: "#1976d2",
+            color: "#1a1a1a",
             marginBottom: 2,
             textAlign: "left",
           }}
@@ -114,7 +114,7 @@ const FeeSection = () => {
           variant="body1"
           sx={{
             lineHeight: 1.8,
-            color: "#555",
+            color: "#1a1a1a",
             fontSize: "1.1rem",
             textAlign: "left",
           }}

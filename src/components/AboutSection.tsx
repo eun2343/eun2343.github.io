@@ -12,7 +12,7 @@ const AboutSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <div style={{ backgroundColor: "#e1b09e", padding: "20px 0" }}>
+    <div style={{ backgroundColor: "#F2EBE6", padding: "20px 0" }}>
       <Container
         sx={{
           marginTop: { xs: 4, md: 12 },
@@ -39,7 +39,7 @@ const AboutSection = () => {
               width: { xs: "50%", md: "30%" },
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              alignItems: { xs: "center", md: "flex-start" },
               marginBottom: { xs: 4, md: 0 },
             }}
           >
@@ -65,26 +65,30 @@ const AboutSection = () => {
             }}
           >
             <Typography
-              variant="h2"
-              gutterBottom
-              sx={{
-                marginBottom: 3,
-                fontWeight: 600,
-                fontSize: { xs: "2rem", md: "3.75rem" },
-              }}
-            >
-              Choi TCM
-            </Typography>
-            <Typography
               variant="h3"
               gutterBottom
               sx={{
-                marginBottom: 3,
+                marginBottom: 8,
                 fontWeight: 600,
                 fontSize: { xs: "1.5rem", md: "3rem" },
+                fontFamily: "'Playfair Display', serif",
+                color: '#1a1a1a',
               }}
             >
               Eunkyeong Choi
+            </Typography>
+            <Typography
+              variant="h5"
+              gutterBottom
+              sx={{
+                fontWeight: 700,
+                fontSize: { xs: "1.1rem", md: "1.5rem" },
+                color: '#915446',
+                fontFamily: "'Playfair Display', serif",
+                marginBottom: 2,
+              }}
+            >
+              Qualifications
             </Typography>
             <List sx={{ padding: 0 }}>
               {translations.app.AboutPage.qualifications.map(
@@ -94,8 +98,9 @@ const AboutSection = () => {
                       primary={`• ${qualification}`}
                       sx={{
                         "& .MuiTypography-root": {
-                          fontSize: "1.5rem",
-                          lineHeight: 1.2,
+                          fontSize: "1.3rem",
+                          lineHeight: 1.1,
+                          color: '#1a1a1a',
                         },
                       }}
                     />
@@ -108,6 +113,19 @@ const AboutSection = () => {
 
         {/* Full-width section for experience */}
         <Box sx={{ maxWidth: "100%", margin: "0 auto" }}>
+          <Typography
+            variant="h5"
+            gutterBottom
+            sx={{
+              fontWeight: 700,
+              fontSize: { xs: "1.1rem", md: "1.5rem" },
+              color: '#915446',
+              fontFamily: "'Playfair Display', serif",
+              marginBottom: 2,
+            }}
+          >
+            Experiences
+          </Typography>
           <List sx={{ padding: 0 }}>
             {translations.app.AboutPage.experience.map(
               (experienceItem: string, index: number) => (
@@ -116,8 +134,9 @@ const AboutSection = () => {
                     primary={`• ${experienceItem}`}
                     sx={{
                       "& .MuiTypography-root": {
-                        fontSize: "1.6rem",
-                        lineHeight: 1.2,
+                        fontSize: "1.3rem",
+                        lineHeight: 1.1,
+                        color: '#1a1a1a',
                       },
                     }}
                   />

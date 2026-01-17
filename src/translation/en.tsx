@@ -181,7 +181,7 @@ export const en = {
     },
     AboutPage: {
       title: "About Dr. Eunkyeong Choi",
-      profileImage: "https://choi-tcm.ch/images/index_logo_tmp.png",
+      profileImage: "/images/choi.jpg",
       qualifications: [
         "Licensed doctor of Traditional Medicine, South Korea",
         "Specialised in Fertility and Reproductive health",
@@ -231,7 +231,7 @@ export const en = {
     FeePage: {
       title: "Price",
       subtitle:
-        "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung). Please check with your insurer in advance.",
+        "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung).| Please check with your insurer in advance.",
       services: [
         {
           name: "Initial Appointment",
