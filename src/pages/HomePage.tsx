@@ -13,12 +13,12 @@ const HomePage = () => {
       <Navigation />
       <HeroSection />
       <div className="responsive-card-wide-container">
-        <div className="responsive-card-wide" style={{ display: 'flex', flexDirection: 'row', alignItems: 'stretch', width: '100%', marginBottom: '20px' }}>
+        <div className="responsive-card-wide flex flexRow itemsStretch wFull" style={{ marginBottom: '20px' }}>
           <div className="responsive-card-wide-left">
             <span className="responsive-card-title">Fertility treatment to increase your chance</span>
           </div>
           <div className="responsive-card-wide-right">
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '1.25rem', color: '#915446', fontFamily: 'HK Grotesk, system-ui, Avenir, Helvetica, Arial, sans-serif', fontWeight: 500, lineHeight: 1.7, textAlign: 'left', marginLeft: '16px' }}>
+            <ul className="listUnstyled textXl textPrimary lineHeightRelaxed textLeft ml-2" style={{ fontFamily: 'HK Grotesk, system-ui, Avenir, Helvetica, Arial, sans-serif', fontWeight: 500 }}>
               <li className="responsive-card-list-item">Getting pregnant naturally</li>
               <li className="responsive-card-list-item">IVF and IUI</li>
               <li className="responsive-card-list-item">Donor egg / sperm / embryo</li>
@@ -32,15 +32,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="responsive-card-row" style={{ marginTop: '4px' }}>
+      <div className="responsive-card-row mt-2">
         {[1,2].map((cardIdx) => (
           <div key={cardIdx} className="responsive-card">
             <div className="responsive-card-content">
               <span className="responsive-card-title">
                 {cardIdx === 1 ? (
-                  <span style={{ display: 'block', marginBottom: '40px' }}>Gynecology and more</span>
+                  <span className="mb-6" style={{ display: 'block' }}>Gynecology and more</span>
                 ) : (
-                  <span style={{ display: 'block', marginBottom: '40px' }}>Pre - Postnatal Care</span>
+                  <span className="mb-6" style={{ display: 'block' }}>Pre - Postnatal Care</span>
                 )}
               </span>
               <ul className="responsive-card-list">

@@ -14,7 +14,7 @@ const GynecologySection = () => {
     <div className={styles.root}>
       <Container>
         <h2 className="headingLarge textCenter mb-8">{translations.app.GynecologySection.title}</h2>
-        <Grid container spacing={4} style={{ marginTop: 32 }}>
+        <Grid container spacing={4} className="mt-4">
           {gynoCardContent.map((item, index) => (
             <CardWithContent key={index} index={index} item={item} />
           ))}

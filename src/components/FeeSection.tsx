@@ -12,7 +12,7 @@ const FeeSection = () => {
   return (
     <Container className={styles.root}>
       <h2 className="headingLarge mb-4">{translations.app.FeePage.title}</h2>
-      <div className="mb-8" style={{ color: 'var(--color-dark)', lineHeight: 1.6 }}>
+      <div className="mb-8 textDark lineHeightNormal">
         {translations.app.FeePage.subtitle
           .split("|")
           .map((line: string, lineIndex: number) => (
@@ -22,18 +22,18 @@ const FeeSection = () => {
             </span>
           ))}
       </div>
-      <div style={{ maxWidth: "100%", marginTop: 32 }}>
+      <div className="maxWFull mt-4">
         {translations.app.FeePage.services.map((service: Service, index: number) => (
           <div key={index} className="card mb-4">
-            <h3 className="headingMedium mb-4" style={{ textAlign: 'left', color: 'var(--color-dark)' }}>{service.name}</h3>
-            <div style={{ color: 'var(--color-dark)', textAlign: 'left' }}>{service.description}</div>
+            <h3 className="headingMedium mb-4 textLeft textDark">{service.name}</h3>
+            <div className="textDark textLeft">{service.description}</div>
           </div>
         ))}
       </div>
 
-      <div className="card mb-4" style={{ marginTop: 48 }}>
-        <h3 className="headingMedium mb-4" style={{ textAlign: 'left', color: 'var(--color-dark)' }}>{translations.app.FeePage.cancellationPolicy.title}</h3>
-        <div style={{ lineHeight: 1.8, color: 'var(--color-dark)', fontSize: '1.1rem', textAlign: 'left' }}>{translations.app.FeePage.cancellationPolicy.description}</div>
+      <div className="card mb-4 mt-6">
+        <h3 className="headingMedium mb-4 textLeft textDark">{translations.app.FeePage.cancellationPolicy.title}</h3>
+        <div className="lineHeightLoose textDark textLg textLeft">{translations.app.FeePage.cancellationPolicy.description}</div>
       </div>
     </Container>
   );

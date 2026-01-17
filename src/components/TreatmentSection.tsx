@@ -15,23 +15,24 @@ const TreatmentSection = () => {
         <img
           src="/images/akupunktur1.jpg"
           alt="Acupuncture Treatment"
-          style={{ width: "100%", height: "auto", maxHeight: "300px", objectFit: "cover", objectPosition: "center" }}
+          className="wFull"
+          style={{ height: "auto", maxHeight: "300px", objectFit: "cover", objectPosition: "center" }}
         />
       </div>
 
       <h2 className="headingLarge textCenter mb-4">{translations.app.TreatmentSection.title}</h2>
-      <div className="textCenter mb-8" style={{ color: '#666' }}>{translations.app.TreatmentSection.subtitle}</div>
+      <div className="textCenter mb-8 textMuted">{translations.app.TreatmentSection.subtitle}</div>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+      <div className="flex flexCol gap4">
         {/* Acupuncture */}
         <div className="card mb-4">
           <h3 className="headingMedium mb-4" style={{ color: '#1976d2' }}>{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
-          <div style={{ lineHeight: 1.8, color: '#555' }}>{translations.app.TreatmentSection.treatments.acupuncture.description}</div>
+          <div className="lineHeightLoose" style={{ color: '#555' }}>{translations.app.TreatmentSection.treatments.acupuncture.description}</div>
         </div>
         {/* Herbal Medicine */}
         <div className="card mb-4">
           <h3 className="headingMedium mb-4" style={{ color: '#1976d2' }}>{translations.app.TreatmentSection.treatments.herbalMedicine.title}</h3>
-          <div style={{ lineHeight: 1.8, color: '#555' }}>{translations.app.TreatmentSection.treatments.herbalMedicine.description}</div>
+          <div className="lineHeightLoose" style={{ color: '#555' }}>{translations.app.TreatmentSection.treatments.herbalMedicine.description}</div>
         </div>
       </div>
     </Container>
