@@ -8,6 +8,7 @@ const GynecologySection = () => {
 
   return (
     <div
+      className="gynecology-section-root"
       style={{
         padding: "20px",
         minHeight: "300px",

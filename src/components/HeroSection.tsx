@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="hero-section"
+      className="hero-section-root hero-section"
       style={{
         position: "relative",
         backgroundImage: "url('/images/herosection.jpg')",

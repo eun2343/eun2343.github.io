@@ -12,8 +12,9 @@ const AboutSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <div style={{ backgroundColor: "#F2EBE6", padding: "20px 0" }}>
+    <div className="about-section-root about-section" style={{ backgroundColor: "#F2EBE6", padding: "20px 0" }}>
       <Container
+        className="about-container"
         sx={{
           marginTop: { xs: 4, md: 12 },
           marginBottom: 8,
@@ -23,6 +24,7 @@ const AboutSection = () => {
       >
         {/* Two-column layout for profile section */}
         <Box
+          className="about-columns"
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
@@ -33,6 +35,7 @@ const AboutSection = () => {
         >
           {/* Left column - Profile Image */}
           <Box
+            className="about-left"
             marginTop={{ xs: 4, md: 16 }}
             sx={{
               flex: { md: "0 0 30%" },
@@ -44,6 +47,7 @@ const AboutSection = () => {
             }}
           >
             <img
+              className="about-profile-image"
               src={translations.app.AboutPage.profileImage}
               alt="Dr. Eunkyeong Choi"
               style={{
@@ -58,26 +62,21 @@ const AboutSection = () => {
 
           {/* Right column - Qualifications */}
           <Box
+            className="about-right"
             sx={{
               flex: { md: "0 0 70%" },
               width: { xs: "100%", md: "70%" },
               paddingLeft: { md: 3 },
             }}
           >
-            <Typography
-              variant="h3"
-              gutterBottom
-              sx={{
-                marginBottom: 8,
-                fontWeight: 600,
-                fontSize: { xs: "1.5rem", md: "3rem" },
-                fontFamily: "'Playfair Display', serif",
-                color: '#1a1a1a',
-              }}
+            <span
+              className="responsive-card-title about-title"
+              style={{ display: 'block', marginBottom: 32, fontSize: '2.2rem' }}
             >
               Eunkyeong Choi
-            </Typography>
+            </span>
             <Typography
+              className="about-qualifications"
               variant="h5"
               gutterBottom
               sx={{
@@ -90,10 +89,10 @@ const AboutSection = () => {
             >
               Qualifications
             </Typography>
-            <List sx={{ padding: 0 }}>
+            <List className="about-qualification-list" sx={{ padding: 0 }}>
               {translations.app.AboutPage.qualifications.map(
                 (qualification: string, index: number) => (
-                  <ListItem key={index} sx={{ paddingX: 0, paddingY: 1 }}>
+                  <ListItem key={index} className="about-qualification-item" sx={{ paddingX: 0, paddingY: 1 }}>
                     <ListItemText
                       primary={`• ${qualification}`}
                       sx={{
@@ -112,8 +111,9 @@ const AboutSection = () => {
         </Box>
 
         {/* Full-width section for experience */}
-        <Box sx={{ maxWidth: "100%", margin: "0 auto" }}>
+        <Box className="about-experiences" sx={{ maxWidth: "100%", margin: "0 auto" }}>
           <Typography
+            className="about-experiences-title"
             variant="h5"
             gutterBottom
             sx={{
@@ -126,10 +126,10 @@ const AboutSection = () => {
           >
             Experiences
           </Typography>
-          <List sx={{ padding: 0 }}>
+          <List className="about-experience-list" sx={{ padding: 0 }}>
             {translations.app.AboutPage.experience.map(
               (experienceItem: string, index: number) => (
-                <ListItem key={index} sx={{ paddingX: 0, paddingY: 1.5 }}>
+                <ListItem key={index} className="about-experience-item" sx={{ paddingX: 0, paddingY: 1.5 }}>
                   <ListItemText
                     primary={`• ${experienceItem}`}
                     sx={{

@@ -8,6 +8,7 @@ const PrePostnatalCareSection = () => {
 
   return (
     <div
+      className="prepostnatal-care-section-root"
       style={{
         padding: "20px",
         minHeight: "300px",

@@ -7,6 +7,7 @@ const FeeSection = () => {
 
   return (
     <Container
+      className="fee-section-root"
       sx={{
         marginTop: { xs: 4, md: 8 },
         marginBottom: 8,

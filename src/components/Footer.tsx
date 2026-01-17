@@ -28,6 +28,7 @@ const Footer = () => {
 
   return (
     <footer
+      className="footer-root"
       style={{
         minHeight: "400px",
         marginTop: "auto",

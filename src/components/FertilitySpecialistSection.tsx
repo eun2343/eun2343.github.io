@@ -6,7 +6,7 @@ const FertilitySpecialistSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
+    <Container className="fertility-specialist-section-root" sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
       {/* Hero Image */}
       {/*
       <Box
@@ -34,7 +34,7 @@ const FertilitySpecialistSection = () => {
       */}
 
       <Typography
-        variant="h2"
+        variant="h4"
         align="center"
         gutterBottom
         sx={{
@@ -42,7 +42,7 @@ const FertilitySpecialistSection = () => {
           fontWeight: 700,
           color: '#915446',
           fontFamily: "'Playfair Display', serif",
-          fontSize: "2.3rem",
+          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.3rem' },
           letterSpacing: 0.2,
         }}
       >
@@ -69,7 +69,7 @@ const FertilitySpecialistSection = () => {
                     color: '#915446',
                     fontWeight: 900,
                     fontSize: '2.6rem',
-                    marginRight: 16,
+                    marginRight: 14,
                     flexShrink: 0,
                   }}
                 >
@@ -84,7 +84,7 @@ const FertilitySpecialistSection = () => {
                       color: '#915446',
                       marginBottom: 2,
                       textAlign: "left",
-                      fontSize: "2rem",
+                      fontSize: { xs: '1.7rem', sm: '1.7rem', md: '2rem' },
                       fontFamily: "'Playfair Display', serif",
                     }}
                   >
@@ -95,7 +95,7 @@ const FertilitySpecialistSection = () => {
                     sx={{
                       lineHeight: 1.6,
                       color: '#1a1a1a',
-                      fontSize: "1.1rem",
+                      fontSize: { xs: '1.1rem', sm: '1.1rem', md: '1.1rem' },
                       textAlign: "left",
                     }}
                   >

@@ -12,7 +12,7 @@ interface CardWithContentProps {
 const CardWithContent = (props: CardWithContentProps): React.ReactElement => {
   const { title, points } = props.item;
   return (
-    <Grid size={{ xs: 12, sm: 6, md: 4 }} key={props.index}>
+    <Grid size={{ xs: 12, sm: 6, md: 4 }} key={props.index} className="card-with-content-root">
       <Card className={`gyno-card with-bg`}>
         <CardContent>
           <Typography variant="h6">{title}</Typography>

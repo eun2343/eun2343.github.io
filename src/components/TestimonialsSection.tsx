@@ -33,6 +33,7 @@ const TestimonialsSection = () => {
 
   return (
     <div
+      className="testimonials-section-root"
       style={{
         padding: "60px 20px",
         minHeight: "400px",

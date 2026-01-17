@@ -5,7 +5,7 @@ const TreatmentSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <Container sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
+    <Container className="treatment-section-root" sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
       {/* Hero Image */}
       <Box
         sx={{

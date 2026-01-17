@@ -7,6 +7,7 @@ const FertilityCareSection = () => {
 
   return (
     <div
+      className="fertility-care-section-root"
       style={{
         padding: "20px",
         minHeight: "300px",
