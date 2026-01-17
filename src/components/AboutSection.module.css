@@ -1,0 +1,52 @@
+/* AboutSection component-specific styles */
+.root {
+  background-color: var(--color-secondary);
+  padding: 20px 0;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .columns {
+    flex-direction: row;
+    gap: 64px;
+    align-items: flex-start;
+  }
+}
+.left {
+  flex: 0 0 30%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+@media (min-width: 900px) {
+  .left {
+    width: 30%;
+    margin-top: 64px;
+    margin-bottom: 0;
+  }
+}
+.right {
+  flex: 0 0 70%;
+  width: 100%;
+  padding-left: 24px;
+}
+.profileImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.qualificationList, .experienceList {
+  padding: 0;
+}
+.qualificationItem, .experienceItem {
+  padding: 8px 0;
+}

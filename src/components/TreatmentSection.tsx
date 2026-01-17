@@ -1,102 +1,39 @@
-import { Container, Typography, Box, Card, CardContent } from "@mui/material";
+
+import { Container } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
+import styles from "./TreatmentSection.module.css";
+import "../styles/utilities.css";
+import "../styles/variables.css";
 
 const TreatmentSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <Container className="treatment-section-root" sx={{ marginTop: 12, marginBottom: 8, minHeight: "60vh" }}>
+    <Container className={styles.root}>
       {/* Hero Image */}
-      <Box
-        sx={{
-          width: "100%",
-          marginBottom: 6,
-          display: "flex",
-          justifyContent: "center",
-          overflow: "hidden",
-          borderRadius: 2,
-        }}
-      >
+      <div className={styles.heroImage}>
         <img
           src="/images/akupunktur1.jpg"
           alt="Acupuncture Treatment"
-          style={{
-            width: "100%",
-            height: "auto",
-            maxHeight: "300px",
-            objectFit: "cover",
-            objectPosition: "center",
-          }}
+          style={{ width: "100%", height: "auto", maxHeight: "300px", objectFit: "cover", objectPosition: "center" }}
         />
-      </Box>
+      </div>
 
-      <Typography
-        variant="h2"
-        align="center"
-        gutterBottom
-        sx={{ marginBottom: 6, fontWeight: 700 }}
-      >
-        {translations.app.TreatmentSection.title}
-      </Typography>
+      <h2 className="headingLarge textCenter mb-4">{translations.app.TreatmentSection.title}</h2>
+      <div className="textCenter mb-8" style={{ color: '#666' }}>{translations.app.TreatmentSection.subtitle}</div>
 
-      <Box sx={{ maxWidth: "100%", marginTop: 8 }}>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ marginBottom: 4, textAlign: "center", color: "#666" }}
-        >
-          {translations.app.TreatmentSection.subtitle}
-        </Typography>
-
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          {/* Acupuncture */}
-          <Card sx={{ boxShadow: 3 }}>
-            <CardContent sx={{ padding: 4 }}>
-              <Typography
-                variant="h4"
-                gutterBottom
-                sx={{ fontWeight: 600, color: "#1976d2" }}
-              >
-                {translations.app.TreatmentSection.treatments.acupuncture.title}
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ lineHeight: 1.8, color: "#555" }}
-              >
-                {
-                  translations.app.TreatmentSection.treatments.acupuncture
-                    .description
-                }
-              </Typography>
-            </CardContent>
-          </Card>
-
-          {/* Herbal Medicine */}
-          <Card sx={{ boxShadow: 3 }}>
-            <CardContent sx={{ padding: 4 }}>
-              <Typography
-                variant="h4"
-                gutterBottom
-                sx={{ fontWeight: 600, color: "#1976d2" }}
-              >
-                {
-                  translations.app.TreatmentSection.treatments.herbalMedicine
-                    .title
-                }
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ lineHeight: 1.8, color: "#555" }}
-              >
-                {
-                  translations.app.TreatmentSection.treatments.herbalMedicine
-                    .description
-                }
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-      </Box>
+      <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+        {/* Acupuncture */}
+        <div className="card mb-4">
+          <h3 className="headingMedium mb-4" style={{ color: '#1976d2' }}>{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
+          <div style={{ lineHeight: 1.8, color: '#555' }}>{translations.app.TreatmentSection.treatments.acupuncture.description}</div>
+        </div>
+        {/* Herbal Medicine */}
+        <div className="card mb-4">
+          <h3 className="headingMedium mb-4" style={{ color: '#1976d2' }}>{translations.app.TreatmentSection.treatments.herbalMedicine.title}</h3>
+          <div style={{ lineHeight: 1.8, color: '#555' }}>{translations.app.TreatmentSection.treatments.herbalMedicine.description}</div>
+        </div>
+      </div>
     </Container>
   );
 };

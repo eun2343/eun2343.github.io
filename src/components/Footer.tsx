@@ -1,15 +1,10 @@
-import {
-  Container,
-  Typography,
-  Link,
-  Grid,
-  Box,
-  Card,
-  CardMedia,
-  CardContent,
-} from "@mui/material";
+
+import { Container, Grid, Card, CardMedia, CardContent } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import { choiTCMLocations, openInGoogleMaps } from "../utils/mapsUtils";
+import styles from "./Footer.module.css";
+import "../styles/utilities.css";
+import "../styles/variables.css";
 
 const Footer = () => {
   const { translations } = useLanguage();
@@ -25,212 +20,77 @@ const Footer = () => {
   const handleLuzernMapClick = () => {
     openInGoogleMaps(luzernLocation);
   };
-
   return (
-    <footer
-      className="footer-root"
-      style={{
-        minHeight: "400px",
-        marginTop: "auto",
-        backgroundColor: "#96695e",
-        padding: "60px 0 20px 0",
-        color: "white",
-      }}
-    >
+    <footer className={styles.root}>
       <Container>
         {/* Our Locations Section */}
-        <Typography
-          variant="h4"
-          component="h2"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            color: "white",
-            mb: 6,
-          }}
-        >
-          {translations.app.LocationsSection.title}
-        </Typography>
-
+        <h2 className="headingLarge textCenter mb-8">{translations.app.LocationsSection.title}</h2>
         {/* Location Information with Maps */}
-        <Grid container spacing={4} sx={{ mb: 4 }}>
+        <Grid container spacing={4} className={styles.locations}>
           {/* Luzern Location */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card
-              sx={{
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-                color: "white",
-                cursor: "pointer",
-                transition:
-                  "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-                "&:hover": {
-                  transform: "translateY(-2px)",
-                  backgroundColor: "rgba(255, 255, 255, 0.15)",
-                },
-              }}
-              onClick={handleLuzernMapClick}
-            >
+            <Card className={styles.locationCard} onClick={handleLuzernMapClick}>
               <CardMedia
                 component="img"
                 height="200"
                 image="/images/eich.jpg"
                 alt="Choi TCM Luzern Location Map"
-                sx={{
-                  objectFit: "cover",
-                  "&:hover": {
-                    opacity: 0.9,
-                  },
-                }}
+                className={styles.locationImage}
               />
-              <CardContent sx={{ p: 3 }}>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  sx={{ fontWeight: "bold", color: "white" }}
-                >
-                  {translations.app.Footer.locations.luzern.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{
-                    mb: 2,
-                    color: "rgba(255, 255, 255, 0.9)",
-                    fontWeight: 500,
-                  }}
-                >
+              <CardContent>
+                <h3 className="headingMedium mb-4">{translations.app.Footer.locations.luzern.title}</h3>
+                <div className="mb-4" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500 }}>
                   {translations.app.Footer.locations.luzern.address}
-                </Typography>
-                <Box sx={{ mb: 2 }}>
-                  <Typography
-                    variant="subtitle2"
-                    sx={{ fontWeight: "bold", color: "white", mb: 1 }}
-                  >
-                    {translations.app.LocationsSection.openingHours}:
-                  </Typography>
-                  {translations.app.Footer.locations.luzern.openingHours.map(
-                    (hours, index) => (
-                      <Typography
-                        key={index}
-                        variant="body2"
-                        sx={{
-                          color: "rgba(255, 255, 255, 0.9)",
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        {hours}
-                      </Typography>
-                    )
-                  )}
-                </Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: "rgba(255, 255, 255, 0.7)",
-                    fontStyle: "italic",
-                  }}
-                >
-                  {translations.app.LocationsSection.clickToOpenMaps}
-                </Typography>
+                </div>
+                <div className="mb-4">
+                  <strong>{translations.app.LocationsSection.openingHours}:</strong>
+                  <div>
+                    {translations.app.Footer.locations.luzern.openingHours.map((hours, index) => (
+                      <div key={index} style={{ color: "rgba(255,255,255,0.9)", lineHeight: 1.4 }}>{hours}</div>
+                    ))}
+                  </div>
+                </div>
+                <div className="textMuted" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
               </CardContent>
             </Card>
           </Grid>
-
           {/* Zürich Location */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card
-              sx={{
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-                color: "white",
-                cursor: "pointer",
-                transition:
-                  "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-                "&:hover": {
-                  transform: "translateY(-2px)",
-                  backgroundColor: "rgba(255, 255, 255, 0.15)",
-                },
-              }}
-              onClick={handleZurichMapClick}
-            >
+            <Card className={styles.locationCard} onClick={handleZurichMapClick}>
               <CardMedia
                 component="img"
                 height="200"
                 image="/images/kasahara.jpg"
                 alt="Choi TCM Zürich Location Map"
-                sx={{
-                  objectFit: "cover",
-                  "&:hover": {
-                    opacity: 0.9,
-                  },
-                }}
+                className={styles.locationImage}
               />
-              <CardContent sx={{ p: 3 }}>
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  sx={{ fontWeight: "bold", color: "white" }}
-                >
-                  {translations.app.Footer.locations.zurich.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{
-                    mb: 2,
-                    color: "rgba(255, 255, 255, 0.9)",
-                    fontWeight: 500,
-                  }}
-                >
+              <CardContent>
+                <h3 className="headingMedium mb-4">{translations.app.Footer.locations.zurich.title}</h3>
+                <div className="mb-4" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500 }}>
                   {translations.app.Footer.locations.zurich.address}
-                </Typography>
-                <Box sx={{ mb: 2 }}>
-                  <Typography
-                    variant="subtitle2"
-                    sx={{ fontWeight: "bold", color: "white", mb: 1 }}
-                  >
-                    {translations.app.LocationsSection.openingHours}:
-                  </Typography>
-                  {translations.app.Footer.locations.zurich.openingHours.map(
-                    (hours, index) => (
-                      <Typography
-                        key={index}
-                        variant="body2"
-                        sx={{
-                          color: "rgba(255, 255, 255, 0.9)",
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        {hours}
-                      </Typography>
-                    )
-                  )}
-                </Box>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    color: "rgba(255, 255, 255, 0.7)",
-                    fontStyle: "italic",
-                  }}
-                >
-                  {translations.app.LocationsSection.clickToOpenMaps}
-                </Typography>
+                </div>
+                <div className="mb-4">
+                  <strong>{translations.app.LocationsSection.openingHours}:</strong>
+                  <div>
+                    {translations.app.Footer.locations.zurich.openingHours.map((hours, index) => (
+                      <div key={index} style={{ color: "rgba(255,255,255,0.9)", lineHeight: 1.4 }}>{hours}</div>
+                    ))}
+                  </div>
+                </div>
+                <div className="textMuted" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
               </CardContent>
             </Card>
           </Grid>
         </Grid>
-
         {/* Copyright */}
-        <Typography
-          variant="body2"
-          color="rgba(255, 255, 255, 0.7)"
-          align="center"
-        >
+        <div className="textCenter textMuted" style={{ marginTop: 32 }}>
           {translations.app.Footer.copyright}
-          <Link color="inherit" href={translations.app.Footer.companyLink}>
+          <a href={translations.app.Footer.companyLink} style={{ color: "inherit" }}>
             {translations.app.Footer.companyName}
-          </Link>{" "}
+          </a>{" "}
           {new Date().getFullYear()}
           {"."}
-        </Typography>
+        </div>
       </Container>
     </footer>
   );

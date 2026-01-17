@@ -1,0 +1,14 @@
+/* TreatmentSection component-specific styles */
+.root {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  min-height: 60vh;
+}
+.heroImage {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}

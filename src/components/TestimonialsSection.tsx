@@ -1,64 +1,27 @@
-import {
-  Container,
-  Typography,
-  Card,
-  CardContent,
-  Avatar,
-} from "@mui/material";
+
+import { Container, Typography, Card, CardContent, Avatar } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper modules
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// Import Swiper CSS
 import "swiper/swiper-bundle.css";
+import styles from "./TestimonialsSection.module.css";
+import "../styles/utilities.css";
+import "../styles/variables.css";
 
 const TestimonialsSection = () => {
   const { translations } = useLanguage();
   const testimonials = translations.app.TestimonialsSection.testimonials;
 
-  // Custom styles for larger pagination bullets
-  const paginationStyle = {
-    "& .swiper-pagination-bullet": {
-      width: "12px",
-      height: "12px",
-      backgroundColor: "#ddd",
-      opacity: 0.7,
-    },
-    "& .swiper-pagination-bullet-active": {
-      backgroundColor: "#1976d2",
-      opacity: 1,
-    },
-  };
-
   return (
-    <div
-      className="testimonials-section-root"
-      style={{
-        padding: "60px 20px",
-        minHeight: "400px",
-        backgroundColor: "#fff",
-      }}
-    >
-      <Container maxWidth="md" sx={paginationStyle}>
-        <Typography
-          variant="h4"
-          padding={4}
-          gutterBottom
-          align="center"
-          sx={{ marginBottom: 6 }}
-        >
-          {translations.app.TestimonialsSection.title}
-        </Typography>
+    <div className={styles.root}>
+      <Container maxWidth="md">
+        <h2 className="headingLarge textCenter mb-8">{translations.app.TestimonialsSection.title}</h2>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
           navigation={true}
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,

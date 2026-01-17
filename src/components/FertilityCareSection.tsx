@@ -1,38 +1,24 @@
-import { Container, Typography, Grid, Card, CardContent } from "@mui/material";
+
+import { Container, Grid } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
+import styles from "./FertilityCareSection.module.css";
+import "../styles/utilities.css";
+import "../styles/variables.css";
 
 const FertilityCareSection = () => {
   const { translations } = useLanguage();
   const fertilityServices = translations.app.FertilityCareSection.services;
 
   return (
-    <div
-      className="fertility-care-section-root"
-      style={{
-        padding: "20px",
-        minHeight: "300px",
-        marginTop: "auto",
-        backgroundColor: "#f5f5f5",
-      }}
-    >
+    <div className={styles.root}>
       <Container>
-        <Typography
-          variant="h4"
-          padding={4}
-          gutterBottom
-          align="center"
-          sx={{ marginBottom: 4 }}
-        >
-          {translations.app.FertilityCareSection.title}
-        </Typography>
-        <Grid container spacing={2} sx={{ marginTop: 4 }}>
+        <h2 className="headingLarge textCenter mb-8">{translations.app.FertilityCareSection.title}</h2>
+        <Grid container spacing={2} style={{ marginTop: 32 }}>
           {fertilityServices.map((service, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">{service}</Typography>
-                </CardContent>
-              </Card>
+              <div className="card mb-4 textCenter">
+                <h3 className="headingMedium mb-4">{service}</h3>
+              </div>
             </Grid>
           ))}
         </Grid>

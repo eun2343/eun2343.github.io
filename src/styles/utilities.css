@@ -1,0 +1,40 @@
+/* Global utility classes for layout, typography, and spacing */
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-section) 16px;
+}
+.headingLarge {
+  font-size: 2.2rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 24px;
+}
+.headingMedium {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+.textMuted {
+  color: #888;
+}
+.textPrimary {
+  color: var(--color-primary);
+}
+.textCenter {
+  text-align: center;
+}
+.card {
+  background: var(--color-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: var(--spacing-card);
+}
+.mt-4 { margin-top: 32px; }
+.mb-4 { margin-bottom: 32px; }
+.mt-8 { margin-top: 64px; }
+.mb-8 { margin-bottom: 64px; }

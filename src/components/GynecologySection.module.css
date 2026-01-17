@@ -1,0 +1,7 @@
+/* GynecologySection component-specific styles */
+.root {
+  padding: 20px;
+  min-height: 300px;
+  margin-top: auto;
+  background-color: var(--color-light);
+}

@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #915446;
+  --color-secondary: #F2EBE6;
+  --color-dark: #1a1a1a;
+  --color-light: #fff;
+  --font-main: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-alt: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --spacing-section: 48px;
+  --spacing-card: 32px;
+  --border-radius: 32px;
+}

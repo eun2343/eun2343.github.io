@@ -1,0 +1,6 @@
+/* TestimonialsSection component-specific styles */
+.root {
+  padding: 60px 20px;
+  min-height: 400px;
+  background-color: var(--color-light);
+}

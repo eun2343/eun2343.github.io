@@ -1,0 +1,11 @@
+/* Footer component-specific styles */
+.root {
+  min-height: 400px;
+  margin-top: auto;
+  background-color: var(--color-primary);
+  padding: 60px 0 20px 0;
+  color: var(--color-light);
+}
+.locations {
+  margin-bottom: 32px;
+}

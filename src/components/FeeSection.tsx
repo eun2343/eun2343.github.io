@@ -1,128 +1,40 @@
-import { Container, Typography, Box } from "@mui/material";
+
+import { Container } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import type { Service } from "../translation/types";
+import styles from "./FeeSection.module.css";
+import "../styles/utilities.css";
+import "../styles/variables.css";
 
 const FeeSection = () => {
   const { translations } = useLanguage();
 
   return (
-    <Container
-      className="fee-section-root"
-      sx={{
-        marginTop: { xs: 4, md: 8 },
-        marginBottom: 8,
-        minHeight: "60vh",
-        px: { xs: 2, md: 3 },
-      }}
-    >
-      <Typography
-        variant="h3"
-        align="left"
-        gutterBottom
-        sx={{ marginBottom: 2, fontWeight: 700, color: "#1a1a1a", fontFamily: "'Playfair Display', serif" }}
-      >
-        {translations.app.FeePage.title}
-      </Typography>
-
-      <Typography
-        variant="h5"
-        align="left"
-        sx={{ marginBottom: 6, color: "#1a1a1a", lineHeight: 1.6 }}
-      >
+    <Container className={styles.root}>
+      <h2 className="headingLarge mb-4">{translations.app.FeePage.title}</h2>
+      <div className="mb-8" style={{ color: 'var(--color-dark)', lineHeight: 1.6 }}>
         {translations.app.FeePage.subtitle
           .split("|")
           .map((line: string, lineIndex: number) => (
             <span key={lineIndex}>
               {line}
-              {lineIndex <
-                translations.app.FeePage.subtitle.split("|").length - 1 && (
-                <br />
-              )}
+              {lineIndex < translations.app.FeePage.subtitle.split("|").length - 1 && <br />}
             </span>
           ))}
-      </Typography>
+      </div>
+      <div style={{ maxWidth: "100%", marginTop: 32 }}>
+        {translations.app.FeePage.services.map((service: Service, index: number) => (
+          <div key={index} className="card mb-4">
+            <h3 className="headingMedium mb-4" style={{ textAlign: 'left', color: 'var(--color-dark)' }}>{service.name}</h3>
+            <div style={{ color: 'var(--color-dark)', textAlign: 'left' }}>{service.description}</div>
+          </div>
+        ))}
+      </div>
 
-      <Box sx={{ maxWidth: "100%", marginTop: 4 }}>
-        {translations.app.FeePage.services.map(
-          (service: Service, index: number) => (
-            <Box key={index} sx={{ marginBottom: 5 }}>
-              <Typography
-                variant="h4"
-                gutterBottom
-                sx={{
-                  fontWeight: 600,
-                  color: "#1a1a1a",
-                  marginBottom: 2,
-                  textAlign: "left",
-                }}
-              >
-                {service.name}
-              </Typography>
-              <Typography
-                variant="h5"
-                sx={{
-                  fontWeight: 700,
-                  color: "#1a1a1a",
-                  marginBottom: 1,
-                  textAlign: "left",
-                }}
-              >
-                {service.price}
-              </Typography>
-              {service.duration && (
-                <Typography
-                  variant="body1"
-                  sx={{
-                    color: "#1a1a1a",
-                    marginBottom: 2,
-                    textAlign: "left",
-                    fontSize: "1.1rem",
-                  }}
-                >
-                  {service.duration}
-                </Typography>
-              )}
-              <Typography
-                variant="body1"
-                sx={{
-                  lineHeight: 1.8,
-                  color: "#1a1a1a",
-                  fontSize: "1.1rem",
-                  textAlign: "left",
-                }}
-              >
-                {service.description}
-              </Typography>
-            </Box>
-          )
-        )}
-      </Box>
-
-      <Box sx={{ marginTop: 6, marginBottom: 5 }}>
-        <Typography
-          variant="h4"
-          gutterBottom
-          sx={{
-            fontWeight: 600,
-            color: "#1a1a1a",
-            marginBottom: 2,
-            textAlign: "left",
-          }}
-        >
-          {translations.app.FeePage.cancellationPolicy.title}
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            lineHeight: 1.8,
-            color: "#1a1a1a",
-            fontSize: "1.1rem",
-            textAlign: "left",
-          }}
-        >
-          {translations.app.FeePage.cancellationPolicy.description}
-        </Typography>
-      </Box>
+      <div className="card mb-4" style={{ marginTop: 48 }}>
+        <h3 className="headingMedium mb-4" style={{ textAlign: 'left', color: 'var(--color-dark)' }}>{translations.app.FeePage.cancellationPolicy.title}</h3>
+        <div style={{ lineHeight: 1.8, color: 'var(--color-dark)', fontSize: '1.1rem', textAlign: 'left' }}>{translations.app.FeePage.cancellationPolicy.description}</div>
+      </div>
     </Container>
   );
 };
