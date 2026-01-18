@@ -26,6 +26,11 @@ const FeeSection = () => {
         {translations.app.FeePage.services.map((service: Service, index: number) => (
           <div key={index} className="card mb-4">
             <h3 className="headingMedium mb-4 textLeft textDark">{service.name}</h3>
+            {(service.duration || service.price) && (
+              <div className="textDark textLeft mb-3">
+                {service.duration && `${service.duration} `}{service.price}
+              </div>
+            )}
             <div className="textDark textLeft">{service.description}</div>
           </div>
         ))}

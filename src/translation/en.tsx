@@ -234,7 +234,7 @@ export const en = {
         "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung).| Please check with your insurer in advance.",
       services: [
         {
-          name: "Initial Appointment",
+          name: "Initial Appointment " ,
           price: "261 CHF",
           duration: "90 minutes",
           description:

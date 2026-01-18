@@ -200,7 +200,7 @@ export const de = {
       title: "Warum Choi TCM wählen",
       reasons: [
         {
-          title: "Fruchtbarkeitsspezialistin",
+          title: "Fruchtbarkeits-spezialistin",
           description:
             "Ich arbeite jeden einzelnen Tag mit Fruchtbarkeitsfällen. | In den letzten Jahren habe ich meine gesamte klinische Praxis der Behandlung von fruchtbarkeitsbezogenen Erkrankungen bei Frauen und Männern gewidmet. Als engagiertes Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie nehme ich kontinuierlich an fortgeschrittenen Schulungen und Forschungen teil, um an der Spitze der Fruchtbarkeitsbetreuung zu bleiben.",
         },
