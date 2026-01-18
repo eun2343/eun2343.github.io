@@ -33,7 +33,7 @@ const Footer = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/eich.jpg"
+                image="/images/habsburgerstrasse16.jpg"
                 alt="Choi TCM Luzern Location Map"
                 className={styles.locationImage}
               />

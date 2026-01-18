@@ -20,10 +20,10 @@ export const choiTCMLocations: Location[] = [
   },
   {
     name: 'Choi TCM Luzern',
-    address: 'Im Wygart 3, 6205 Eich, Switzerland',
+    address: 'Habsburgerstrasse 16, 6003 Luzern, Switzerland',
     coordinates: {
-      lat: 47.0879,
-      lng: 8.1895
+      lat: 47.0473136,
+      lng: 8.3079459
     }
   }
 ];

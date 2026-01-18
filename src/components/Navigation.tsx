@@ -60,7 +60,7 @@ const Navigation = () => {
             textAlign: "center",
                 "& .MuiTypography-root": {
                   color: "#1A1A1A",
-                  fontSize: "1.05rem",
+                  fontSize: "1.2rem !important",
                   py: 1,
             },
           }}
@@ -80,7 +80,7 @@ const Navigation = () => {
               sx={{
                   color: language === "en" ? "#1A1A1A" : "#666",
                 cursor: language === "en" ? "default" : "pointer",
-                fontSize: "0.85rem",
+                fontSize: "1.2rem !important",
               }}
               onClick={language === "en" ? undefined : () => changeLang("en")}
             >
@@ -101,7 +101,7 @@ const Navigation = () => {
               sx={{
                 color: language === "de" ? "black" : "#666",
                 cursor: language === "de" ? "default" : "pointer",
-                fontSize: "0.85rem",
+                fontSize: "1.2rem !important",
               }}
               onClick={language === "de" ? undefined : () => changeLang("de")}
             >
@@ -121,6 +121,7 @@ const Navigation = () => {
               fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
               borderRadius: "24px",
               padding: "10px 24px",
+              fontSize: "1.2rem !important",
               mx: "auto",
               "&:hover": {
                 backgroundColor: "#96695e",
