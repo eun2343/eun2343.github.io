@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className={styles.root}>
       <Container>
         {/* Our Locations Section */}
-        <h2 className="headingLarge textCenter mb-8">{translations.app.LocationsSection.title}</h2>
+        <h2 className="headingLarge textLight textCenter mb-8">{translations.app.LocationsSection.title}</h2>
         {/* Location Information with Maps */}
         <Grid container spacing={4} className={styles.locations}>
           {/* Luzern Location */}
@@ -43,14 +43,13 @@ const Footer = () => {
                   {translations.app.Footer.locations.luzern.address}
                 </div>
                 <div className="mb-4 textLight">
-                  <strong>{translations.app.LocationsSection.openingHours}:</strong>
                   <div>
                     {translations.app.Footer.locations.luzern.openingHours.map((hours, index) => (
                       <div key={index} className="textLight" style={{ lineHeight: 1.4 }}>{hours}</div>
                     ))}
                   </div>
                 </div>
-                <div className="textMuted" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
+                <div className="textLight" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
               </CardContent>
             </Card>
           </Grid>
@@ -65,19 +64,18 @@ const Footer = () => {
                 className={styles.locationImage}
               />
               <CardContent>
-                <h3 className="headingMedium mb-4">{translations.app.Footer.locations.zurich.title}</h3>
+                <h3 className="headingMedium textLight mb-4">{translations.app.Footer.locations.zurich.title}</h3>
                 <div className="mb-4 textLight fontMedium">
                   {translations.app.Footer.locations.zurich.address}
                 </div>
-                <div className="mb-4">
-                  <strong>{translations.app.LocationsSection.openingHours}:</strong>
+                <div className="mb-4 textLight">
                   <div>
                     {translations.app.Footer.locations.zurich.openingHours.map((hours, index) => (
                       <div key={index} className="textLight" style={{ lineHeight: 1.4 }}>{hours}</div>
                     ))}
                   </div>
                 </div>
-                <div className="textMuted" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
+                <div className="textLight" style={{ fontStyle: "italic" }}>{translations.app.LocationsSection.clickToOpenMaps}</div>
               </CardContent>
             </Card>
           </Grid>

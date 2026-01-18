@@ -161,35 +161,26 @@ export const de = {
       locations: {
         luzern: {
           title: "Choi TCM Luzern",
-          address: "Im Wygart 3, 6205 Eich",
+          address: "Habsburgerstrasse 16, 6003 Luzern",
           openingHours: [
-            "Montag: 9:00 - 18:00",
             "Dienstag: 9:00 - 18:00",
-            "Mittwoch: 9:00 - 18:00",
-            "Donnerstag: 9:00 - 18:00",
-            "Freitag: 9:00 - 18:00",
-            "Samstag: 9:00 - 14:00",
-            "Sonntag: Geschlossen",
+            "Mittwoch: 9:00 - 12:00",
+            "Donnerstag: 9:00 - 12:00",
           ],
         },
         zurich: {
           title: "Choi TCM Zürich",
           address: "Kreuzstrasse 60, 8032 Zürich",
           openingHours: [
-            "Montag: 9:00 - 18:00",
-            "Dienstag: 9:00 - 18:00",
-            "Mittwoch: 9:00 - 18:00",
-            "Donnerstag: 9:00 - 18:00",
-            "Freitag: 9:00 - 18:00",
-            "Samstag: 9:00 - 14:00",
-            "Sonntag: Geschlossen",
+            "Montag: 11:00 - 19:00",
+            "Freitag: 11:00 - 19:00",
           ],
         },
       },
     },
     AboutPage: {
       title: "Über Dr. Eunkyeong Choi",
-      profileImage: "https://choi-tcm.ch/images/index_logo_tmp.png",
+      profileImage: "/images/choi.jpg",
       qualifications: [
         "Lizenzierte Ärztin für traditionelle Medizin, Südkorea",
         "Spezialisiert auf Fruchtbarkeit und Reproduktionsgesundheit",
@@ -209,59 +200,58 @@ export const de = {
       title: "Warum Choi TCM wählen",
       reasons: [
         {
-          title: "Spezialistin für die Fruchtbarkeit",
+          title: "Fruchtbarkeitsspezialistin",
           description:
-            "Dr. Choi bringt über 15 Jahre spezialisierte Erfahrung in traditioneller koreanischer Medizin mit. | Sie absolvierte ihr 6-jähriges Medizinstudium an der Dong-Eui Universität und praktizierte in führenden Fruchtbarkeitskliniken in Seoul und Busan. | Ihr tiefes Wissen verbindet alte Weisheit mit modernem medizinischem Verständnis.",
+            "Ich arbeite jeden einzelnen Tag mit Fruchtbarkeitsfällen. | In den letzten Jahren habe ich meine gesamte klinische Praxis der Behandlung von fruchtbarkeitsbezogenen Erkrankungen bei Frauen und Männern gewidmet. Als engagiertes Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie nehme ich kontinuierlich an fortgeschrittenen Schulungen und Forschungen teil, um an der Spitze der Fruchtbarkeitsbetreuung zu bleiben.",
         },
         {
-          title: "Spezialisiert auf Fruchtbarkeit & Reproduktionsgesundheit",
+          title: "Personalisierte Behandlung",
           description:
-            "Als lizenzierte Spezialistin für Fruchtbarkeit und Reproduktionsgesundheit konzentriert sich Dr. Choi ausschließlich darauf, Paaren zu helfen, schwanger zu werden. | Sie ist zertifiziertes Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie. | Ihre Behandlungen behandeln sowohl männliche als auch weibliche Fruchtbarkeitsprobleme mit bewährten Erfolgsraten.",
+            "Fruchtbarkeit ist komplex und Einheitslösungen funktionieren nicht. | Ich werde Ihre vollständige Gesundheitsgeschichte, aktuellen Anliegen und alle bisherigen Testergebnisse oder Behandlungen durchgehen, die Sie durchlaufen haben. Ihr Behandlungsplan wird hochgradig individualisiert nur für Sie sein und jede Akupunktursitzung und Kräutermedizin wird entsprechend Ihren Menstruationszyklen oder ART-Verfahren angepasst.",
         },
         {
-          title: "Schweizer Lizenz & zertifizierte Praxis",
+          title:
+            "Evidenzbasierte TCM-Behandlungen",
           description:
-            "Dr. Choi besitzt ein Eidgenössisches Diplom in TCM und ist offiziell zur Praxis in den Kantonen Zürich und Luzern zugelassen. | Sie verfügt über eine EMR-Zertifizierung (ZSR - J121064), die höchste Schweizer Gesundheitsstandards gewährleistet. | Ihre Praxis erfüllt alle regulatorischen Anforderungen für traditionelle Medizin in der Schweiz.",
+            "Ich verlasse mich nicht auf vage oder abstrakte Konzepte. | Ich bleibe mit den neuesten Forschungen zu TCM-Fruchtbarkeitsbehandlungen auf dem Laufenden. Basierend auf sowohl TCM als auch den neuesten klinischen Erkenntnissen ist es mein Ziel, Ihre reproduktive Gesundheit auf jeder Ebene zu optimieren.",
         },
         {
-          title: "Ganzheitlicher & personalisierter Behandlungsansatz",
+          title: "Unterstützung und Respekt",
           description:
-            "Jeder Behandlungsplan wird individuell auf Ihren einzigartigen Gesundheitszustand und Ihre Fruchtbarkeitsreise zugeschnitten. | Dr. Choi behandelt den ganzen Menschen, nicht nur Symptome, und konzentriert sich auf Grundursachen und allgemeines Wohlbefinden. | Ihr Ansatz integriert traditionelle koreanische Medizin mit modernen Fruchtbarkeitsunterstützungsmethoden.",
+            "Jede Fruchtbarkeitsreise ist zutiefst persönlich. | Egal, ob Sie Optionen erkunden, sich Unsicherheiten stellen oder Meilensteine feiern, meine Rolle ist es nicht nur, Sie medizinisch zu führen, sondern mit Ihnen mit Respekt, Fürsorge und unerschütterlicher Unterstützung zu gehen—jeden Schritt des Weges.",
         },
         {
-          title: "Umfassende Betreuung & Unterstützung",
+          title: "Klinische Expertise",
           description:
-            "Von der ersten Beratung über die Schwangerschaft bis darüber hinaus bietet Dr. Choi kontinuierliche Unterstützung während Ihrer gesamten Reise. | Sie bietet Präkonzeptionsbetreuung, Fruchtbarkeitssteigerung, Schwangerschaftsunterstützung und postnatale Erholungsbehandlungen an. | Patienten erhalten detaillierte Anleitung und emotionale Unterstützung in jeder Phase ihrer Fruchtbarkeitsreise.",
+            "Ich habe 6 Jahre intensives Vollzeitmedizinstudium (sowohl westlich als auch traditionell) absolviert und habe über ein Jahrzehnt klinischer Erfahrung in Korea, wo das Fachgebiet hochmoderne und innovative Behandlungsmethoden bietet. | Dieser umfassende Hintergrund ermöglicht es mir, modernste, effektive Therapien zu meinen Patienten zu bringen.",
         },
       ],
     },
     FeePage: {
-      title: "Behandlungsgebühren",
-      subtitle: "Transparente Preise für Qualitätsversorgung",
+      title: "Preis",
+      subtitle:
+        "Wir werden von den meisten Versicherungsgesellschaften akzeptiert. | Die Versicherungsdeckung hängt jedoch von Ihrem Zusatzversicherungsplan ab. | Bitte klären Sie dies im Voraus mit Ihrer Versicherung.",
       services: [
         {
-          name: "Erstberatung",
-          price: "€120",
+          name: "Ersttermin",
+          price: "261 CHF",
           duration: "90 Minuten",
-          description: "Umfassende Gesundheitsbewertung und Behandlungsplan",
+          description:
+            "Beinhaltet eine umfassende Überprüfung der Fruchtbarkeits- und Gesundheitsgeschichte, Bewertung früherer Testergebnisse, Zungen- und Pulsdiagnose und eine vollständige Akupunkturbehandlung.",
         },
         {
-          name: "Nachbehandlung",
-          price: "€80",
+          name: "Nachfolgende Akupunktursitzungen",
+          price: "174 CHF",
           duration: "60 Minuten",
-          description: "Akupunktur und laufende Betreuung",
+          description:
+            "Beinhaltet fortlaufende Bewertung und personalisierte Akupunkturbehandlung.",
         },
         {
-          name: "Fruchtbarkeitspaket",
-          price: "€450",
-          duration: "6 Sitzungen",
-          description: "Komplettes Fruchtbarkeitssteigerungsprogramm",
-        },
-        {
-          name: "Schwangerschaftsunterstützung",
-          price: "€90",
-          duration: "60 Minuten",
-          description: "Prä- und postnatale Betreuungssitzungen",
+          name: "Kräutermedizin-Verschreibung",
+          price: "33 – 99 CHF",
+          duration: "",
+          description:
+            "Angepasste Kräuterformeln können als Teil Ihres Behandlungsplans empfohlen werden. Die Verschreibungsgebühr variiert je nachdem, ob es sich um eine neue Formel, eine Nachfüllung oder eine Änderung einer bestehenden Verschreibung handelt.",
         },
       ],
       cancellationPolicy: {
