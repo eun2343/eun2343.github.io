@@ -44,6 +44,12 @@ const Navigation = () => {
       key={item.path}
       to={item.path}
       style={{ textDecoration: "none" }}
+      onClick={(e) => {
+        if (location.pathname === item.path) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }}
     >
       <Typography variant="h5" className="textDark" sx={{ cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
         {item.label}
@@ -53,7 +59,19 @@ const Navigation = () => {
 
   const renderMobileNavLink = (item: { path: string; label: string }) => (
     <ListItem key={item.path} disablePadding>
-      <Link to={item.path} style={{ textDecoration: "none", width: "100%" }}>
+      <Link
+        to={item.path}
+        style={{ textDecoration: "none", width: "100%" }}
+        onClick={(e) => {
+          if (location.pathname === item.path) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setMobileOpen(false);
+          } else {
+            setMobileOpen(false);
+          }
+        }}
+      >
         <ListItemText
           primary={item.label}
           sx={{

@@ -21,6 +21,9 @@ const AppWrapper = () => {
   usePageTitle(); // Set page title based on route and language
 
   useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+
     // Remove existing route classes
     document.body.className = document.body.className
       .replace(/route-\S+/g, "")
