@@ -164,7 +164,13 @@ const Navigation = () => {
             style={{ maxHeight: "60px", width: "auto", cursor: "pointer" }}
             src="/images/logo-normal.png "
             alt="Logo"
-            onClick={() => navigate(`/${language}/`)}
+            onClick={() => {
+              if (location.pathname === `/${language}/`) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                navigate(`/${language}/`);
+              }
+            }}
           />
 
           {/* Centered Desktop Navigation */}
