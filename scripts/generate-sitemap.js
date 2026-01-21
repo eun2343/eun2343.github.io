@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // Define your routes and their metadata
 const routes = [
+  { url: '/', priority: '1.0', changefreq: 'weekly' },
   { url: '/en', priority: '1.0', changefreq: 'weekly' },
   { url: '/de', priority: '1.0', changefreq: 'weekly' },
   { url: '/en/about', priority: '0.8', changefreq: 'monthly' },
