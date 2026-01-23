@@ -4,3 +4,24 @@
   margin-bottom: 32px;
   min-height: 60vh;
 }
+
+.root :global(.headingMedium) {
+  font-size: 1.5rem;
+}
+
+.root :global(.textDark),
+.root :global(.textLg) {
+  font-size: 1.125rem;
+}
+
+/* Mobile-specific font size adjustments */
+@media (max-width: 768px) {
+  .root :global(.headingMedium) {
+    font-size: 1.75rem;
+  }
+  
+  .root :global(.textDark),
+  .root :global(.textLg) {
+    font-size: 1.25rem;
+  }
+}

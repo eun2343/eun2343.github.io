@@ -93,7 +93,7 @@ export const en = {
       ],
     },
     GynecologySection: {
-      title: "Gynecology and more",
+      title: "Gynecology",
       content: [
         {
           title: "Regulation of Menstrual cycle",
@@ -170,7 +170,7 @@ export const en = {
         },
         zurich: {
           title: "Choi TCM Zürich",
-          address: "Kreuzstrasse 60, 8032 Zürich",
+          address: "Kreuzstrasse 60, 8008 Zürich",
           openingHours: [
             "Monday: 11:00 - 19:00",
             "Friday: 11:00 - 19:00",

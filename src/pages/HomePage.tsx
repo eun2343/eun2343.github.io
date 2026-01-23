@@ -38,7 +38,7 @@ const HomePage = () => {
             <div className="responsive-card-content">
               <span className="responsive-card-title">
                 {cardIdx === 1 ? (
-                  <span className="mb-6" style={{ display: 'block' }}>Gynecology and more</span>
+                  <span className="mb-6" style={{ display: 'block' }}>Gynecology</span>
                 ) : (
                   <span className="mb-6" style={{ display: 'block' }}>Pre - Postnatal Care</span>
                 )}
@@ -53,6 +53,8 @@ const HomePage = () => {
                     <li className="responsive-card-list-item-centered">Premature ovarian failure</li>
                     <li className="responsive-card-list-item-centered">Thyroid dysfunction</li>
                     <li className="responsive-card-list-item-centered">Stress and Anxiety</li>
+                    <li className="responsive-card-list-item-centered">Menopause</li>
+
                   </>
                 ) : (
                   <>

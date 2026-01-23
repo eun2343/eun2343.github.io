@@ -260,7 +260,8 @@ const ContactPage = () => {
                     fullWidth
                     variant="contained"
                     sx={{
-                      backgroundColor: "#96695e",
+                      backgroundColor: "#A76456",
+                      color: "#FFFFFF",
                       textTransform: "none",
                       fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
                       borderRadius: "24px",
@@ -270,7 +271,8 @@ const ContactPage = () => {
                       py: 1.5,
                       fontSize: "1.1rem",
                       "&:hover": {
-                        backgroundColor: "#96695e",
+                        backgroundColor: "#A76456",
+                        color: "#FFFFFF",
                       },
                     }}
                   >

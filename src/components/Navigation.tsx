@@ -134,7 +134,8 @@ const Navigation = () => {
             variant="contained"
             color="primary"
             sx={{
-              backgroundColor: "#96695e",
+              backgroundColor: "#A76456",
+              color: "#FFFFFF",
               textTransform: "none",
               fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
               borderRadius: "24px",
@@ -142,8 +143,8 @@ const Navigation = () => {
               fontSize: "1.2rem !important",
               mx: "auto",
               "&:hover": {
-                backgroundColor: "#96695e",
-                color: "white",
+                backgroundColor: "#A76456",
+                color: "#FFFFFF",
               },
             }}
           >
@@ -249,14 +250,15 @@ const Navigation = () => {
               variant="contained"
               color="primary"
               sx={{
-                backgroundColor: "#915446",
+                backgroundColor: "#A76456",
+                color: "#FFFFFF",
                 textTransform: "none",
                 fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
                 borderRadius: "24px",
                 padding: "10px 24px",
                 "&:hover": {
-                  backgroundColor: "#915446",
-                  color: "white",
+                  backgroundColor: "#A76456",
+                  color: "#FFFFFF",
                 },
               }}
             >

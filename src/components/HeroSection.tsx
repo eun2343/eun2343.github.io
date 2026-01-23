@@ -98,7 +98,8 @@ const HeroSection = () => {
           variant="contained"
           color="primary"
           sx={{
-            backgroundColor: "#915446",
+            backgroundColor: "#A76456",
+            color: "#FFFFFF",
             textTransform: "none",
             fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
             borderRadius: "24px",
@@ -111,8 +112,8 @@ const HeroSection = () => {
             alignItems: "center",
             fontSize: "1rem",
             "&:hover": {
-              backgroundColor: "#915446",
-              color: "white",
+              backgroundColor: "#A76456",
+              color: "#FFFFFF",
             },
           }}
         >

@@ -50,3 +50,20 @@
 .qualificationItem, .experienceItem {
   padding: 8px 0;
 }
+
+.qualificationItem span,
+.experienceItem span {
+  font-size: 1.125rem;
+}
+
+/* Mobile-specific font size adjustments */
+@media (max-width: 768px) {
+  .root :global(.headingMedium) {
+    font-size: 1.75rem;
+  }
+  
+  .qualificationItem span,
+  .experienceItem span {
+    font-size: 1.25rem;
+  }
+}
