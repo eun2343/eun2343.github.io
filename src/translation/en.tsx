@@ -37,17 +37,33 @@ export const en = {
     },
     TreatmentSection: {
       title: "Treatment Methods",
-      subtitle: "Comprehensive Traditional Chinese Medicine Services",
+      subtitle: "Every treatment session will be customized based on your menstrual cycle phase, ART process, and daily symptoms.",
       treatments: {
         acupuncture: {
           title: "Acupuncture",
           description:
-            "Traditional acupuncture treatment using fine needles to stimulate specific points on the body, promoting natural healing and balance. This ancient practice helps restore the flow of vital energy (Qi) and supports the body's natural healing mechanisms.",
+            "Acupuncture increases blood circulation, helps deliver neurotransmitters, and reduces stress hormones.",
         },
         herbalMedicine: {
           title: "Herbal Medicine",
           description:
-            "Customized herbal formulations based on individual diagnosis and constitutional assessment, following traditional Chinese medicine principles. Each prescription is tailored to address specific health concerns and restore internal balance.",
+            "In TCM, herbal medicine is a key treatment method for fertility and gynecology. Every patient receives a personalized prescription tailored to their unique constitution, following a thorough consultation.",
+        },
+        bloodAnalysis: {
+          title: "Analysis of Fertility Test Results",
+          description: "",
+        },
+        supplements: {
+          title: "Supplements recommendation",
+          description: "",
+        },
+        fertilityAwareness: {
+          title: "Fertility awareness practice",
+          description: "",
+        },
+        dietLifestyle: {
+          title: "Diet and lifestyle adjustment",
+          description: "",
         },
       },
     },
@@ -205,8 +221,13 @@ export const en = {
           description:
             "I work with fertility cases every single day. | Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. As a committed member of the Society of Korean Medicine Obstetrics and Gynecology, I continuously engage in advanced training and research to stay at the forefront of fertility care.",
         },
-        {
-          title: "Personalized treatment",
+        { 
+          title: "Clinical expertise",
+          description:
+            "I completed 6 years of full-time intensive medical study (both western and traditional) and I have over a decade of clinical experience in Korea where the field features highly advanced and innovative treatment methods. | This extensive background allows me to bring cutting-edge, effective therapies to my patients.",
+        },
+        { 
+            title: "Personalized treatment",
           description:
             "Fertility is complex and one-size-fits-all doesn't work. | I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
         },
@@ -220,11 +241,6 @@ export const en = {
           title: "Support and respect",
           description:
             "Each fertility journey is deeply personal. | Whether you're exploring options, facing uncertainty, or celebrating milestones, my role is not only to guide you medically, but to walk with you with respect, care, and unwavering support—every step of the way.",
-        },
-        {
-          title: "Clinical expertise",
-          description:
-            "I completed 6 years of full-time intensive medical study (both western and traditional) and I have over a decade of clinical experience in Korea where the field features highly advanced and innovative treatment methods. | This extensive background allows me to bring cutting-edge, effective therapies to my patients.",
         },
       ],
     },

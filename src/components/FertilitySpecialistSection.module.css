@@ -5,6 +5,10 @@
   min-height: 60vh;
 }
 
+.root :global(.headingMedium) {
+  font-family: inherit;
+}
+
 .numberBadge {
   min-width: 80px;
   min-height: 80px;

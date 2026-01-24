@@ -23,7 +23,7 @@ const AboutSection = () => {
           </Box>
           {/* Right column - Qualifications */}
           <Box className={styles.right}>
-            <span className="headingLarge mb-4">Eunkyeong Choi</span>
+            <span className="headingLarge mb-8">Eunkyeong Choi</span>
             <span className="headingMedium mb-4">Qualifications</span>
             <List className={styles.qualificationList}>
               {translations.app.AboutPage.qualifications.map((qualification: string, index: number) => (

@@ -4,6 +4,11 @@
   margin-bottom: 32px;
   min-height: 60vh;
 }
+
+.root :global(.headingMedium) {
+  font-family: inherit;
+}
+
 .heroImage {
   width: 100%;
   margin-bottom: 24px;

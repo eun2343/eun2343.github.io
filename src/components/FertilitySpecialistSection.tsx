@@ -2,6 +2,7 @@
 import { Container } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import type { Reason } from "../translation/types";
+import { renderTextWithLineBreaks } from "../utils/textUtils";
 import styles from "./FertilitySpecialistSection.module.css";
 import "../styles/utilities.css";
 import "../styles/variables.css";
@@ -19,12 +20,7 @@ const FertilitySpecialistSection = () => {
             <div style={{ flex: 1, maxWidth: 800 }}>
               <h3 className="headingMedium mb-4 textLeft">{reason.title}</h3>
               <div className="lineHeightNormal textDark textLg textLeft">
-                {reason.description.split("|").map((line: string, lineIndex: number) => (
-                  <span key={lineIndex}>
-                    {line}
-                    {lineIndex < reason.description.split("|").length - 1 && <br />}
-                  </span>
-                ))}
+                {renderTextWithLineBreaks(reason.description)}
               </div>
             </div>
           </div>

@@ -3,6 +3,10 @@
   background-color: var(--color-secondary);
   padding: 20px 0;
 }
+
+.root :global(.headingMedium) {
+  font-family: inherit;
+}
 .columns {
   display: flex;
   flex-direction: column;

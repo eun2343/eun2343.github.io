@@ -51,6 +51,22 @@ export const de = {
           description:
             "Individuell angepasste Kräuterrezepturen basierend auf individueller Diagnose und konstitutioneller Bewertung, nach den Prinzipien der traditionellen chinesischen Medizin. Jede Verschreibung ist maßgeschneidert, um spezifische Gesundheitsprobleme anzugehen und das innere Gleichgewicht wiederherzustellen.",
         },
+        bloodAnalysis: {
+          title: "Analyse von Fruchtbarkeitstestergebnissen",
+          description: "",
+        },
+        supplements: {
+          title: "Nahrungsergänzungsempfehlung",
+          description: "",
+        },
+        fertilityAwareness: {
+          title: "Fruchtbarkeitsbewusstseinspraxis",
+          description: "",
+        },
+        dietLifestyle: {
+          title: "Ernährungs- und Lebensstilanpassung",
+          description: "",
+        },
       },
     },
     TestimonialsSection: {
