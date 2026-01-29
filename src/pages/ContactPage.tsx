@@ -282,8 +282,6 @@ const ContactPage = () => {
                       backgroundColor: "#A76456",
                       color: "#FFFFFF",
                       textTransform: "none",
-                      fontFamily:
-                        "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
                       borderRadius: "24px",
                       padding: "12px 24px",
                       mt: 3,
@@ -295,6 +293,7 @@ const ContactPage = () => {
                         color: "#FFFFFF",
                       },
                     }}
+                    className="fontAlt"
                   >
                     {translations.app.ContactPage.submit}
                   </Button>

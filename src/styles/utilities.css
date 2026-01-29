@@ -51,6 +51,7 @@
 
 /* Font Families */
 .fontMain { font-family: var(--font-main); }
+.fontAlt { font-family: var(--font-alt); }
 
 /* Line Heights */
 .lineHeightNormal { line-height: 1.6; }
