@@ -49,6 +49,9 @@
 .textBlack { color: black; }
 .textInherit { color: inherit; }
 
+/* Font Families */
+.fontMain { font-family: var(--font-main); }
+
 /* Line Heights */
 .lineHeightNormal { line-height: 1.6; }
 .lineHeightRelaxed { line-height: 1.7; }

@@ -68,11 +68,10 @@ const Navigation = () => {
     >
       <Typography
         variant="h5"
-        className="textDark"
+        className="textDark fontMain"
         sx={{
           cursor: "pointer",
           fontSize: "1.15rem",
-          fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
         }}
       >
         {item.label}
@@ -163,8 +162,6 @@ const Navigation = () => {
               backgroundColor: "#A76456",
               color: "#FFFFFF",
               textTransform: "none",
-              fontFamily:
-                "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
               borderRadius: "24px",
               padding: "10px 24px",
               fontSize: "1.2rem !important",
@@ -174,6 +171,7 @@ const Navigation = () => {
                 color: "#FFFFFF",
               },
             }}
+            className="fontMain"
           >
             {translations.app.Navigation.bookAppointment}
           </Button>
@@ -280,8 +278,6 @@ const Navigation = () => {
                 backgroundColor: "#A76456",
                 color: "#FFFFFF",
                 textTransform: "none",
-                fontFamily:
-                  "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
                 borderRadius: "24px",
                 padding: "10px 24px",
                 "&:hover": {
@@ -289,6 +285,7 @@ const Navigation = () => {
                   color: "#FFFFFF",
                 },
               }}
+              className="fontMain"
             >
               {translations.app.Navigation.bookAppointment}
             </Button>
