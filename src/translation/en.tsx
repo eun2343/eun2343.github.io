@@ -280,5 +280,17 @@ export const en = {
       bookAppointment: "Book Appointment | Choi TCM",
       contact: "Contact Us | Choi TCM",
     },
+    PageDescriptions: {
+      home: "Expert fertility treatments and traditional Chinese medicine. Dr. Choi specializes in acupuncture, herbal medicine, and personalized care for enhanced conception and reproductive health.",
+      about:
+        "Learn about Dr. Choi's expertise in fertility treatments and traditional Chinese medicine. Specialized care for natural conception, IVF support, and women's health.",
+      treatment:
+        "Comprehensive fertility and gynecology treatments including natural conception support, IVF assistance, pregnancy care, and specialized programs for women 38+.",
+      fee: "Transparent pricing for fertility treatments, acupuncture sessions, and traditional Chinese medicine consultations. Insurance and payment options available.",
+      bookAppointment:
+        "Schedule your fertility consultation with Dr. Choi. Expert traditional Chinese medicine treatments for enhanced conception and reproductive wellness.",
+      contact:
+        "Contact Choi TCM for fertility consultations and traditional Chinese medicine treatments. Located in Zurich with flexible appointment scheduling.",
+    },
   },
 };

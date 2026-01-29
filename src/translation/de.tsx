@@ -281,5 +281,17 @@ export const de = {
       bookAppointment: "Termin buchen | Choi TCM",
       contact: "Kontakt | Choi TCM",
     },
+    PageDescriptions: {
+      home: "Expertenfruchtbarkeitsbehandlungen und traditionelle chinesische Medizin. Dr. Choi spezialisiert sich auf Akupunktur, Kräutermedizin und personalisierte Betreuung für verbesserte Empfängnis und Fortpflanzungsgesundheit.",
+      about:
+        "Erfahren Sie mehr über Dr. Chois Expertise in Fruchtbarkeitsbehandlungen und traditioneller chinesischer Medizin. Spezialisierte Betreuung für natürliche Empfängnis, IVF-Unterstützung und Frauengesundheit.",
+      treatment:
+        "Umfassende Fruchtbarkeits- und Gynäkologiebehandlungen einschließlich natürlicher Empfängnisunterstützung, IVF-Hilfe, Schwangerschaftsbetreuung und spezieller Programme für Frauen ab 38.",
+      fee: "Transparente Preise für Fruchtbarkeitsbehandlungen, Akupunktursitzungen und traditionelle chinesische Medizinkonsultationen. Versicherungs- und Zahlungsoptionen verfügbar.",
+      bookAppointment:
+        "Vereinbaren Sie Ihre Fruchtbarkeitskonsultation mit Dr. Choi. Experte für traditionelle chinesische Medizinbehandlungen für verbesserte Empfängnis und Fortpflanzungswellness.",
+      contact:
+        "Kontaktieren Sie Choi TCM für Fruchtbarkeitskonsultationen und traditionelle chinesische Medizinbehandlungen. In Zürich ansässig mit flexibler Terminplanung.",
+    },
   },
 };

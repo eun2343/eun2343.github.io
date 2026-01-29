@@ -12,15 +12,22 @@ export const usePageTitle = () => {
 
     let titleKey: keyof typeof translations.app.PageTitles = 'home';
 
+    // Handle translated URLs
     switch (pagePath) {
       case '/':
         titleKey = 'home';
         break;
       case '/about':
+      case '/ueber-uns':
         titleKey = 'about';
         break;
       case '/treatment':
+      case '/behandlung':
         titleKey = 'treatment';
+        break;
+      case '/acupuncture':
+      case '/akupunktur':
+        titleKey = 'treatment'; // Use treatment descriptions for acupuncture page
         break;
       case '/fee':
         titleKey = 'fee';
@@ -35,6 +42,19 @@ export const usePageTitle = () => {
         titleKey = 'home';
     }
 
+    // Update page title
     document.title = translations.app.PageTitles[titleKey];
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', translations.app.PageDescriptions[titleKey]);
+    } else {
+      // Create meta description if it doesn't exist
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = translations.app.PageDescriptions[titleKey];
+      document.head.appendChild(newMetaDescription);
+    }
   }, [location.pathname, translations]);
 };
