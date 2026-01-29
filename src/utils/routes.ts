@@ -40,7 +40,7 @@ export const translateUrlPath = (path: string, targetLanguage: Language): string
   const cleanPath = path.startsWith("/") ? path.slice(1) : path;
   
   // Find the route that matches the current path
-  for (const [routeKey, config] of Object.entries(ROUTES)) {
+  for (const [, config] of Object.entries(ROUTES)) {
     const enPath = config.en.startsWith("/") ? config.en.slice(1) : config.en;
     const dePath = config.de.startsWith("/") ? config.de.slice(1) : config.de;
     

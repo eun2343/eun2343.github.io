@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
 import { usePageTitle } from "./translation/usePageTitle";
-import { getRouteClassName, getLocalizedPath, ROUTES } from "./utils/routes";
+import { getRouteClassName, getLocalizedPath } from "./utils/routes";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
