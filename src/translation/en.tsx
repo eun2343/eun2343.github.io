@@ -1,7 +1,7 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["About", "Fertility & Gynecology"],
+      menuItems: ["About", "Fertility & Gynecology", "Treatment Methods"],
       language: "de",
       bookAppointment: "Book Appointment",
       contact: "Contact",

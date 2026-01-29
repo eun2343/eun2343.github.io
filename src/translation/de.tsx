@@ -1,7 +1,7 @@
 export const de = {
   app: {
     Navigation: {
-      menuItems: ["Über uns", "Behandlung"],
+      menuItems: ["Über uns", "Behandlung", "Behandlungsmethoden"],
       language: "english",
       bookAppointment: "Termin buchen",
       contact: "Kontakt",

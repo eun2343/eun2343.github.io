@@ -34,8 +34,18 @@ const Navigation = () => {
 
   const menuItems = [
     { path: `/${language}/`, label: "Home" },
-    { path: `/${language}/about`, label: translations.app.Navigation.menuItems[0] },
-    { path: `/${language}/treatment`, label: translations.app.Navigation.menuItems[1] },
+    {
+      path: `/${language}/about`,
+      label: translations.app.Navigation.menuItems[0],
+    },
+    {
+      path: `/${language}/treatment`,
+      label: translations.app.Navigation.menuItems[1],
+    },
+    {
+      path: language === "en" ? `/${language}/acupuncture` : `/${language}/akupunktur`,
+      label: translations.app.Navigation.menuItems[2],
+    },
   ];
 
   const renderDesktopNavLink = (item: { path: string; label: string }) => (
@@ -47,11 +57,19 @@ const Navigation = () => {
       onClick={(e) => {
         if (location.pathname === item.path) {
           e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
       }}
     >
-      <Typography variant="h5" className="textDark" sx={{ cursor: "pointer", fontSize: "1.15rem", fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
+      <Typography
+        variant="h5"
+        className="textDark"
+        sx={{
+          cursor: "pointer",
+          fontSize: "1.15rem",
+          fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
+        }}
+      >
         {item.label}
       </Typography>
     </Link>
@@ -65,7 +83,7 @@ const Navigation = () => {
         onClick={(e) => {
           if (location.pathname === item.path) {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
             setMobileOpen(false);
           } else {
             setMobileOpen(false);
@@ -76,10 +94,10 @@ const Navigation = () => {
           primary={item.label}
           sx={{
             textAlign: "center",
-                "& .MuiTypography-root": {
-                  color: "#1A1A1A",
-                  fontSize: "1.2rem !important",
-                  py: 1,
+            "& .MuiTypography-root": {
+              color: "#1A1A1A",
+              fontSize: "1.2rem !important",
+              py: 1,
             },
           }}
         />
@@ -92,11 +110,14 @@ const Navigation = () => {
       <List>
         {menuItems.map(renderMobileNavLink)}
         <ListItem disablePadding>
-          <Box className="language-toggle" sx={{ textAlign: "center", width: "100%", py: 1 }}>
+          <Box
+            className="language-toggle"
+            sx={{ textAlign: "center", width: "100%", py: 1 }}
+          >
             <Typography
               component="span"
               sx={{
-                  color: language === "en" ? "#1A1A1A" : "#666",
+                color: language === "en" ? "#1A1A1A" : "#666",
                 cursor: language === "en" ? "default" : "pointer",
                 fontSize: "1.2rem !important",
               }}
@@ -137,7 +158,8 @@ const Navigation = () => {
               backgroundColor: "#A76456",
               color: "#FFFFFF",
               textTransform: "none",
-              fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
+              fontFamily:
+                "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
               borderRadius: "24px",
               padding: "10px 24px",
               fontSize: "1.2rem !important",
@@ -159,7 +181,12 @@ const Navigation = () => {
     <>
       <AppBar position="sticky">
         <Toolbar
-          sx={{ height: 100, bgcolor: "#fff", padding: { xs: 1, md: 2 }, position: "relative" }}
+          sx={{
+            height: 100,
+            bgcolor: "#fff",
+            padding: { xs: 1, md: 2 },
+            position: "relative",
+          }}
         >
           <img
             style={{ maxHeight: "60px", width: "auto", cursor: "pointer" }}
@@ -167,7 +194,7 @@ const Navigation = () => {
             alt="Logo"
             onClick={() => {
               if (location.pathname === `/${language}/`) {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: "smooth" });
               } else {
                 navigate(`/${language}/`);
               }
@@ -199,7 +226,6 @@ const Navigation = () => {
               marginLeft: "auto",
             }}
           >
-
             {/* Language Toggle */}
             <Box className="language-toggle" sx={{ paddingLeft: "20px" }}>
               <Typography
@@ -210,9 +236,7 @@ const Navigation = () => {
                   cursor: language === "en" ? "default" : "pointer",
                   fontSize: "0.85rem",
                 }}
-                onClick={
-                  language === "en" ? undefined : () => changeLang("en")
-                }
+                onClick={language === "en" ? undefined : () => changeLang("en")}
               >
                 en
               </Typography>
@@ -235,9 +259,7 @@ const Navigation = () => {
                   cursor: language === "de" ? "default" : "pointer",
                   fontSize: "0.85rem",
                 }}
-                onClick={
-                  language === "de" ? undefined : () => changeLang("de")
-                }
+                onClick={language === "de" ? undefined : () => changeLang("de")}
               >
                 de
               </Typography>
@@ -253,7 +275,8 @@ const Navigation = () => {
                 backgroundColor: "#A76456",
                 color: "#FFFFFF",
                 textTransform: "none",
-                fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
+                fontFamily:
+                  "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
                 borderRadius: "24px",
                 padding: "10px 24px",
                 "&:hover": {

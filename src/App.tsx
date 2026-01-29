@@ -11,6 +11,7 @@ import { usePageTitle } from "./translation/usePageTitle";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
+import AcupuncturePage from "./pages/AcupuncturePage";
 import BookAppointmentPage from "./pages/BookAppointmentPage";
 import ContactPage from "./pages/ContactPage";
 import { useEffect } from "react";
@@ -46,6 +47,9 @@ const AppWrapper = () => {
         return "route-why-choi-tcm";
       case "/treatment":
         return "route-treatment";
+      case "/acupuncture":
+      case "/akupunktur":
+        return "route-acupuncture";
       case "/book-appointment":
         return "route-book-appointment";
       case "/contact":
@@ -56,14 +60,19 @@ const AppWrapper = () => {
   };
 
   return (
-      <div className={`app-container ${getRouteClass(location.pathname)}`}>
+    <div className={`app-container ${getRouteClass(location.pathname)}`}>
       <Routes>
         {/* Redirect root to default language */}
         <Route path="/" element={<Navigate to="/en" replace />} />
         <Route path="/:lang" element={<HomePage />} />
         <Route path="/:lang/about" element={<AboutPage />} />
         <Route path="/:lang/treatment" element={<TreatmentPage />} />
-        <Route path="/:lang/book-appointment" element={<BookAppointmentPage />} />
+        <Route path="/en/acupuncture" element={<AcupuncturePage />} />
+        <Route path="/de/akupunktur" element={<AcupuncturePage />} />
+        <Route
+          path="/:lang/book-appointment"
+          element={<BookAppointmentPage />}
+        />
         <Route path="/:lang/contact" element={<ContactPage />} />
       </Routes>
     </div>
