@@ -292,5 +292,13 @@ export const en = {
       contact:
         "Contact Choi TCM for fertility consultations and traditional Chinese medicine treatments. Located in Zurich with flexible appointment scheduling.",
     },
+    SeoKeywords: {
+      home: "fertility treatment, traditional chinese medicine, acupuncture, herbal medicine, IVF support, conception, reproductive health, fertility specialist, zurich, luzern",
+      about: "Dr. Choi, fertility specialist, traditional chinese medicine doctor, acupuncture practitioner, reproductive health expert, fertility clinic zurich",
+      treatment: "fertility treatments, gynecology, acupuncture, herbal medicine, IVF support, pregnancy care, reproductive wellness, fertility awareness",
+      fee: "fertility treatment cost, acupuncture pricing, TCM consultation fees, insurance coverage, fertility clinic prices zurich",
+      bookAppointment: "book fertility consultation, schedule acupuncture appointment, fertility specialist zurich, TCM appointment",
+      contact: "contact fertility clinic, choi tcm zurich, fertility consultation booking, reproductive health clinic switzerland",
+    },
   },
 };

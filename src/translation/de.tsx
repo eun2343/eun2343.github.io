@@ -293,5 +293,13 @@ export const de = {
       contact:
         "Kontaktieren Sie Choi TCM für Fruchtbarkeitskonsultationen und traditionelle chinesische Medizinbehandlungen. In Zürich ansässig mit flexibler Terminplanung.",
     },
+    SeoKeywords: {
+      home: "fruchtbarkeitsbehandlung, traditionelle chinesische medizin, akupunktur, kräutermedizin, ivf unterstützung, empfängnis, fortpflanzungsgesundheit, fruchtbarkeitsspezialist, zürich, luzern",
+      about: "Dr. Choi, fruchtbarkeitsspezialist, tcm arzt, akupunkteur, fortpflanzungsgesundheit experte, fruchtbarkeitsklinik zürich",
+      treatment: "fruchtbarkeitsbehandlungen, gynäkologie, akupunktur, kräutermedizin, ivf unterstützung, schwangerschaftsbetreuung, fortpflanzungswellness, fruchtbarkeitsbewusstsein",
+      fee: "fruchtbarkeitsbehandlung kosten, akupunktur preise, tcm beratung gebühren, versicherungsschutz, fruchtbarkeitsklinik preise zürich",
+      bookAppointment: "fruchtbarkeitsberatung buchen, akupunktur termin vereinbaren, fruchtbarkeitsspezialist zürich, tcm termin",
+      contact: "kontakt fruchtbarkeitsklinik, choi tcm zürich, fruchtbarkeitsberatung buchung, fortpflanzungsgesundheit klinik schweiz",
+    },
   },
 };
