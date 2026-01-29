@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
 import { usePageTitle } from "./translation/usePageTitle";
+import { getRouteClassName, getLocalizedPath, ROUTES } from "./utils/routes";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
@@ -31,44 +32,34 @@ const AppWrapper = () => {
       .trim();
 
     // Add route-specific class to body
-    const routeClass = getRouteClass(location.pathname);
+    const routeClass = getRouteClassName(location.pathname);
     document.body.classList.add(routeClass);
   }, [location.pathname]);
 
-  const getRouteClass = (pathname: string) => {
-    // strip language prefix (/en or /de)
-    const stripped = pathname.replace(/^\/(en|de)/, "") || "/";
-    switch (stripped) {
-      case "/":
-        return "route-home";
-      case "/about":
-        return "route-about";
-      case "/why-choi-tcm":
-        return "route-why-choi-tcm";
-      case "/treatment":
-        return "route-treatment";
-      case "/acupuncture":
-      case "/akupunktur":
-        return "route-acupuncture";
-      case "/book-appointment":
-        return "route-book-appointment";
-      case "/contact":
-        return "route-contact";
-      default:
-        return "route-unknown";
-    }
-  };
-
   return (
-    <div className={`app-container ${getRouteClass(location.pathname)}`}>
+    <div className={`app-container ${getRouteClassName(location.pathname)}`}>
       <Routes>
         {/* Redirect root to default language */}
         <Route path="/" element={<Navigate to="/en" replace />} />
         <Route path="/:lang" element={<HomePage />} />
-        <Route path="/:lang/about" element={<AboutPage />} />
-        <Route path="/:lang/treatment" element={<TreatmentPage />} />
-        <Route path="/en/acupuncture" element={<AcupuncturePage />} />
-        <Route path="/de/akupunktur" element={<AcupuncturePage />} />
+        <Route path={getLocalizedPath("about", "en")} element={<AboutPage />} />
+        <Route path={getLocalizedPath("about", "de")} element={<AboutPage />} />
+        <Route
+          path={getLocalizedPath("treatment", "en")}
+          element={<TreatmentPage />}
+        />
+        <Route
+          path={getLocalizedPath("treatment", "de")}
+          element={<TreatmentPage />}
+        />
+        <Route
+          path={getLocalizedPath("acupuncture", "en")}
+          element={<AcupuncturePage />}
+        />
+        <Route
+          path={getLocalizedPath("acupuncture", "de")}
+          element={<AcupuncturePage />}
+        />
         <Route
           path="/:lang/book-appointment"
           element={<BookAppointmentPage />}

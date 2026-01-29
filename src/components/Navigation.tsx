@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
+import { translateUrlPath, getLocalizedPath } from "../utils/routes";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -27,7 +28,11 @@ const Navigation = () => {
   const changeLang = (target: "en" | "de") => {
     // strip existing lang prefix (if any) and preserve the rest
     const stripped = location.pathname.replace(/^\/(en|de)/, "") || "/";
-    const newPath = `/${target}${stripped}${location.search}${location.hash}`;
+
+    // Translate URL path using centralized function
+    const translatedPath = translateUrlPath(stripped, target);
+
+    const newPath = `/${target}${translatedPath}${location.search}${location.hash}`;
     navigate(newPath);
     setLanguage(target);
   };
@@ -35,15 +40,15 @@ const Navigation = () => {
   const menuItems = [
     { path: `/${language}/`, label: "Home" },
     {
-      path: `/${language}/about`,
+      path: getLocalizedPath("about", language),
       label: translations.app.Navigation.menuItems[0],
     },
     {
-      path: `/${language}/treatment`,
+      path: getLocalizedPath("treatment", language),
       label: translations.app.Navigation.menuItems[1],
     },
     {
-      path: language === "en" ? `/${language}/acupuncture` : `/${language}/akupunktur`,
+      path: getLocalizedPath("acupuncture", language),
       label: translations.app.Navigation.menuItems[2],
     },
   ];
