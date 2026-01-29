@@ -23,10 +23,6 @@ export const ROUTES: Record<string, RouteConfig> = {
     en: "/acupuncture",
     de: "/akupunktur",
   },
-  bookAppointment: {
-    en: "/book-appointment",
-    de: "/termin-buchen", // keeping same for now, can be translated later
-  },
   contact: {
     en: "/contact",
     de: "/kontakt", 

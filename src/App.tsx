@@ -13,7 +13,6 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
 import AcupuncturePage from "./pages/AcupuncturePage";
-import BookAppointmentPage from "./pages/BookAppointmentPage";
 import ContactPage from "./pages/ContactPage";
 import { useEffect } from "react";
 
@@ -59,10 +58,6 @@ const AppWrapper = () => {
         <Route
           path={getLocalizedPath("acupuncture", "de")}
           element={<AcupuncturePage />}
-        />
-        <Route
-          path="/:lang/book-appointment"
-          element={<BookAppointmentPage />}
         />
         <Route path="/:lang/contact" element={<ContactPage />} />
       </Routes>
