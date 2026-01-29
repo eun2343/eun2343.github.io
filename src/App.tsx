@@ -59,7 +59,14 @@ const AppWrapper = () => {
           path={getLocalizedPath("acupuncture", "de")}
           element={<AcupuncturePage />}
         />
-        <Route path="/:lang/contact" element={<ContactPage />} />
+        <Route
+          path={getLocalizedPath("contact", "en")}
+          element={<ContactPage />}
+        />
+        <Route
+          path={getLocalizedPath("contact", "de")}
+          element={<ContactPage />}
+        />
       </Routes>
     </div>
   );
