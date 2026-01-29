@@ -29,6 +29,7 @@ const ContactPage = () => {
     email: "",
     phone: "",
     inquiryType: "fertility",
+    comments: "",
   });
 
   const [errors, setErrors] = useState({
@@ -81,6 +82,7 @@ const ContactPage = () => {
     formDataToSubmit.append("email", formData.email);
     formDataToSubmit.append("phone", formData.phone);
     formDataToSubmit.append("inquiryType", formData.inquiryType);
+    formDataToSubmit.append("comments", formData.comments);
     formDataToSubmit.append(
       "language",
       language === "de" ? "Deutsch" : "English",
@@ -109,6 +111,7 @@ const ContactPage = () => {
             email: "",
             phone: "",
             inquiryType: "fertility",
+            comments: "",
           });
         } else {
           throw new Error("Network response was not ok");
@@ -255,6 +258,18 @@ const ContactPage = () => {
                         ? translations.app.ContactPage.requiredField
                         : ""
                     }
+                  />
+                </Grid>
+                <Grid size={{ xs: 12 }}>
+                  <TextField
+                    fullWidth
+                    id="comments"
+                    label={translations.app.ContactPage.comments}
+                    multiline
+                    rows={4}
+                    value={formData.comments}
+                    onChange={handleInputChange("comments")}
+                    sx={{ mt: 2 }}
                   />
                 </Grid>
 

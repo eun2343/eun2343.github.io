@@ -157,6 +157,7 @@ export const de = {
       fertility: "Fruchtbarkeit",
       gynecology: "Gynäkologische Probleme außer Fruchtbarkeit",
       other: "Sonstiges",
+      comments: "Mitteilung (Optional)",
       submit: "Nachricht senden",
       requiredField: "Dieses Feld ist erforderlich",
       invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein",
@@ -187,10 +188,7 @@ export const de = {
         zurich: {
           title: "Choi TCM Zürich",
           address: "Kreuzstrasse 60, 8032 Zürich",
-          openingHours: [
-            "Montag: 11:00 - 19:00",
-            "Freitag: 11:00 - 19:00",
-          ],
+          openingHours: ["Montag: 11:00 - 19:00", "Freitag: 11:00 - 19:00"],
         },
       },
     },
@@ -226,8 +224,7 @@ export const de = {
             "Fruchtbarkeit ist komplex und Einheitslösungen funktionieren nicht. | Ich werde Ihre vollständige Gesundheitsgeschichte, aktuellen Anliegen und alle bisherigen Testergebnisse oder Behandlungen durchgehen, die Sie durchlaufen haben. Ihr Behandlungsplan wird hochgradig individualisiert nur für Sie sein und jede Akupunktursitzung und Kräutermedizin wird entsprechend Ihren Menstruationszyklen oder ART-Verfahren angepasst.",
         },
         {
-          title:
-            "Evidenzbasierte TCM-Behandlungen",
+          title: "Evidenzbasierte TCM-Behandlungen",
           description:
             "Ich verlasse mich nicht auf vage oder abstrakte Konzepte. | Ich bleibe mit den neuesten Forschungen zu TCM-Fruchtbarkeitsbehandlungen auf dem Laufenden. Basierend auf sowohl TCM als auch den neuesten klinischen Erkenntnissen ist es mein Ziel, Ihre reproduktive Gesundheit auf jeder Ebene zu optimieren.",
         },

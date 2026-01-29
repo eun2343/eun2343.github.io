@@ -37,7 +37,8 @@ export const en = {
     },
     TreatmentSection: {
       title: "Treatment Methods",
-      subtitle: "Every treatment session will be customized based on your menstrual cycle phase, ART process, and daily symptoms.",
+      subtitle:
+        "Every treatment session will be customized based on your menstrual cycle phase, ART process, and daily symptoms.",
       treatments: {
         acupuncture: {
           title: "Acupuncture",
@@ -155,6 +156,7 @@ export const en = {
       fertility: "Fertility",
       gynecology: "Gynecology issues other than fertility",
       other: "Other",
+      comments: "Message (Optional)",
       submit: "Send Message",
       requiredField: "This field is required",
       invalidEmail: "Please enter a valid email address",
@@ -177,21 +179,15 @@ export const en = {
           title: "Choi TCM Luzern",
           address: "Habsburgerstrasse 16, 6003 Luzern",
           openingHours: [
-            
             "Tuesday: 9:00 - 18:00",
             "Wednesday: 9:00 - 12:00",
             "Thursday: 9:00 - 12:00",
-           
           ],
         },
         zurich: {
           title: "Choi TCM Zürich",
           address: "Kreuzstrasse 60, 8008 Zürich",
-          openingHours: [
-            "Monday: 11:00 - 19:00",
-            "Friday: 11:00 - 19:00",
-            
-          ],
+          openingHours: ["Monday: 11:00 - 19:00", "Friday: 11:00 - 19:00"],
         },
       },
     },
@@ -221,19 +217,18 @@ export const en = {
           description:
             "I work with fertility cases every single day. | Over the past years, I've dedicated my entire clinical practice to treat fertility-related conditions in both women and men. As a committed member of the Society of Korean Medicine Obstetrics and Gynecology, I continuously engage in advanced training and research to stay at the forefront of fertility care.",
         },
-        { 
+        {
           title: "Clinical expertise",
           description:
             "I completed 6 years of full-time intensive medical study (both western and traditional) and I have over a decade of clinical experience in Korea where the field features highly advanced and innovative treatment methods. | This extensive background allows me to bring cutting-edge, effective therapies to my patients.",
         },
-        { 
-            title: "Personalized treatment",
+        {
+          title: "Personalized treatment",
           description:
             "Fertility is complex and one-size-fits-all doesn't work. | I'll go over your full health history, current concerns, and any previous test results or treatments you've undergone. Your treatment plan will be highly individualized just for you and each acupuncture session and herbal medicines will be adjusted according to your menstrual cycles or ART procedures.",
         },
         {
-          title:
-            "Evidence-based TCM treatments",
+          title: "Evidence-based TCM treatments",
           description:
             "I don't rely on vague or abstract concepts. | I stay up to date with the latest research on TCM fertility treatments. Grounded in both TCM and the latest clinical insights, my goal is to optimize your reproductive health at every level.",
         },
@@ -250,7 +245,7 @@ export const en = {
         "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung).| Please check with your insurer in advance.",
       services: [
         {
-          name: "Initial Appointment " ,
+          name: "Initial Appointment ",
           price: "261 CHF",
           duration: "90 minutes",
           description:
