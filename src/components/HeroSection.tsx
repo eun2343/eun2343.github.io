@@ -85,7 +85,7 @@ const HeroSection = () => {
             {translations.app.HeroSection.subtitle
               .split(" | ")
               .map((part: string, index: number, array: string[]) => (
-                <span key={index} className="textDark" style={{ fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif" }}>
+                <span key={index} className="textDark fontMain">
                   &#8226; {part}
                   {index < array.length - 1 && <br />}
                 </span>
@@ -101,7 +101,6 @@ const HeroSection = () => {
             backgroundColor: "#A76456",
             color: "#FFFFFF",
             textTransform: "none",
-            fontFamily: "'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif",
             borderRadius: "24px",
             padding: "10px 24px",
             width: { xs: "80%", sm: "200px" },
@@ -116,6 +115,7 @@ const HeroSection = () => {
               color: "#FFFFFF",
             },
           }}
+          className="fontMain"
         >
           {translations.app.HeroSection.bookAppointment}
         </Button>

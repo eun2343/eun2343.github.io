@@ -197,6 +197,7 @@ export const de = {
       fertility: "Fruchtbarkeit",
       gynecology: "Gynäkologische Probleme außer Fruchtbarkeit",
       other: "Sonstiges",
+      comments: "Mitteilung (Optional)",
       submit: "Nachricht senden",
       requiredField: "Dieses Feld ist erforderlich",
       invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein",
@@ -227,10 +228,7 @@ export const de = {
         zurich: {
           title: "Choi TCM Zürich",
           address: "Kreuzstrasse 60, 8032 Zürich",
-          openingHours: [
-            "Montag: 11:00 - 19:00",
-            "Freitag: 11:00 - 19:00",
-          ],
+          openingHours: ["Montag: 11:00 - 19:00", "Freitag: 11:00 - 19:00"],
         },
       },
     },
@@ -266,8 +264,7 @@ export const de = {
             "Fruchtbarkeit ist komplex und Einheitslösungen funktionieren nicht. | Ich werde Ihre vollständige Gesundheitsgeschichte, aktuellen Anliegen und alle bisherigen Testergebnisse oder Behandlungen durchgehen, die Sie durchlaufen haben. Ihr Behandlungsplan wird hochgradig individualisiert nur für Sie sein und jede Akupunktursitzung und Kräutermedizin wird entsprechend Ihren Menstruationszyklen oder ART-Verfahren angepasst.",
         },
         {
-          title:
-            "Evidenzbasierte TCM-Behandlungen",
+          title: "Evidenzbasierte TCM-Behandlungen",
           description:
             "Ich verlasse mich nicht auf vage oder abstrakte Konzepte. | Ich bleibe mit den neuesten Forschungen zu TCM-Fruchtbarkeitsbehandlungen auf dem Laufenden. Basierend auf sowohl TCM als auch den neuesten klinischen Erkenntnissen ist es mein Ziel, Ihre reproduktive Gesundheit auf jeder Ebene zu optimieren.",
         },
@@ -323,6 +320,26 @@ export const de = {
       fee: "Preisgestaltung & Gebühren | Choi TCM",
       bookAppointment: "Termin buchen | Choi TCM",
       contact: "Kontakt | Choi TCM",
+    },
+    PageDescriptions: {
+      home: "Expertenfruchtbarkeitsbehandlungen und traditionelle chinesische Medizin. Dr. Choi spezialisiert sich auf Akupunktur, Kräutermedizin und personalisierte Betreuung für verbesserte Empfängnis und Fortpflanzungsgesundheit.",
+      about:
+        "Erfahren Sie mehr über Dr. Chois Expertise in Fruchtbarkeitsbehandlungen und traditioneller chinesischer Medizin. Spezialisierte Betreuung für natürliche Empfängnis, IVF-Unterstützung und Frauengesundheit.",
+      treatment:
+        "Umfassende Fruchtbarkeits- und Gynäkologiebehandlungen einschließlich natürlicher Empfängnisunterstützung, IVF-Hilfe, Schwangerschaftsbetreuung und spezieller Programme für Frauen ab 38.",
+      fee: "Transparente Preise für Fruchtbarkeitsbehandlungen, Akupunktursitzungen und traditionelle chinesische Medizinkonsultationen. Versicherungs- und Zahlungsoptionen verfügbar.",
+      bookAppointment:
+        "Vereinbaren Sie Ihre Fruchtbarkeitskonsultation mit Dr. Choi. Experte für traditionelle chinesische Medizinbehandlungen für verbesserte Empfängnis und Fortpflanzungswellness.",
+      contact:
+        "Kontaktieren Sie Choi TCM für Fruchtbarkeitskonsultationen und traditionelle chinesische Medizinbehandlungen. In Zürich ansässig mit flexibler Terminplanung.",
+    },
+    SeoKeywords: {
+      home: "fruchtbarkeitsbehandlung, traditionelle chinesische medizin, akupunktur, kräutermedizin, ivf unterstützung, empfängnis, fortpflanzungsgesundheit, fruchtbarkeitsspezialist, zürich, luzern",
+      about: "Dr. Choi, fruchtbarkeitsspezialist, tcm arzt, akupunkteur, fortpflanzungsgesundheit experte, fruchtbarkeitsklinik zürich",
+      treatment: "fruchtbarkeitsbehandlungen, gynäkologie, akupunktur, kräutermedizin, ivf unterstützung, schwangerschaftsbetreuung, fortpflanzungswellness, fruchtbarkeitsbewusstsein",
+      fee: "fruchtbarkeitsbehandlung kosten, akupunktur preise, tcm beratung gebühren, versicherungsschutz, fruchtbarkeitsklinik preise zürich",
+      bookAppointment: "fruchtbarkeitsberatung buchen, akupunktur termin vereinbaren, fruchtbarkeitsspezialist zürich, tcm termin",
+      contact: "kontakt fruchtbarkeitsklinik, choi tcm zürich, fruchtbarkeitsberatung buchung, fortpflanzungsgesundheit klinik schweiz",
     },
   },
 };

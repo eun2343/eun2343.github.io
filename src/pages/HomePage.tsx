@@ -1,5 +1,3 @@
-
-
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
 import FertilitySpecialistSection from "../components/FertilitySpecialistSection";
@@ -13,11 +11,13 @@ const HomePage = () => {
 
   return (
     <div className="homepage-root">
-
       <Navigation />
       <HeroSection />
       <div className="responsive-card-wide-container">
-        <div className="responsive-card-wide flex flexRow itemsStretch wFull" style={{ marginBottom: '20px' }}>
+        <div
+          className="responsive-card-wide flex flexRow itemsStretch wFull"
+          style={{ marginBottom: "20px" }}
+        >
           <div className="responsive-card-wide-left">
             <span className="responsive-card-title">{t.fertilityCardTitle}</span>
           </div>
@@ -31,7 +31,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="responsive-card-row mt-2">
-        {[1,2].map((cardIdx) => (
+        {[1, 2].map((cardIdx) => (
           <div key={cardIdx} className="responsive-card">
             <div className="responsive-card-content">
               <span className="responsive-card-title">

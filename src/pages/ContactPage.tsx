@@ -22,13 +22,14 @@ declare global {
 }
 
 const ContactPage = () => {
-  const { translations } = useLanguage();
+  const { translations, language } = useLanguage();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     inquiryType: "fertility",
+    comments: "",
   });
 
   const [errors, setErrors] = useState({
@@ -81,6 +82,11 @@ const ContactPage = () => {
     formDataToSubmit.append("email", formData.email);
     formDataToSubmit.append("phone", formData.phone);
     formDataToSubmit.append("inquiryType", formData.inquiryType);
+    formDataToSubmit.append("comments", formData.comments);
+    formDataToSubmit.append(
+      "language",
+      language === "de" ? "Deutsch" : "English",
+    );
 
     // Submit to Basin
     fetch("https://usebasin.com/f/8264472cbd9b", {
@@ -91,8 +97,8 @@ const ContactPage = () => {
         if (response.ok) {
           // Send event to Google Analytics
           if (typeof gtag !== "undefined") {
-            gtag('event', 'form_submit', {
-              event_category: 'contact_form',
+            gtag("event", "form_submit", {
+              event_category: "contact_form",
               event_label: formData.inquiryType,
               value: 1,
             });
@@ -105,6 +111,7 @@ const ContactPage = () => {
             email: "",
             phone: "",
             inquiryType: "fertility",
+            comments: "",
           });
         } else {
           throw new Error("Network response was not ok");
@@ -253,6 +260,18 @@ const ContactPage = () => {
                     }
                   />
                 </Grid>
+                <Grid size={{ xs: 12 }}>
+                  <TextField
+                    fullWidth
+                    id="comments"
+                    label={translations.app.ContactPage.comments}
+                    multiline
+                    rows={4}
+                    value={formData.comments}
+                    onChange={handleInputChange("comments")}
+                    sx={{ mt: 2 }}
+                  />
+                </Grid>
 
                 <Grid size={{ xs: 12 }}>
                   <Button
@@ -263,7 +282,6 @@ const ContactPage = () => {
                       backgroundColor: "#A76456",
                       color: "#FFFFFF",
                       textTransform: "none",
-                      fontFamily: "'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif",
                       borderRadius: "24px",
                       padding: "12px 24px",
                       mt: 3,
@@ -275,6 +293,7 @@ const ContactPage = () => {
                         color: "#FFFFFF",
                       },
                     }}
+                    className="fontAlt"
                   >
                     {translations.app.ContactPage.submit}
                   </Button>

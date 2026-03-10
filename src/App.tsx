@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
 import { usePageTitle } from "./translation/usePageTitle";
+import { getRouteClassName, getLocalizedPath } from "./utils/routes";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
@@ -33,7 +34,7 @@ const AppWrapper = () => {
       .trim();
 
     // Add route-specific class to body
-    const routeClass = getRouteClass(location.pathname);
+    const routeClass = getRouteClassName(location.pathname);
     document.body.classList.add(routeClass);
   }, [location.pathname]);
 
@@ -65,7 +66,7 @@ const AppWrapper = () => {
   };
 
   return (
-      <div className={`app-container ${getRouteClass(location.pathname)}`}>
+    <div className={`app-container ${getRouteClassName(location.pathname)}`}>
       <Routes>
         {/* Redirect root to default language */}
         <Route path="/" element={<Navigate to="/en" replace />} />
