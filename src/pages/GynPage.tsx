@@ -1,15 +1,15 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import TreatmentSection from "../components/TreatmentSection";
+import GynecologySection from "../components/GynecologySection";
 
-const TreatmentPage = () => {
+const GynPage = () => {
   return (
     <>
       <Navigation />
-      <TreatmentSection />
+      <GynecologySection />
       <Footer />
     </>
   );
 };
 
-export default TreatmentPage;
+export default GynPage;

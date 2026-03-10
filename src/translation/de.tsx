@@ -1,7 +1,7 @@
 export const de = {
   app: {
     Navigation: {
-      menuItems: ["Über uns", "Behandlung"],
+      menuItems: ["Über uns", "Fruchtbarkeit", "Gynäkologie", "Schwangerschaft", "Behandlung"],
       language: "english",
       bookAppointment: "Termin buchen",
       contact: "Kontakt",
@@ -13,19 +13,59 @@ export const de = {
         "Lizenzierte Ärztin für traditionelle Medizin | Fruchtbarkeits- und Gynäkologie-Spezialistin",
       bookAppointment: "Termin buchen",
     },
+    HomePage: {
+      fertilityCardTitle: "Fruchtbarkeitsbehandlung zur Steigerung Ihrer Chancen",
+      fertilityItems: [
+        "Natürlich schwanger werden",
+        "IVF und IUI",
+        "Spender Eizelle / Spermien / Embryo",
+        "Fruchtbarkeit über 40",
+        "Niedriges AMH",
+        "Wiederholte Fehlgeburten",
+        "Männliche Fruchtbarkeit",
+        "Social Freezing",
+        "Alleinerziehende / Gleichgeschlechtliche Paare",
+      ],
+      gynecologyTitle: "Gynäkologie",
+      gynecologyItems: [
+        "Schmerzhafte Periode, unregelmäßiger Zyklus",
+        "PCOS",
+        "Endometriose, Myom",
+        "PMS",
+        "Vorzeitiges Eierstockversagen",
+        "Schilddrüsenstörung",
+        "Stress und Angst",
+        "Wechseljahre",
+      ],
+      pregnancyTitle: "Prä- und Postnatal-Versorgung",
+      pregnancyItems: [
+        "Schwangerschaftskomplikationen vorbeugen",
+        "Steisslage",
+        "Einfache und sanfte Geburt",
+        "Stillprobleme",
+        "Nachsorge nach der Geburt",
+      ],
+    },
+    FertilityHeroSection: {
+      smallText: "Pflege den Samen. Bereite den Boden vor.",
+      largeText: "Ei- und Spermienqualität verbessern, | Hormonhaushalt regulieren und die Gebärmutter stärken | für eine optimale Empfängnis.",
+    },
+    FertilitySeedSection: {
+      text: "Stellen Sie sich eine Schwangerschaft wie das Pflanzen eines Samens in die Erde vor. | Damit eine gesunde Pflanze wächst, brauchen Sie einen hochwertigen Samen, sanfte Wärme (keine sengende Hitze), ausreichend Wasser, das den Boden feucht hält, und fruchtbare Erde ohne Steine, damit die Wurzeln tief und stark wachsen können. | Bei der Fruchtbarkeit verhält es sich ganz ähnlich. | Die entscheidende Aufgabe unserer Behandlung ist die Verbesserung der Eiqualität – oder der Spermienqualität beim Mann. Ein gesundes Ei oder eine gesunde Samenzelle ist wie ein starker, lebensfähiger Samen. | Die Regulierung Ihres Menstruationszyklus, die Behandlung gynäkologischer Beschwerden und die Hormonbalance sind wie die Vorbereitung von fruchtbarem Boden und die Bereitstellung von Sonnenlicht und Feuchtigkeit – sie schaffen das ideale Umfeld für die Einnistung und das Wachstum des Samens.",
+    },
     FertilityCareSection: {
       title:
-        "Fortschrittliche Fruchtbarkeitsbetreuung für Ihre individuelle Reise",
+        "Fortgeschrittene Fruchtbarkeitsunterstützung",
       services: [
-        "Natürliche Empfängnis",
-        "IVF & IUI",
-        "Wenn Sie 38+ sind",
+        "Natürlich schwanger werden",
+        "IVF und IUI",
+        "Spender Eizelle / Spermien / Embryo",
+        "Fruchtbarkeit über 40",
         "Männliche Fruchtbarkeit",
         "Niedriges AMH",
         "Wiederholte Fehlgeburten",
-        "Alleinerziehende Mutter",
         "Social Freezing",
-        "Homosexuelle Paare",
+        "Alleinerziehende / Gleichgeschlechtliche Paare",
       ],
     },
     PrePostnatalCareSection: {
@@ -39,17 +79,17 @@ export const de = {
     },
     TreatmentSection: {
       title: "Behandlungsmethoden",
-      subtitle: "Umfassende Traditionelle Chinesische Medizin Leistungen",
+      subtitle: "Jede Behandlungssitzung wird individuell auf Ihre Zyklusphase, den ART-Prozess und die täglichen Beschwerden abgestimmt.",
       treatments: {
         acupuncture: {
           title: "Akupunktur",
           description:
-            "Traditionelle Akupunkturbehandlung mit feinen Nadeln zur Stimulation spezifischer Körperpunkte, die natürliche Heilung und Balance fördern. Diese alte Praxis hilft dabei, den Fluss der Lebensenergie (Qi) wiederherzustellen und unterstützt die natürlichen Heilungsmechanismen des Körpers.",
+            "Akupunktur verbessert die Durchblutung, unterstützt die Ausschüttung von Neurotransmittern und senkt Stresshormone.",
         },
         herbalMedicine: {
           title: "Kräutermedizin",
           description:
-            "Individuell angepasste Kräuterrezepturen basierend auf individueller Diagnose und konstitutioneller Bewertung, nach den Prinzipien der traditionellen chinesischen Medizin. Jede Verschreibung ist maßgeschneidert, um spezifische Gesundheitsprobleme anzugehen und das innere Gleichgewicht wiederherzustellen.",
+            "In der TCM ist Kräutermedizin eine zentrale Behandlungsmethode bei Fruchtbarkeit und Gynäkologie. Jede Patientin erhält ein individuell auf ihre Konstitution abgestimmtes Rezept, das nach einem ausführlichen Beratungsgespräch erstellt wird.",
         },
         bloodAnalysis: {
           title: "Analyse von Fruchtbarkeitstestergebnissen",

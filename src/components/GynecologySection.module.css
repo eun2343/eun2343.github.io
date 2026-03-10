@@ -5,3 +5,27 @@
   margin-top: auto;
   background-color: var(--color-light);
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 16px;
+  }
+
+  .root :global(.headingLarge) {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .root {
+    padding: 12px;
+  }
+
+  .root :global(.headingLarge) {
+    font-size: 1.5rem;
+  }
+
+  .root :global(.headingMedium) {
+    font-size: 1.2rem;
+  }
+}

@@ -5,3 +5,43 @@
   margin-top: auto;
   background-color: #f5f5f5;
 }
+
+.root :global(.headingMedium) {
+  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .root {
+    padding: 16px;
+  }
+
+  .root :global(.headingLarge) {
+    font-size: 1.8rem;
+  }
+
+  .root :global(.card) {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .root {
+    padding: 12px;
+  }
+
+  .root :global(.headingLarge) {
+    font-size: 1.5rem;
+  }
+
+  .root :global(.headingMedium) {
+    font-size: 1.2rem;
+  }
+
+  .root :global(.card) {
+    padding: 10px 14px;
+  }
+
+  .root :global(.mb-4) {
+    margin-bottom: 8px;
+  }
+}

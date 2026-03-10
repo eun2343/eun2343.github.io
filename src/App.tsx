@@ -11,6 +11,9 @@ import { usePageTitle } from "./translation/usePageTitle";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
+import FertilityPage from "./pages/FertilityPage";
+import GynPage from "./pages/GynPage";
+import PregPage from "./pages/PregPage";
 import BookAppointmentPage from "./pages/BookAppointmentPage";
 import ContactPage from "./pages/ContactPage";
 import { useEffect } from "react";
@@ -46,6 +49,12 @@ const AppWrapper = () => {
         return "route-why-choi-tcm";
       case "/treatment":
         return "route-treatment";
+      case "/fertility":
+        return "route-fertility";
+      case "/gynecology":
+        return "route-gynecology";
+      case "/pregnancy":
+        return "route-pregnancy";
       case "/book-appointment":
         return "route-book-appointment";
       case "/contact":
@@ -63,6 +72,9 @@ const AppWrapper = () => {
         <Route path="/:lang" element={<HomePage />} />
         <Route path="/:lang/about" element={<AboutPage />} />
         <Route path="/:lang/treatment" element={<TreatmentPage />} />
+        <Route path="/:lang/fertility" element={<FertilityPage />} />
+        <Route path="/:lang/gynecology" element={<GynPage />} />
+        <Route path="/:lang/pregnancy" element={<PregPage />} />
         <Route path="/:lang/book-appointment" element={<BookAppointmentPage />} />
         <Route path="/:lang/contact" element={<ContactPage />} />
       </Routes>

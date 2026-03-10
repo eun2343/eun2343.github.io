@@ -24,9 +24,9 @@ const TreatmentSection = () => {
       <h2 className="headingLarge textCenter mb-4">{translations.app.TreatmentSection.title}</h2>
       <div className="textCenter mb-8 textMuted">{translations.app.TreatmentSection.subtitle}</div>
 
-      <div className="flex" style={{ gap: "32px", alignItems: "flex-start" }}>
+      <div className={styles.treatmentGrid}>
         {/* Left Column - Acupuncture and Herbal Medicine */}
-        <div className="flex flexCol" style={{ flex: "1.3", gap: "32px" }}>
+        <div className={styles.leftColumn}>
           {/* Acupuncture */}
           <div className="card">
             <h3 className="headingMedium mb-4 textPrimary">{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
@@ -44,7 +44,7 @@ const TreatmentSection = () => {
         </div>
 
         {/* Right Column - Other treatments */}
-        <div className="flex flexCol" style={{ flex: "1", gap: "32px" }}>
+        <div className={styles.rightColumn}>
           {/* Blood Analysis */}
           <div className="card">
             <h3 className="headingMedium mb-4 textPrimary">{translations.app.TreatmentSection.treatments.bloodAnalysis.title}</h3>

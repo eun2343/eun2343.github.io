@@ -69,6 +69,26 @@
     max-width: 100%;
     border-radius: 24px;
     font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homepage-root .responsive-card-wide-left {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    justify-content: center;
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .homepage-root .responsive-card-wide-right {
+    width: 100%;
+    justify-content: center;
+    padding: 24px 24px 28px;
+    text-align: center;
+  }
+  .homepage-root .responsive-card-list-item {
+    text-align: center;
+    margin-left: 0;
   }
 }
 .homepage-root .responsive-card-row {

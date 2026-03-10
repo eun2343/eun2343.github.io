@@ -1,15 +1,15 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import TreatmentSection from "../components/TreatmentSection";
+import PrePostnatalCareSection from "../components/PrePostnatalCareSection";
 
-const TreatmentPage = () => {
+const PregPage = () => {
   return (
     <>
       <Navigation />
-      <TreatmentSection />
+      <PrePostnatalCareSection />
       <Footer />
     </>
   );
 };
 
-export default TreatmentPage;
+export default PregPage;

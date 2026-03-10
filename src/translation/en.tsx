@@ -1,7 +1,7 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["About", "Fertility & Gynecology"],
+      menuItems: ["About", "Fertility", "Gynecology", "Pregnancy", "Treatment"],
       language: "de",
       bookAppointment: "Book Appointment",
       contact: "Contact",
@@ -12,18 +12,58 @@ export const en = {
         "Licensed Doctor of traditional medicine | Fertility and Gynecology Specialist",
       bookAppointment: "Book Appointment",
     },
+    HomePage: {
+      fertilityCardTitle: "Fertility treatment to increase your chance",
+      fertilityItems: [
+        "Getting pregnant naturally",
+        "IVF and IUI",
+        "Donor egg / sperm / embryo",
+        "Fertility over 40",
+        "Low AMH",
+        "Repeated miscarriage",
+        "Male fertility",
+        "Social freezing",
+        "Single mom / Same sex couple",
+      ],
+      gynecologyTitle: "Gynecology",
+      gynecologyItems: [
+        "Painful period, Irregular cycle",
+        "PCOS",
+        "Endometriosis, Myoma",
+        "PMS",
+        "Premature ovarian failure",
+        "Thyroid dysfunction",
+        "Stress and Anxiety",
+        "Menopause",
+      ],
+      pregnancyTitle: "Pre - Postnatal Care",
+      pregnancyItems: [
+        "Prevent pregnancy complications",
+        "Breech presentation",
+        "Easy and smooth Labor",
+        "Nursing issues",
+        "After delivery Care",
+      ],
+    },
+    FertilityHeroSection: {
+      smallText: "Nurture the seed. Prepare the soil.",
+      largeText: "Improve egg and sperm quality, | hormonal balance, and uterine health | for optimal conception.",
+    },
+    FertilitySeedSection: {
+      text: "Imagine getting pregnant as planting a seed in the soil. | To grow a healthy plant, you need a high-quality seed, gentle warm sunshine (not scorching heat), just enough water to moisten the soil, and fertile earth free of stones so the roots can grow deep and strong. | Fertility works in much the same way. | The crucial role of our treatment is to improve egg quality — or sperm quality for men. A healthy egg or sperm is like a strong, viable seed. | Regulating your menstrual cycle, addressing gynecological symptoms, and balancing hormones are like preparing fertile soil and providing the right sunlight and moisture — creating the ideal environment for the seed to implant and grow.",
+    },
     FertilityCareSection: {
-      title: "Advanced fertility care for your unique journey",
+      title: "Advanced fertility support",
       services: [
-        "Natural Conception",
-        "IVF & IUI",
-        "When you're 38+",
+        "Getting pregnant naturally",
+        "IVF and IUI",
+        "Donor egg / sperm / embryo",
+        "Fertility over 40",
         "Male fertility",
         "Low AMH",
         "Repeated miscarriages",
-        "Single mom",
         "Social freezing",
-        "Homosexual couples",
+        "Single mom / Same sex couple",
       ],
     },
     PrePostnatalCareSection: {
