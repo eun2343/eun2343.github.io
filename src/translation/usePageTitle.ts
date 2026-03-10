@@ -55,7 +55,7 @@ export const usePageTitle = () => {
         titleKey = 'home';
         break;
       case '/about':
-      case '/ueber-uns':
+      case '/ueber-mich':
         titleKey = 'about';
         break;
       case '/treatment':
@@ -73,6 +73,7 @@ export const usePageTitle = () => {
         titleKey = 'bookAppointment';
         break;
       case '/contact':
+      case '/kontakt':
         titleKey = 'contact';
         break;
       default:

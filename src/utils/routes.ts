@@ -19,6 +19,18 @@ export const ROUTES: Record<string, RouteConfig> = {
     en: "/treatment",
     de: "/behandlung",
   },
+  fertility: {
+    en: "/fertility",
+    de: "/fruchtbarkeit",
+  },
+  gynecology: {
+    en: "/gynecology",
+    de: "/gynaekologie",
+  },
+  pregnancy: {
+    en: "/pregnancy",
+    de: "/schwangerschaft",
+  },
   acupuncture: {
     en: "/acupuncture",
     de: "/akupunktur",

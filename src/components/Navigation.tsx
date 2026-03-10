@@ -38,11 +38,11 @@ const Navigation = () => {
   };
 
   const menuItems = [
-    { path: `/${language}/about`, label: translations.app.Navigation.menuItems[0] },
-    { path: `/${language}/fertility`, label: translations.app.Navigation.menuItems[1] },
-    { path: `/${language}/gynecology`, label: translations.app.Navigation.menuItems[2] },
-    { path: `/${language}/pregnancy`, label: translations.app.Navigation.menuItems[3] },
-    { path: `/${language}/treatment`, label: translations.app.Navigation.menuItems[4] },
+    { path: getLocalizedPath("about", language), label: translations.app.Navigation.menuItems[0] },
+    { path: getLocalizedPath("fertility", language), label: translations.app.Navigation.menuItems[1] },
+    { path: getLocalizedPath("gynecology", language), label: translations.app.Navigation.menuItems[2] },
+    { path: getLocalizedPath("pregnancy", language), label: translations.app.Navigation.menuItems[3] },
+    { path: getLocalizedPath("treatment", language), label: translations.app.Navigation.menuItems[4] },
   ];
 
   const renderDesktopNavLink = (item: { path: string; label: string }) => (
