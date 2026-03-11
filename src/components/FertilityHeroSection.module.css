@@ -8,6 +8,10 @@
   text-align: left;
 }
 
+.textContent {
+  width: 100%;
+}
+
 .smallText {
   font-size: 1.2rem;
   color: #666;
@@ -39,11 +43,15 @@
     padding: 32px 12px;
   }
 
+  .content {
+    text-align: left;
+  }
+
   .smallText {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .largeText {
-    font-size: 1.5rem;
+    font-size: 1.95rem;
   }
 }

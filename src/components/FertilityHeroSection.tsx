@@ -12,12 +12,14 @@ const FertilityHeroSection = () => {
     <div className={styles.root}>
       <Container>
         <div className={styles.content}>
-          <p className={styles.smallText}>{translations.app.FertilityHeroSection.smallText}</p>
-          <h1 className={styles.largeText}>
-            {largeParts.map((part: string, i: number) => (
-              <span key={i}>{part}{i < largeParts.length - 1 && <br />}</span>
-            ))}
-          </h1>
+          <div className={styles.textContent}>
+            <p className={styles.smallText}>{translations.app.FertilityHeroSection.smallText}</p>
+            <h1 className={styles.largeText}>
+              {largeParts.map((part: string, i: number) => (
+                <span key={i}>{part}{i < largeParts.length - 1 && <br />}</span>
+              ))}
+            </h1>
+          </div>
         </div>
       </Container>
     </div>
