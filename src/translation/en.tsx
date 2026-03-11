@@ -69,9 +69,10 @@ export const en = {
     PrePostnatalCareSection: {
       title: "Pre-Postnatal care",
       services: [
-        "prevent pregnancy complications",
+        "Prevent pregnancy complications",
         "Breech presentation",
         "Easy and smooth Labor",
+        "Nursing issues",
         "After delivery Care",
       ],
     },

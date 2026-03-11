@@ -74,6 +74,7 @@ export const de = {
         "Schwangerschaftskomplikationen vorbeugen",
         "Beckenendlage",
         "Einfache und sanfte Geburt",
+        "Stillprobleme",
         "Nachsorge nach der Geburt",
       ],
     },
