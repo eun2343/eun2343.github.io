@@ -131,7 +131,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #1A1A1A;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   letter-spacing: 0.5px;
   display: block;
   margin-bottom: 18px;
@@ -142,7 +142,7 @@
   margin: 0;
   font-size: 1.25rem;
   color: #915446;
-  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.7;
   text-align: center;
@@ -150,7 +150,7 @@
 :root {
     color: #3D3B38;
     background-color: #fff;
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     font-synthesis: none;
@@ -159,18 +159,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Use HK Grotesk for navigation */
+/* Use Lato for navigation */
 .MuiAppBar-root,
 .MuiAppBar-root .MuiToolbar-root,
 .MuiAppBar-root .MuiTypography-root,
 a.navlink > * {
-  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Apply HK Grotesk to language toggle only (desktop + mobile) */
+/* Apply Lato to language toggle only (desktop + mobile) */
 .language-toggle,
 .language-toggle .MuiTypography-root {
-  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Global mobile improvements */

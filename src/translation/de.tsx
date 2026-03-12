@@ -1,7 +1,7 @@
 export const de = {
   app: {
     Navigation: {
-      menuItems: ["Über uns", "Fruchtbarkeit", "Gynäkologie", "Schwangerschaft", "Behandlung"],
+      menuItems: ["Über uns", "Kinderwunsch", "Gynäkologie", "Schwangerschaft", "Behandlung"],
       language: "english",
       bookAppointment: "Termin buchen",
       contact: "Kontakt",
@@ -10,7 +10,7 @@ export const de = {
       title:
         "Verbessertes Fruchtbarkeitsprogramm | um Ihnen zu helfen schwanger zu werden",
       subtitle:
-        "Lizenzierte Ärztin für traditionelle Medizin | Fruchtbarkeits- und Gynäkologie-Spezialistin",
+        "Lizenzierte Ärztin für traditionelle Medizin | Kinderwunsch- und Gynäkologie-Spezialistin",
       bookAppointment: "Termin buchen",
     },
     HomePage: {
@@ -68,14 +68,36 @@ export const de = {
         "Alleinerziehende / Gleichgeschlechtliche Paare",
       ],
     },
+      GynecologyHeroSection: {
+        titleLine1: "Unterstützung der hormonellen Gesundheit der Frau",
+        titleLine2: "in jedem Lebensabschnitt",
+        descriptionLines: [
+          "Ihre hormonelle Gesundheit beeinflusst jeden Lebensabschnitt – von Menstruationszyklen und Fruchtbarkeit bis hin zu Schwangerschaft und Wechseljahren.",
+          "Traditionelle Chinesische Medizin (TCM) bietet einen ganzheitlichen Ansatz zur Gynäkologie, der die Wurzeln von Unausgeglichenheiten anspricht, anstatt nur die Symptome zu behandeln.",
+          "In unserer Klinik verbinden wir jahrhundertealte TCM-Weisheit mit modernem Verständnis von Frauengesundheit, um hormonelles Gleichgewicht, reproduktive Gesundheit und allgemeines Wohlbefinden zu unterstützen.",
+          "Durch personalisierte Diagnose und Behandlung streben wir danach, das natürliche Gleichgewicht des Körpers wiederherzustellen, damit er optimal funktionieren kann.",
+        ],
+      },
     PrePostnatalCareSection: {
-      title: "Prä-Postnatale Betreuung",
+      title: "Prä- und Postnatal-Versorgung",
       services: [
         "Schwangerschaftskomplikationen vorbeugen",
         "Beckenendlage",
         "Einfache und sanfte Geburt",
         "Stillprobleme",
         "Nachsorge nach der Geburt",
+      ],
+    },
+    PregnancyHeroSection: {
+      titleLines: [
+        "Bereiten Sie sich auf die Geburt vor,",
+        "Genesen Sie mit Fürsorge,",
+        "Gedeihen Sie als Mutter",
+      ],
+      descriptionLines: [
+        "Schwangerschaft und die Zeit nach der Geburt sind Zeiten tiefgreifender Umwandlung für den Körper. Die Unterstützung der Gesundheit der Mutter in diesen Phasen ist für Mutter und Baby gleichermaßen wichtig.",
+        "Die Traditionelle Chinesische Medizin (TCM) wurde seit Jahrhunderten zur Betreuung von Frauen vor, während und nach der Schwangerschaft eingesetzt. Durch die Unterstützung der Zirkulation, die Nährung des Körpers und die Förderung des Gleichgewichts hilft TCM Frauen, eine gesündere und komfortablere Umstellung während der Schwangerschaft und der Genesung nach der Geburt zu erleben.",
+        "In unserer Klinik bieten wir sanfte, individualisierte Behandlungen an, die das Wohlbefinden von Mutter und Baby unterstützen.",
       ],
     },
     TreatmentSection: {
@@ -90,7 +112,7 @@ export const de = {
         herbalMedicine: {
           title: "Kräutermedizin",
           description:
-            "In der TCM ist Kräutermedizin eine zentrale Behandlungsmethode bei Fruchtbarkeit und Gynäkologie. Jede Patientin erhält ein individuell auf ihre Konstitution abgestimmtes Rezept, das nach einem ausführlichen Beratungsgespräch erstellt wird.",
+            "In der TCM ist Kräutermedizin eine zentrale Behandlungsmethode bei Kinderwunsch und Gynäkologie. Jede Patientin erhält ein individuell auf ihre Konstitution abgestimmtes Rezept, das nach einem ausführlichen Beratungsgespräch erstellt wird.",
         },
         bloodAnalysis: {
           title: "Analyse von Fruchtbarkeitstestergebnissen",
@@ -152,7 +174,7 @@ export const de = {
       ],
     },
     GynecologySection: {
-      title: "Gynäkologie und mehr",
+      title: "Gynäkologie",
       content: [
         {
           title: "Regulierung des Menstruationszyklus",
@@ -246,7 +268,7 @@ export const de = {
       ],
       experience: [
         "Seit 2025  Privatpraxis, Choi TCM, Luzern",
-        "Seit 2022  Privatpraxis Choi TCM, Zürich (in Partnerschaft mit Kasahara TCM)",
+        "Seit 2022  Privatpraxis, Choi TCM, Zürich (in Partnerschaft mit Kasahara TCM)",
         "2011 - 2022 Praktizierte als Ärztin für traditionelle Medizin in Kliniken, Seoul und Busan, Südkorea",
         "2005 - 2011 Abschluss eines 6-jährigen Vollzeitstudiums in traditioneller koreanischer Medizin, Dong-Eui Universität, Südkorea",
       ],
@@ -311,7 +333,7 @@ export const de = {
       cancellationPolicy: {
         title: "Stornierungsrichtlinie",
         description:
-          "48 Stunden für neue Patienten und 24 Stunden für bestehende Patienten. Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
+          "Termine müssen bis 10:00 Uhr am Tag vor Ihrem geplanten Besuch storniert werden. Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
       },
     },
     PageTitles: {

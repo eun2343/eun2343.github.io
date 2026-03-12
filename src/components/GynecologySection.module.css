@@ -7,7 +7,7 @@
 }
 
 .root :global(.headingMedium) {
-  font-family: 'HK Grotesk', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lato', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 900px) {

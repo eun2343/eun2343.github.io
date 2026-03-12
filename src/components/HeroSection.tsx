@@ -47,7 +47,7 @@ const HeroSection = () => {
           gutterBottom
           align="center"
           sx={{
-            fontFamily: "'Playfair Display', serif",
+            fontFamily: "'Lora', serif",
             fontSize: { xs: "1.75rem", sm: "2.25rem", md: "3rem" },
             lineHeight: 1.4,
           }}
@@ -76,7 +76,7 @@ const HeroSection = () => {
             gutterBottom
             align="left"
             sx={{
-              fontFamily: "'lato', serif",
+              fontFamily: "'Lato', sans-serif",
               fontSize: { xs: "1.15rem", sm: "1.35rem", md: "1.7rem" },
               textAlign: "left",
               lineHeight: 2,

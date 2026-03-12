@@ -66,6 +66,16 @@ export const en = {
         "Single mom / Same sex couple",
       ],
     },
+      GynecologyHeroSection: {
+        titleLine1: "Supporting women's hormonal health",
+        titleLine2: "at Every Stage of Life",
+        descriptionLines: [
+          "Your hormonal health influences every stage of life - from menstrual cycles and fertility to pregnancy and menopause.",
+          "Traditional Chinese Medicine (TCM) offers a holistic approach to gynecology, addressing the root causes of imbalance rather than only managing symptoms.",
+          "At our clinic, we combine centuries-old TCM wisdom with modern understanding of women's health to support hormonal balance, reproductive health, and overall wellbeing.",
+          "Through personalized diagnosis and treatment, we aim to restore the natural balance of the body so that it can function optimally.",
+        ],
+      },
     PrePostnatalCareSection: {
       title: "Pre-Postnatal care",
       services: [
@@ -74,6 +84,18 @@ export const en = {
         "Easy and smooth Labor",
         "Nursing issues",
         "After delivery Care",
+      ],
+    },
+    PregnancyHeroSection: {
+      titleLines: [
+        "Prepare for Birth,",
+        "Recover with Care,",
+        "Thrive as a Mother",
+      ],
+      descriptionLines: [
+        "Pregnancy and the postpartum period are times of profound transformation for the body. Supporting maternal health during these stages is essential for both the mother and the baby.",
+        "Traditional Chinese Medicine (TCM) has been used for centuries to care for women before, during, and after pregnancy. By supporting circulation, nourishing the body, and promoting balance, TCM helps women experience a healthier and more comfortable transition through pregnancy and recovery after birth.",
+        "At our clinic, we provide gentle, individualized treatments designed to support the wellbeing of both mother and baby.",
       ],
     },
     TreatmentSection: {
@@ -244,8 +266,8 @@ export const en = {
         "EMR certificate ZSR - J121064",
       ],
       experience: [
-        "Since 2025  Private clinic,Choi TCM, Luzern",
-        "Since 2022  Private clinic Choi TCM (in partner with Kasahara TCM), Zurich",
+        "Since 2025  Private clinic, Choi TCM, Luzern",
+        "Since 2022  Private clinic, Choi TCM (in partner with Kasahara TCM), Zurich",
         "2011 - 2022 Practiced as a Doctor of traditional medicine in clinics, Seoul and Busan, South Korea",
         "2005 - 2011 Completed a 6-year full-time medical study in Traditional Korean Medicine, Dong-Eui University, South Korea",
       ],
@@ -310,7 +332,7 @@ export const en = {
       cancellationPolicy: {
         title: "Cancellation policy",
         description:
-          "48 hours for new patients and 24 hours for established patients, your appointment is subject to the full fee if missed or cancelled within this time.",
+          "Appointments must be cancelled by 10:00 am the day before your scheduled visit. Your appointment is subject to the full fee if missed or cancelled within this time.",
       },
     },
     PageTitles: {

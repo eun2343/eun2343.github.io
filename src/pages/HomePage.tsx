@@ -22,7 +22,7 @@ const HomePage = () => {
             <span className="responsive-card-title">{t.fertilityCardTitle}</span>
           </div>
           <div className="responsive-card-wide-right">
-            <ul className="listUnstyled textXl textPrimary lineHeightRelaxed textLeft ml-2" style={{ fontFamily: 'HK Grotesk, system-ui, Avenir, Helvetica, Arial, sans-serif', fontWeight: 500 }}>
+            <ul className="listUnstyled textXl textPrimary lineHeightRelaxed textLeft ml-2" style={{ fontFamily: 'Lato, system-ui, Avenir, Helvetica, Arial, sans-serif', fontWeight: 500 }}>
               {t.fertilityItems.map((item: string, i: number) => (
                 <li key={i} className="responsive-card-list-item">{item}</li>
               ))}
