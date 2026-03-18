@@ -13,7 +13,7 @@ export const en = {
       bookAppointment: "Book Appointment",
     },
     HomePage: {
-      fertilityCardTitle: "Fertility treatment to increase your chance",
+      fertilityCardTitle: "Fertility Support",
       fertilityItems: [
         "Getting pregnant naturally",
         "IVF and IUI",

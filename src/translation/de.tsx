@@ -14,7 +14,7 @@ export const de = {
       bookAppointment: "Termin buchen",
     },
     HomePage: {
-      fertilityCardTitle: "Fruchtbarkeitsbehandlung zur Steigerung Ihrer Chancen",
+      fertilityCardTitle: "Fruchtbarkeitsunterstützung",
       fertilityItems: [
         "Natürlich schwanger werden",
         "IVF und IUI",

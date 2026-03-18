@@ -48,7 +48,7 @@ const HeroSection = () => {
           align="center"
           sx={{
             fontFamily: "'Lora', serif",
-            fontSize: { xs: "3rem", sm: "3rem", md: "3rem" },
+            fontSize: { xs: "2.8rem", sm: "3rem", md: "3rem" },
             lineHeight: 1.4,
           }}
         >
@@ -109,7 +109,7 @@ const HeroSection = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: "1rem",
+            fontSize: "1rem !important",
             "&:hover": {
               backgroundColor: "#A76456",
               color: "#FFFFFF",
