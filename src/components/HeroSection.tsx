@@ -48,7 +48,7 @@ const HeroSection = () => {
           align="center"
           sx={{
             fontFamily: "'Lora', serif",
-            fontSize: { xs: "1.75rem", sm: "2.25rem", md: "3rem" },
+            fontSize: { xs: "3rem", sm: "3rem", md: "3rem" },
             lineHeight: 1.4,
           }}
         >

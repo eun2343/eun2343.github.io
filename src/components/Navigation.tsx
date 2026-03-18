@@ -15,11 +15,18 @@ import { useLanguage } from "../translation/useLanguage";
 import { translateUrlPath, getLocalizedPath } from "../utils/routes";
 import { useState } from "react";
 
-const Navigation = () => {
+type NavigationProps = {
+  logoScale?: number;
+  barHeightScale?: number;
+};
+
+const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
   const { translations, language, setLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const logoMaxHeight = `${60 * logoScale}px`;
+  const toolbarHeight = 100 * barHeightScale;
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -177,14 +184,14 @@ const Navigation = () => {
       <AppBar position="sticky">
         <Toolbar
           sx={{
-            height: 100,
+            height: toolbarHeight,
             bgcolor: "#fff",
             padding: { xs: 1, md: 2 },
             position: "relative",
           }}
         >
           <img
-            style={{ maxHeight: "60px", width: "auto", cursor: "pointer" }}
+            style={{ maxHeight: logoMaxHeight, width: "auto", cursor: "pointer" }}
             src="/images/logo-normal.png "
             alt="Logo"
             onClick={() => {

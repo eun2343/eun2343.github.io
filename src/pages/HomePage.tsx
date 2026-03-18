@@ -11,7 +11,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage-root">
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <HeroSection />
       <div className="responsive-card-wide-container">
         <div
