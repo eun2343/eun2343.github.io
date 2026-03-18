@@ -8,13 +8,13 @@ export const de = {
     },
     HeroSection: {
       title:
-        "Verbessertes Fruchtbarkeitsprogramm | um Ihnen zu helfen schwanger zu werden",
+        "Fortgeschrittenes Fruchtbarkeitsprogramm",
       subtitle:
         "Lizenzierte Ärztin für traditionelle Medizin | Kinderwunsch- und Gynäkologie-Spezialistin",
       bookAppointment: "Termin buchen",
     },
     HomePage: {
-      fertilityCardTitle: "Fruchtbarkeitsunterstützung",
+      fertilityCardTitle: "Fruchtbarkeitsbehandlung",
       fertilityItems: [
         "Natürlich schwanger werden",
         "IVF und IUI",

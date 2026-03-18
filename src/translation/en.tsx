@@ -7,7 +7,7 @@ export const en = {
       contact: "Contact",
     },
     HeroSection: {
-      title: "Enhanced Fertility Program | to help you conceive",
+      title: "Enhanced Fertility Program",
       subtitle:
         "Licensed Doctor of traditional medicine | Fertility and Gynecology Specialist",
       bookAppointment: "Book Appointment",

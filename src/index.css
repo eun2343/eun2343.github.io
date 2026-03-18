@@ -1,31 +1,4 @@
 /* HomePage specific styles */
-.homepage-root .responsive-card-wide-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 32px;
-  box-sizing: border-box;
-  border-right: 1px solid #e0e0e0;
-}
-.homepage-root .responsive-card-wide-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 32px;
-  box-sizing: border-box;
-}
-.homepage-root .responsive-card-list-item {
-  border-bottom: 2px solid #a1a1a1;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
-  color: #1a1a1a;
-  margin-left: -48px;
-}
-.homepage-root .responsive-card-list-item:last-child {
-  border-bottom: none;
-}
 .homepage-root .responsive-card-list-item-centered {
   border-bottom: 2px solid #a1a1a1;
   padding-bottom: 8px;
@@ -45,50 +18,10 @@
   margin: 96px auto 0 auto;
   max-width: 1200px;
 }
-.homepage-root .responsive-card-wide {
-  background: #F2EBE6;
-  border-radius: 32px;
-  width: 100%;
-  min-height: 220px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: #915446;
-  font-weight: 600;
-  max-width: 1040px;
-}
 @media (max-width: 900px) {
   .homepage-root .responsive-card-wide-container {
     margin: 32px 0 0 0;
     padding: 0 8px;
-  }
-  .homepage-root .responsive-card-wide {
-    min-width: 0;
-    max-width: 100%;
-    border-radius: 24px;
-    font-size: 1.1rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  .homepage-root .responsive-card-wide-left {
-    border-right: none;
-    border-bottom: 1px solid #e0e0e0;
-    width: 100%;
-    justify-content: center;
-    padding: 28px 24px;
-    text-align: center;
-  }
-  .homepage-root .responsive-card-wide-right {
-    width: 100%;
-    justify-content: center;
-    padding: 24px 24px 28px;
-    text-align: center;
-  }
-  .homepage-root .responsive-card-list-item {
-    text-align: center;
-    margin-left: 0;
   }
 }
 .homepage-root .responsive-card-row {
@@ -115,8 +48,8 @@
   min-height: 220px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: 2rem;
   color: #915446;
   font-weight: 600;

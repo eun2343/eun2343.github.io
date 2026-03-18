@@ -13,24 +13,19 @@ const HomePage = () => {
     <div className="homepage-root">
       <Navigation logoScale={0.8} barHeightScale={0.8} />
       <HeroSection />
-      <div className="responsive-card-wide-container">
-        <div
-          className="responsive-card-wide flex flexRow itemsStretch wFull"
-          style={{ marginBottom: "20px" }}
-        >
-          <div className="responsive-card-wide-left">
-            <span className="responsive-card-title">{t.fertilityCardTitle}</span>
-          </div>
-          <div className="responsive-card-wide-right">
-            <ul className="listUnstyled textXl textPrimary lineHeightRelaxed textLeft ml-2" style={{ fontFamily: 'Lato, system-ui, Avenir, Helvetica, Arial, sans-serif', fontWeight: 500 }}>
+      <div className="responsive-card-row mt-2">
+        <div className="responsive-card">
+          <div className="responsive-card-content">
+            <span className="responsive-card-title">
+              <span className="mb-6" style={{ display: 'block' }}>{t.fertilityCardTitle}</span>
+            </span>
+            <ul className="responsive-card-list">
               {t.fertilityItems.map((item: string, i: number) => (
-                <li key={i} className="responsive-card-list-item">{item}</li>
+                <li key={i} className="responsive-card-list-item-centered">{item}</li>
               ))}
             </ul>
           </div>
         </div>
-      </div>
-      <div className="responsive-card-row mt-2">
         {[1, 2].map((cardIdx) => (
           <div key={cardIdx} className="responsive-card">
             <div className="responsive-card-content">
