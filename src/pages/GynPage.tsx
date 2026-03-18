@@ -6,7 +6,7 @@ import GynecologySection from "../components/GynecologySection";
 const GynPage = () => {
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <GynecologyHeroSection />
       <GynecologySection />
       <Footer />

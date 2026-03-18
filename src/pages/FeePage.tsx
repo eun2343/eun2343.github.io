@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const FeePage = () => {
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <FeeSection />
       <Footer />
     </>

@@ -125,7 +125,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <Container sx={{ py: 4, minHeight: "88vh" }}>
         <Typography
           variant="h2"

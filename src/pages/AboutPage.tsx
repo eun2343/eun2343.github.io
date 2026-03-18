@@ -6,7 +6,7 @@ import FeeSection from "../components/FeeSection";
 const AboutPage = () => {
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <AboutSection />
       <FeeSection />
       <Footer />

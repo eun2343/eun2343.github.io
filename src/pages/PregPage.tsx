@@ -6,7 +6,7 @@ import PrePostnatalCareSection from "../components/PrePostnatalCareSection";
 const PregPage = () => {
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <PregnancyHeroSection />
       <PrePostnatalCareSection />
       <Footer />

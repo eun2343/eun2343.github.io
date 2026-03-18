@@ -7,7 +7,7 @@ import FertilityCareSection from "../components/FertilityCareSection";
 const FertilityPage = () => {
   return (
     <>
-      <Navigation />
+      <Navigation logoScale={0.8} barHeightScale={0.8} />
       <FertilityHeroSection />
       <FertilitySeedSection />
       <FertilityCareSection />
