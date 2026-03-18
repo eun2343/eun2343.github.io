@@ -277,7 +277,7 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
                 backgroundColor: "#A76456",
                 color: "#FFFFFF",
                 textTransform: "none",
-                borderRadius: "24px",
+                borderRadius: "8px",
                 padding: "10px 24px",
                 "&:hover": {
                   backgroundColor: "#A76456",

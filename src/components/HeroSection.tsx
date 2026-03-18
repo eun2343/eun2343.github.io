@@ -101,7 +101,7 @@ const HeroSection = () => {
             backgroundColor: "#A76456",
             color: "#FFFFFF",
             textTransform: "none",
-            borderRadius: "24px",
+            borderRadius: "8px",
             padding: "10px 24px",
             width: { xs: "80%", sm: "200px" },
             margin: "0 auto",
