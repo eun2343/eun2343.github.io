@@ -39,6 +39,10 @@ const ContactPage = () => {
     phone: false,
   });
 
+  const subtitle = translations.app.ContactPage.subtitle;
+  const boldPrefix = "We accept new patients through this contact form only.";
+  const shouldBoldPrefix = subtitle.startsWith(boldPrefix);
+
   const handleInputChange =
     (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
       setFormData((prev) => ({
@@ -133,8 +137,10 @@ const ContactPage = () => {
           gutterBottom
           align="center"
           sx={{
-            fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+            fontSize: { xs: "2.2rem", sm: "2.5rem", md: "2.8rem" },
             fontWeight: 700,
+            fontFamily: "'Lora', serif",
+            color: "#000000",
             mb: 4,
           }}
         >
@@ -145,7 +151,7 @@ const ContactPage = () => {
           <Box
             sx={{
               p: 4,
-              backgroundColor: "#f8f9fa",
+              backgroundColor: "#FFF5F0",
               borderRadius: 2,
               border: "1px solid #e9ecef",
             }}
@@ -157,12 +163,19 @@ const ContactPage = () => {
               align="center"
               sx={{ mb: 3 }}
             >
-              {translations.app.ContactPage.subtitle}
+              {shouldBoldPrefix ? (
+                <>
+                  <strong>{boldPrefix}</strong>
+                  {subtitle.slice(boldPrefix.length)}
+                </>
+              ) : (
+                subtitle
+              )}
             </Typography>
 
             <Box component="form" onSubmit={handleSubmit} noValidate>
               <Grid size={{ xs: 12 }}>
-                <FormControl component="fieldset" sx={{ mt: 2 }}>
+                <FormControl component="fieldset" sx={{ mt: 2, mb: 3 }}>
                   <FormLabel component="legend" sx={{ mb: 1 }}>
                     {translations.app.ContactPage.inquiryType}
                   </FormLabel>

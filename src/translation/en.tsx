@@ -208,7 +208,7 @@ export const en = {
       ],
     },
     ContactPage: {
-      title: "Contact Us",
+      title: "Choi TCM contact form",
       subtitle:
         "We accept new patients through this contact form only. Once you submit the form, we’ll get back to you within 1–2 business days.",
       firstName: "First Name",
