@@ -49,7 +49,7 @@ const HeroSection = () => {
           sx={{
             paddingLeft: language === "de" ? { xs: 2, sm: 0 } : 0,
             fontFamily: "'Lora', serif",
-            fontSize: { xs: "2.8rem", sm: "3rem", md: "3rem" },
+            fontSize: { xs: "2.6rem", sm: "3rem", md: "3rem" },
             lineHeight: 1.4,
             color: "#000000",
           }}
