@@ -45,21 +45,31 @@ const HeroSection = () => {
           paddingBottom={{ xs: 2, md: 4 }}
           variant="h2"
           gutterBottom
-          align="center"
+          align="left"
           sx={{
+            paddingLeft: language === "de" ? { xs: 2, sm: 0 } : 0,
             fontFamily: "'Lora', serif",
             fontSize: { xs: "2.8rem", sm: "3rem", md: "3rem" },
             lineHeight: 1.4,
+            color: "#000000",
           }}
         >
           {translations.app.HeroSection.title
             .split(" | ")
-            .map((part: string, index: number, array: string[]) => (
-              <span key={index}>
-                {part}
-                {index < array.length - 1 && <br />}
-              </span>
-            ))}
+            .flatMap((part: string, i: number, arr: string[]) => {
+              const xsParts = part.split(" || ");
+              const nodes: React.ReactNode[] = xsParts.flatMap((seg, j) => [
+                <span key={`${i}-${j}`}>{seg}</span>,
+                j < xsParts.length - 1
+                  ? <Box key={`xsbr-${i}-${j}`} component="br" sx={{ display: { xs: 'block', sm: 'none' } }} />
+                  : null,
+                j < xsParts.length - 1
+                  ? <Box key={`xssp-${i}-${j}`} component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>{' '}</Box>
+                  : null,
+              ]).filter(Boolean) as React.ReactNode[];
+              if (i < arr.length - 1) nodes.push(<br key={`br-${i}`} />);
+              return nodes;
+            })}
         </Typography>
 
         <Box
@@ -80,12 +90,13 @@ const HeroSection = () => {
               fontSize: { xs: "1.15rem", sm: "1.35rem", md: "1.7rem" },
               textAlign: "left",
               lineHeight: 2,
+              color: "#000000",
             }}
           >
             {translations.app.HeroSection.subtitle
               .split(" | ")
               .map((part: string, index: number, array: string[]) => (
-                <span key={index} className="textDark fontMain">
+                <span key={index} className="fontMain">
                   &#8226; {part}
                   {index < array.length - 1 && <br />}
                 </span>
@@ -98,10 +109,10 @@ const HeroSection = () => {
           variant="contained"
           color="primary"
           sx={{
-            backgroundColor: "#A76456",
+            backgroundColor: "#A6463D",
             color: "#FFFFFF",
             textTransform: "none",
-            borderRadius: "8px",
+            borderRadius: "12px",
             padding: "10px 24px",
             width: { xs: "80%", sm: "200px" },
             margin: "0 auto",
@@ -111,7 +122,7 @@ const HeroSection = () => {
             alignItems: "center",
             fontSize: "1rem !important",
             "&:hover": {
-              backgroundColor: "#A76456",
+              backgroundColor: "#A6463D",
               color: "#FFFFFF",
             },
           }}

@@ -8,13 +8,13 @@ export const de = {
     },
     HeroSection: {
       title:
-        "Fortgeschrittenes Fruchtbarkeitsprogramm",
+          "Fortgeschrittene Fruchtbarkeits || behandlungen",
       subtitle:
         "Lizenzierte Ärztin für traditionelle Medizin | Kinderwunsch- und Gynäkologie-Spezialistin",
       bookAppointment: "Termin buchen",
     },
     HomePage: {
-      fertilityCardTitle: "Fruchtbarkeitsbehandlung",
+      fertilityCardTitle: "Kinderwunsch",
       fertilityItems: [
         "Natürlich schwanger werden",
         "IVF und IUI",
@@ -273,8 +273,18 @@ export const de = {
         "2005 - 2011 Abschluss eines 6-jährigen Vollzeitstudiums in traditioneller koreanischer Medizin, Dong-Eui Universität, Südkorea",
       ],
     },
+    DoesTCMWorkSection: {
+      title: "Funktioniert TCM?",
+      description1: "TCM-Behandlungen können Ihre Fruchtbarkeit verbessern und in jedem Schritt Ihrer Reise bessere Ergebnisse erzielen.",
+      description2: "Immer mehr Studien belegen die Wirksamkeit der TCM bei Fruchtbarkeit und Gynäkologie.",
+      studies: [
+        "27% höhere IVF-Erfolgsrate mit TCM",
+        "Doppelte Eizellanzahl bei Frauen über 37",
+        "Signifikante Erhöhung der Spermienzahl",
+      ],
+    },
     WhyChoiTCMPage: {
-      title: "Warum Choi TCM wählen",
+      title: "Warum Choi TCM",
       reasons: [
         {
           title: "Fruchtbarkeits-spezialistin",

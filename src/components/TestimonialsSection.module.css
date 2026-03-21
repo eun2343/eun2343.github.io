@@ -2,5 +2,20 @@
 .root {
   padding: 60px 20px;
   min-height: 400px;
-  background-color: var(--color-light);
+  background-color: #F6F6F6;
+}
+
+.root :global(.swiper-pagination) {
+  bottom: 2px !important;
+}
+
+.root :global(.swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: #d9d9d9;
+}
+
+.root :global(.swiper-pagination-bullet-active) {
+  background: #FF6F61;
 }

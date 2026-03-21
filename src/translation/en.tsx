@@ -7,7 +7,7 @@ export const en = {
       contact: "Contact",
     },
     HeroSection: {
-      title: "Enhanced Fertility Program",
+      title: "Advanced || Fertility Treatments | to help you conceive",
       subtitle:
         "Licensed Doctor of traditional medicine | Fertility and Gynecology Specialist",
       bookAppointment: "Book Appointment",
@@ -270,6 +270,16 @@ export const en = {
         "Since 2022  Private clinic, Choi TCM (in partner with Kasahara TCM), Zurich",
         "2011 - 2022 Practiced as a Doctor of traditional medicine in clinics, Seoul and Busan, South Korea",
         "2005 - 2011 Completed a 6-year full-time medical study in Traditional Korean Medicine, Dong-Eui University, South Korea",
+      ],
+    },
+    DoesTCMWorkSection: {
+      title: "Does TCM work?",
+      description1: "TCM treatment can help you to improve your fertility and make a better result in every steps of your journey.",
+      description2: "More studies support the effectiveness of TCM in fertility and gynecology.",
+      studies: [
+        "27% higher IVF success with TCM",
+        "Egg number doubled in 37+ women",
+        "Significant increase in sperm count",
       ],
     },
     WhyChoiTCMPage: {

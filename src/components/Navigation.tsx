@@ -158,15 +158,15 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
             variant="contained"
             color="primary"
             sx={{
-              backgroundColor: "#A76456",
+              backgroundColor: "#A6463D",
               color: "#FFFFFF",
               textTransform: "none",
-              borderRadius: "24px",
+              borderRadius: "28px",
               padding: "10px 24px",
               fontSize: "1.2rem !important",
               mx: "auto",
               "&:hover": {
-                backgroundColor: "#A76456",
+                backgroundColor: "#A6463D",
                 color: "#FFFFFF",
               },
             }}
@@ -274,13 +274,13 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
               variant="contained"
               color="primary"
               sx={{
-                backgroundColor: "#A76456",
+                  backgroundColor: "#A6463D",
                 color: "#FFFFFF",
                 textTransform: "none",
-                borderRadius: "8px",
+                borderRadius: "12px",
                 padding: "10px 24px",
                 "&:hover": {
-                  backgroundColor: "#A76456",
+                    backgroundColor: "#A6463D",
                   color: "#FFFFFF",
                 },
               }}

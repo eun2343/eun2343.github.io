@@ -1,8 +1,8 @@
 
-import { Container, Typography, Card, CardContent, Avatar } from "@mui/material";
+import { Container, Typography, Card, CardContent } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import styles from "./TestimonialsSection.module.css";
 import "../styles/utilities.css";
@@ -17,19 +17,18 @@ const TestimonialsSection = () => {
       <Container maxWidth="md">
         <h2 className="headingLarge textCenter mb-8">{translations.app.TestimonialsSection.title}</h2>
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          navigation={true}
-          pagination={{ clickable: true, dynamicBullets: true }}
+          pagination={{ clickable: true }}
           autoplay={{
-            delay: 4000,
+            delay: 5000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
           loop={true}
           centeredSlides={true}
-          style={{ paddingBottom: "50px" }}
+          style={{ paddingBottom: "34px" }}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
@@ -41,20 +40,23 @@ const TestimonialsSection = () => {
                   boxShadow: 3,
                   minHeight: 300,
                   margin: "10px",
-                  backgroundColor: "#f9f9f9",
+                  backgroundColor: "#FFF5F0",
                 }}
               >
                 <CardContent>
-                  <Avatar
-                    src={testimonial.picture}
-                    alt={testimonial.name}
+                  <Typography
+                    component="div"
+                    aria-label="5 star rating"
                     sx={{
-                      width: 80,
-                      height: 80,
-                      margin: "0 auto 24px auto",
-                      backgroundColor: "#e0e0e0",
+                      margin: "0 auto 20px auto",
+                      fontSize: "1.5rem",
+                      letterSpacing: "0.2rem",
+                      color: "#FFBF00",
+                      lineHeight: 1,
                     }}
-                  />
+                  >
+                    {'★★★★★'}
+                  </Typography>
 
                   <Typography
                     variant="h6"

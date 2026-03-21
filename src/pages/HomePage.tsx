@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
+import DoesTCMWorkSection from "../components/DoesTCMWorkSection";
 import FertilitySpecialistSection from "../components/FertilitySpecialistSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import Footer from "../components/Footer";
@@ -51,6 +52,7 @@ const HomePage = () => {
           </div>
         ))}
       </div>
+      <DoesTCMWorkSection />
       <FertilitySpecialistSection />
       <TestimonialsSection />
       <Footer />
