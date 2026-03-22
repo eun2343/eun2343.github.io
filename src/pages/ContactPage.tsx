@@ -106,6 +106,12 @@ const ContactPage = () => {
               event_label: formData.inquiryType,
               value: 1,
             });
+
+            gtag("event", "conversion", {
+              send_to: "AW-17871101395/0t1nCNX-yY0cENO7zclC",
+              value: 1.0,
+              currency: "CAD",
+            });
           }
 
           alert(translations.app.ContactPage.successMessage);
