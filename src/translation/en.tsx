@@ -7,7 +7,7 @@ export const en = {
       contact: "Contact",
     },
     HeroSection: {
-      title: "Advanced || Fertility Treatments | to help you conceive",
+      title: "Advanced || Fertility Treatments",
       subtitle:
         "Licensed Doctor of traditional medicine | Fertility and Gynecology Specialist",
       bookAppointment: "Book Appointment",
@@ -274,7 +274,7 @@ export const en = {
     },
     DoesTCMWorkSection: {
       title: "Does TCM work?",
-      description1: "TCM treatment can help you to improve your fertility and make a better result in every steps of your journey.",
+      description1: "TCM treatment can help you to improve your fertility and make a better result in every steps.",
       description2: "More studies support the effectiveness of TCM in fertility and gynecology.",
       studies: [
         "27% higher IVF success with TCM",

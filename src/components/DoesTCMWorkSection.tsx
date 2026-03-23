@@ -22,7 +22,7 @@ const DoesTCMWorkSection = () => {
           {t.studies.map((label: string, i: number) => (
             <li key={i}>
               <a href={studyLinks[i]} target="_blank" rel="noopener noreferrer">
-                {label}
+                <span className={styles.linkText}>{label}</span>
               </a>
             </li>
           ))}
