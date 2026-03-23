@@ -2,7 +2,7 @@
 .root {
   min-height: 400px;
   margin-top: auto;
-  background-color: var(--color-primary);
+  background-color: #96695E;
   padding: 60px 0 20px 0;
   color: var(--color-light);
 }
@@ -10,11 +10,19 @@
   margin-bottom: 32px;
 }
 .locationCard {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: white;
+  background-color: #FFF6F2 !important;
+  color: #2C1E1B;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
+
+.locationCard :global(.textLight) {
+  color: #2C1E1B !important;
+}
 .locationCard:hover {
   transform: translateY(-4px);
+}
+
+.locationImage {
+  border-bottom: 1px solid #96695E;
 }

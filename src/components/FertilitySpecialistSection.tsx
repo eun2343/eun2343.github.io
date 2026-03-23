@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
 import type { Reason } from "../translation/types";
 import { renderTextWithLineBreaks } from "../utils/textUtils";
-import { getLocalizedPath } from "../utils/routes";
 import styles from "./FertilitySpecialistSection.module.css";
 import "../styles/utilities.css";
 import "../styles/variables.css";
@@ -28,27 +27,33 @@ const FertilitySpecialistSection = () => {
           </div>
         ))}
       </div>
-      <div className="textCenter" style={{ marginTop: 24 }}>
-        <Button
-          component={Link}
-          to={getLocalizedPath("contact", language)}
-          variant="contained"
-          sx={{
+      <Button
+        component={Link}
+        to={`/${language}/contact`}
+        variant="contained"
+        color="primary"
+        sx={{
+          backgroundColor: "#A6463D",
+          color: "#FFFFFF",
+          textTransform: "none",
+          borderRadius: "12px",
+          padding: "10px 24px",
+          width: { xs: "80%", sm: "200px" },
+          margin: "0 auto",
+          marginTop: 6,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "1rem !important",
+          "&:hover": {
             backgroundColor: "#A6463D",
             color: "#FFFFFF",
-            textTransform: "none",
-            borderRadius: "12px",
-            padding: "10px 24px",
-            "&:hover": {
-              backgroundColor: "#A6463D",
-              color: "#FFFFFF",
-            },
-          }}
-          className="fontMain"
-        >
-          {translations.app.Navigation.bookAppointment}
-        </Button>
-      </div>
+          },
+        }}
+        className="fontMain"
+      >
+        {translations.app.HeroSection.bookAppointment}
+      </Button>
     </Container>
   );
 };

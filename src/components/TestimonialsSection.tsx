@@ -49,10 +49,13 @@ const TestimonialsSection = () => {
                     aria-label="5 star rating"
                     sx={{
                       margin: "0 auto 20px auto",
-                      fontSize: "1.5rem",
+                      fontSize: { xs: "3rem", sm: "1.5rem" },
+                      fontWeight: 900,
                       letterSpacing: "0.2rem",
                       color: "#FFBF00",
                       lineHeight: 1,
+                      textShadow: { xs: "0 0 1px #B8860B, 0 1px 0 #B8860B", sm: "none" },
+                      WebkitTextStroke: { xs: "0.35px #B8860B", sm: "0" },
                     }}
                   >
                     {'★★★★★'}
