@@ -1,8 +1,16 @@
 /* FeeSection component-specific styles */
 .root {
+  background-color: #FFF5F0;
   margin-top: 32px;
   margin-bottom: 32px;
   min-height: 60vh;
+  padding-top: 32px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .root :global(.headingMedium) {
@@ -17,6 +25,10 @@
 
 /* Mobile-specific font size adjustments */
 @media (max-width: 768px) {
+  .content {
+    padding: 0 16px;
+  }
+
   .root :global(.headingMedium) {
     font-size: 1.75rem;
   }

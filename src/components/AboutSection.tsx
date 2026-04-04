@@ -23,8 +23,8 @@ const AboutSection = () => {
           </Box>
           {/* Right column - Qualifications */}
           <Box className={styles.right}>
-            <span className="headingLarge mb-8">Eunkyeong Choi</span>
-            <span className="headingMedium mb-4">Qualifications</span>
+            <span className="headingLarge mb-8">Dr. Eunkyeong Choi</span>
+            <span className={`headingMedium mb-2 ${styles.sectionHeading}`}>Qualifications</span>
             <List className={styles.qualificationList}>
               {translations.app.AboutPage.qualifications.map((qualification: string, index: number) => (
                 <ListItem key={index} className={styles.qualificationItem}>
@@ -35,8 +35,8 @@ const AboutSection = () => {
           </Box>
         </Box>
         {/* Full-width section for experience */}
-        <Box>
-          <span className="headingMedium mb-4">Experiences</span>
+        <Box className={styles.experienceBlock}>
+          <span className={`headingMedium mb-2 ${styles.sectionHeading}`}>Experiences</span>
           <List className={styles.experienceList}>
             {translations.app.AboutPage.experience.map((experienceItem: string, index: number) => (
               <ListItem key={index} className={styles.experienceItem}>

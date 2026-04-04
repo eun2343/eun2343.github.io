@@ -14,6 +14,12 @@
   padding-right: 0 !important;
 }
 
+.route-treatment .MuiContainer-root:not(.footer-container) {
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* Style the iframe container on book appointment page */
 .route-book-appointment .iframe-container {
   width: 100%;

@@ -106,7 +106,7 @@ export const en = {
         acupuncture: {
           title: "Acupuncture",
           description:
-            "Acupuncture increases blood circulation, helps deliver neurotransmitters, and reduces stress hormones.",
+            "Acupuncture is backed by scientific research to | 1. Support hormonal balance | 2. Improve blood flow to the ovaries and uterus—creating a healthier environment | 3. Reduce stress hormones that can interfere with your body's natural rhythms.",
         },
         herbalMedicine: {
           title: "Herbal Medicine",

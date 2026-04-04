@@ -1,12 +1,21 @@
 /* AboutSection component-specific styles */
 .root {
-  background-color: var(--color-secondary);
+  background-color: #FFF5F0;
   padding: 20px 0;
 }
 
 .root :global(.headingMedium) {
   font-family: inherit;
 }
+
+.sectionHeading {
+  color: #FF6F61;
+}
+
+.experienceBlock {
+  margin-top: 64px;
+}
+
 .columns {
   display: flex;
   flex-direction: column;
@@ -64,6 +73,11 @@
 @media (max-width: 768px) {
   .root :global(.headingMedium) {
     font-size: 1.75rem;
+  }
+
+  .experienceBlock {
+    margin-top: 64px;
+    padding-left: 24px;
   }
   
   .qualificationItem span,

@@ -22,7 +22,7 @@ const Footer = () => {
   };
   return (
     <footer className={styles.root}>
-      <Container>
+      <Container className="footer-container">
         {/* Our Locations Section */}
         <h2 className="headingLarge textLight textCenter mb-8">{translations.app.LocationsSection.title}</h2>
         {/* Location Information with Maps */}

@@ -292,6 +292,11 @@ export const de = {
             "Ich arbeite jeden einzelnen Tag mit Fruchtbarkeitsfällen. | In den letzten Jahren habe ich meine gesamte klinische Praxis der Behandlung von fruchtbarkeitsbezogenen Erkrankungen bei Frauen und Männern gewidmet. Als engagiertes Mitglied der Gesellschaft für koreanische Medizin Geburtshilfe und Gynäkologie nehme ich kontinuierlich an fortgeschrittenen Schulungen und Forschungen teil, um an der Spitze der Fruchtbarkeitsbetreuung zu bleiben.",
         },
         {
+          title: "Klinische Expertise",
+          description:
+            "Ich habe 6 Jahre intensives Vollzeitmedizinstudium (sowohl westlich als auch traditionell) absolviert und habe über ein Jahrzehnt klinischer Erfahrung in Korea, wo das Fachgebiet hochmoderne und innovative Behandlungsmethoden bietet. | Dieser umfassende Hintergrund ermöglicht es mir, modernste, effektive Therapien zu meinen Patienten zu bringen.",
+        },
+        {
           title: "Personalisierte Behandlung",
           description:
             "Fruchtbarkeit ist komplex und Einheitslösungen funktionieren nicht. | Ich werde Ihre vollständige Gesundheitsgeschichte, aktuellen Anliegen und alle bisherigen Testergebnisse oder Behandlungen durchgehen, die Sie durchlaufen haben. Ihr Behandlungsplan wird hochgradig individualisiert nur für Sie sein und jede Akupunktursitzung und Kräutermedizin wird entsprechend Ihren Menstruationszyklen oder ART-Verfahren angepasst.",
@@ -305,11 +310,6 @@ export const de = {
           title: "Unterstützung und Respekt",
           description:
             "Jede Fruchtbarkeitsreise ist zutiefst persönlich. | Egal, ob Sie Optionen erkunden, sich Unsicherheiten stellen oder Meilensteine feiern, meine Rolle ist es nicht nur, Sie medizinisch zu führen, sondern mit Ihnen mit Respekt, Fürsorge und unerschütterlicher Unterstützung zu gehen—jeden Schritt des Weges.",
-        },
-        {
-          title: "Klinische Expertise",
-          description:
-            "Ich habe 6 Jahre intensives Vollzeitmedizinstudium (sowohl westlich als auch traditionell) absolviert und habe über ein Jahrzehnt klinischer Erfahrung in Korea, wo das Fachgebiet hochmoderne und innovative Behandlungsmethoden bietet. | Dieser umfassende Hintergrund ermöglicht es mir, modernste, effektive Therapien zu meinen Patienten zu bringen.",
         },
       ],
     },
