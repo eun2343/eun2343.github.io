@@ -107,28 +107,32 @@ export const de = {
         acupuncture: {
           title: "Akupunktur",
           description:
-            "Akupunktur verbessert die Durchblutung, unterstützt die Ausschüttung von Neurotransmittern und senkt Stresshormone.",
+            "Akupunktur ist wissenschaftlich belegt und | 1. Unterstützt die hormonelle Balance | 2. Verbessert die Durchblutung der Eierstöcke und der Gebärmutter – für eine gesündere Umgebung | 3. Senkt Stresshormone, die den natürlichen Rhythmus des Körpers stören können.",
         },
         herbalMedicine: {
           title: "Kräutermedizin",
           description:
-            "In der TCM ist Kräutermedizin eine zentrale Behandlungsmethode bei Kinderwunsch und Gynäkologie. Jede Patientin erhält ein individuell auf ihre Konstitution abgestimmtes Rezept, das nach einem ausführlichen Beratungsgespräch erstellt wird.",
+            "Kräutermedizin ist eine zentrale Behandlungsmethode bei Kinderwunsch und Gynäkologie in der TCM. | Sie erhalten ein individuell auf Ihre Konstitution abgestimmtes Rezept nach einem ausführlichen Beratungsgespräch.",
         },
         bloodAnalysis: {
           title: "Analyse von Fruchtbarkeitstestergebnissen",
-          description: "",
+          description:
+            "Ich werde Ihre vorhandenen Fruchtbarkeitstestergebnisse überprüfen, um zugrundeliegende Ungleichgewichte zu identifizieren, die Ihre Reproduktionsgesundheit beeinflussen. | Falls erforderlich, empfehle ich geeignete grundlegende oder erweiterte Fruchtbarkeitsuntersuchungen.",
         },
         supplements: {
           title: "Nahrungsergänzungsempfehlung",
-          description: "",
+          description:
+            "Bei so vielen Fruchtbarkeitsnahrungsergänzungsmitteln auf dem Markt kann es schwer sein zu wissen, was wirklich wirkt. | Ich empfehle die wichtigsten Optionen, die auf Ihre individuelle Situation abgestimmt sind.",
         },
         fertilityAwareness: {
-          title: "Fruchtbarkeitsbewusstseinspraxis",
-          description: "",
+          title: "Methoden zur Fruchtbarkeitswahrnehmung",
+          description:
+            "Eine natürliche (und kostengünstigste) Methode zur Überwachung Ihres reproduktiven hormonellen Gleichgewichts.",
         },
         dietLifestyle: {
           title: "Ernährungs- und Lebensstilanpassung",
-          description: "",
+          description:
+            "Fruchtbarkeit, Ernährung und Lebensstil gehen Hand in Hand. | Die Anpassung Ihrer täglichen Gewohnheiten ist entscheidend für die Verbesserung der Ei- und Spermienqualität und die Unterstützung Ihrer allgemeinen Reproduktionsgesundheit.",
         },
       },
     },
@@ -343,7 +347,7 @@ export const de = {
       cancellationPolicy: {
         title: "Stornierungsrichtlinie",
         description:
-          "Termine müssen bis 10:00 Uhr am Tag vor Ihrem geplanten Besuch storniert werden. Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
+          "Termine müssen bis 10:00 Uhr am Tag vor Ihrem geplanten Besuch storniert werden. | Bei verpassten oder stornierten Terminen innerhalb dieser Zeit wird die volle Gebühr berechnet.",
       },
     },
     PageTitles: {

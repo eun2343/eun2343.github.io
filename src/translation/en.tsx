@@ -111,23 +111,27 @@ export const en = {
         herbalMedicine: {
           title: "Herbal Medicine",
           description:
-            "In TCM, herbal medicine is a key treatment method for fertility and gynecology. Every patient receives a personalized prescription tailored to their unique constitution, following a thorough consultation.",
+            "Herbal medicine is a key treatment method for fertility and gynecology in TCM. | You will receive a personalized prescription tailored to your constitution after a thorough consultation.",
         },
         bloodAnalysis: {
           title: "Analysis of Fertility Test Results",
-          description: "",
+          description:
+            "I will review your existing fertility test results to identify underlying imbalances affecting your reproductive health. | If needed, I will recommend appropriate basic or advanced fertility assessments.",
         },
         supplements: {
           title: "Supplements recommendation",
-          description: "",
+          description:
+            "With so many fertility supplements out there, it can be hard to know what actually works. | I'll recommend the most essential options based on your unique situation.",
         },
         fertilityAwareness: {
-          title: "Fertility awareness practice",
-          description: "",
+          title: "Fertility awareness methods",
+          description:
+            "A natural (and the most cost-effective) way to track your reproductive hormonal balance.",
         },
         dietLifestyle: {
           title: "Diet and lifestyle adjustment",
-          description: "",
+          description:
+            "Fertility, diet, and lifestyle go hand in hand. | Adjusting your daily habits is essential to improving egg and sperm quality and supporting your overall reproductive health.",
         },
       },
     },
@@ -342,7 +346,7 @@ export const en = {
       cancellationPolicy: {
         title: "Cancellation policy",
         description:
-          "Appointments must be cancelled by 10:00 am the day before your scheduled visit. Your appointment is subject to the full fee if missed or cancelled within this time.",
+          "Appointments must be cancelled by 10:00 am the day before your scheduled visit. | Your appointment is subject to the full fee if missed or cancelled within this time.",
       },
     },
     PageTitles: {

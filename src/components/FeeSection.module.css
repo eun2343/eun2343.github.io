@@ -1,16 +1,21 @@
 /* FeeSection component-specific styles */
 .root {
-  background-color: #FFF5F0;
+  background-color: #F6F6F6;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   min-height: 60vh;
   padding-top: 32px;
+  padding-bottom: 48px;
 }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.headingOffset {
+  margin-left: 18px;
 }
 
 .root :global(.headingMedium) {
@@ -23,10 +28,23 @@
   font-size: 1.125rem;
 }
 
+.root :global(.card) {
+  background-color: #FFF5F0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
 /* Mobile-specific font size adjustments */
 @media (max-width: 768px) {
   .content {
     padding: 0 16px;
+  }
+
+  .root {
+    padding-bottom: 36px;
+  }
+
+  .headingOffset {
+    margin-left: 12px;
   }
 
   .root :global(.headingMedium) {
