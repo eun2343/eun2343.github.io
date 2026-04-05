@@ -30,15 +30,6 @@ const FertilitySeedSection = () => {
               )}
               {i < parts.length - 1 && <br />}
               {i === 0 && <br />}
-              {i === 0 && (
-                <span className={styles.seedImageWrapper}>
-                  <img
-                    src="/images/sprout.png"
-                    alt="Sprout"
-                    className={styles.seedImage}
-                  />
-                </span>
-              )}
               {part.trim() === emphasisLine && <br />}
             </span>
           ))}

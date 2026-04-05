@@ -8,19 +8,6 @@
   font-family: inherit;
 }
 
-.seedImageWrapper {
-  display: block;
-  text-align: center;
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
-.seedImage {
-  width: min(200px, 45vw);
-  height: auto;
-  display: inline-block;
-}
-
 .root :global(.textDark),
 .root :global(.textLg) {
   font-size: 1.125rem;
@@ -42,14 +29,5 @@
 @media (max-width: 600px) {
   .root {
     padding: 0 12px 24px;
-  }
-
-  .seedImageWrapper {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-
-  .seedImage {
-    width: min(160px, 55vw);
   }
 }
