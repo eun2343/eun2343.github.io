@@ -2,7 +2,6 @@
 import { Container, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../translation/useLanguage";
-import { renderTextWithLineBreaks } from "../utils/textUtils";
 import { getLocalizedPath } from "../utils/routes";
 import styles from "./TreatmentSection.module.css";
 import "../styles/utilities.css";
