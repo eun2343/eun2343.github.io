@@ -53,7 +53,7 @@ export const en = {
       text: "Imagine getting pregnant as planting a seed in the soil. | To grow a healthy plant, you need a high-quality seed, gentle warm sunshine (not scorching heat), just enough water to moisten the soil, and fertile earth free of stones so the roots can grow deep and strong. | Fertility works in much the same way. | The crucial role of our treatment is to improve egg quality — or sperm quality for men. A healthy egg or sperm is like a strong, viable seed. | Regulating your menstrual cycle, addressing gynecological symptoms, and balancing hormones are like preparing fertile soil and providing the right sunlight and moisture — creating the ideal environment for the seed to implant and grow.",
     },
     FertilityCareSection: {
-      title: "Advanced fertility support",
+      title: "Advanced Fertility Support",
       services: [
         "Getting pregnant naturally",
         "IVF and IUI",

@@ -6,13 +6,23 @@ import "../styles/utilities.css";
 import "../styles/variables.css";
 
 const FertilityCareSection = () => {
-  const { translations } = useLanguage();
+  const { translations, language } = useLanguage();
   const fertilityServices = translations.app.FertilityCareSection.services;
 
   return (
     <div className={styles.root}>
       <Container>
-        <h2 className="headingLarge textCenter mb-8">{translations.app.FertilityCareSection.title}</h2>
+        <h2 className="headingLarge textCenter mb-8">
+          {language === "en" ? (
+            <>
+              Advanced{" "}
+              <br className={styles.mobileOnlyBreak} />
+              Fertility Support
+            </>
+          ) : (
+            translations.app.FertilityCareSection.title
+          )}
+        </h2>
         <Grid container spacing={2} className="mt-4">
           {fertilityServices.map((service, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>

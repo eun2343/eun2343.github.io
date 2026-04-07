@@ -1,10 +1,10 @@
 .root {
   padding: 0 20px;
-  background-color: #fff;
+  background-color: #F6F6F6;
 }
 
 .rootOpen {
-  padding-bottom: 40px;
+  padding-bottom: 58px;
 }
 
 .panel {
@@ -35,7 +35,7 @@
   }
 
   .rootOpen {
-    padding-bottom: 32px;
+    padding-bottom: 46px;
   }
 }
 
@@ -52,6 +52,6 @@
   }
 
   .rootOpen {
-    padding-bottom: 24px;
+    padding-bottom: 36px;
   }
 }
