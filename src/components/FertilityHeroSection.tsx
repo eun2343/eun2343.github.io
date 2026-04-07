@@ -4,9 +4,21 @@ import { useLanguage } from "../translation/useLanguage";
 import "../styles/utilities.css";
 import "../styles/variables.css";
 
-const FertilityHeroSection = () => {
-  const { translations } = useLanguage();
+type FertilityHeroSectionProps = {
+  isDescriptionOpen: boolean;
+  onToggleDescription: () => void;
+};
+
+const FertilityHeroSection = ({
+  isDescriptionOpen,
+  onToggleDescription,
+}: FertilityHeroSectionProps) => {
+  const { translations, language } = useLanguage();
   const largeParts = translations.app.FertilityHeroSection.largeText.split(" | ");
+  const toggleLabel =
+    language === "de"
+      ? "Fruchtbarkeitsbeschreibung anzeigen oder ausblenden"
+      : "Show or hide fertility description";
 
   return (
     <div className={styles.root}>
@@ -19,6 +31,15 @@ const FertilityHeroSection = () => {
                 <span key={i}>{part}{i < largeParts.length - 1 && <br />}</span>
               ))}
             </h1>
+            <button
+              type="button"
+              className={styles.arrowButton}
+              onClick={onToggleDescription}
+              aria-expanded={isDescriptionOpen}
+              aria-label={toggleLabel}
+            >
+              <span className={`${styles.arrowIcon} ${isDescriptionOpen ? styles.open : ""}`} />
+            </button>
           </div>
         </div>
       </Container>

@@ -1,6 +1,22 @@
 .root {
-  padding: 0 20px 40px;
+  padding: 0 20px;
   background-color: #fff;
+}
+
+.rootOpen {
+  padding-bottom: 40px;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.15s ease, opacity 0.9s ease;
+}
+
+.open {
+  max-height: 1400px;
+  opacity: 1;
 }
 
 .text {
@@ -15,7 +31,11 @@
 
 @media (max-width: 900px) {
   .root {
-    padding: 0 16px 32px;
+    padding: 0 16px;
+  }
+
+  .rootOpen {
+    padding-bottom: 32px;
   }
 }
 
@@ -28,6 +48,10 @@
 
 @media (max-width: 600px) {
   .root {
-    padding: 0 12px 24px;
+    padding: 0 12px;
+  }
+
+  .rootOpen {
+    padding-bottom: 24px;
   }
 }

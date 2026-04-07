@@ -28,6 +28,47 @@
   font-family: 'Lora', serif;
 }
 
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(166, 70, 61, 0.08);
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.arrowButton:hover,
+.arrowButton:focus-visible {
+  background: rgba(166, 70, 61, 0.18);
+  transform: translateY(1px);
+}
+
+.arrowButton:focus-visible {
+  outline: 2px solid #a6463d;
+  outline-offset: 3px;
+}
+
+.arrowIcon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid var(--color-dark);
+  border-bottom: 2px solid var(--color-dark);
+  transform: rotate(45deg);
+  transition: transform 0.6s ease;
+}
+
+.open {
+  transform: rotate(-135deg);
+}
+
 @media (max-width: 900px) {
   .root {
     padding: 40px 16px;
@@ -35,6 +76,11 @@
 
   .largeText {
     font-size: 2rem;
+  }
+
+  .arrowIcon {
+    width: 13px;
+    height: 13px;
   }
 }
 
@@ -53,5 +99,10 @@
 
   .largeText {
     font-size: 1.95rem;
+  }
+
+  .arrowIcon {
+    width: 12px;
+    height: 12px;
   }
 }

@@ -48,7 +48,7 @@ export const de = {
     },
     FertilityHeroSection: {
       smallText: "Pflege den Samen. Bereite den Boden vor.",
-      largeText: "Ei- und Spermienqualität verbessern, | Hormonhaushalt regulieren und die Gebärmutter stärken | für eine optimale Empfängnis.",
+      largeText: "Verbessern | der Ei- und Spermienqualität | für eine optimale Empfängnis.",
     },
     FertilitySeedSection: {
       text: "Stellen Sie sich eine Schwangerschaft wie das Pflanzen eines Samens in die Erde vor. | Damit eine gesunde Pflanze wächst, brauchen Sie einen hochwertigen Samen, sanfte Wärme (keine sengende Hitze), ausreichend Wasser, das den Boden feucht hält, und fruchtbare Erde ohne Steine, damit die Wurzeln tief und stark wachsen können. | Bei der Fruchtbarkeit verhält es sich ganz ähnlich. | Die entscheidende Aufgabe unserer Behandlung ist die Verbesserung der Eiqualität – oder der Spermienqualität beim Mann. Ein gesundes Ei oder eine gesunde Samenzelle ist wie ein starker, lebensfähiger Samen. | Die Regulierung Ihres Menstruationszyklus, die Behandlung gynäkologischer Beschwerden und die Hormonbalance sind wie die Vorbereitung von fruchtbarem Boden und die Bereitstellung von Sonnenlicht und Feuchtigkeit – sie schaffen das ideale Umfeld für die Einnistung und das Wachstum des Samens.",
