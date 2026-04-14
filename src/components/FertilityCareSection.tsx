@@ -1,5 +1,5 @@
 
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import styles from "./FertilityCareSection.module.css";
 import "../styles/utilities.css";
@@ -12,7 +12,7 @@ const FertilityCareSection = () => {
   return (
     <div className={styles.root}>
       <Container>
-        <h2 className="headingLarge textCenter mb-8">
+        <h2 className={`headingLarge textCenter ${styles.sectionTitle}`}>
           {language === "en" ? (
             <>
               Advanced{" "}
@@ -23,15 +23,14 @@ const FertilityCareSection = () => {
             translations.app.FertilityCareSection.title
           )}
         </h2>
-        <Grid container spacing={2} className="mt-4">
+        <div className={styles.serviceList}>
           {fertilityServices.map((service, index) => (
-            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-              <div className="card mb-4 textCenter">
-                <h3 className="headingMedium mb-4">{service}</h3>
-              </div>
-            </Grid>
+            <div key={index} className={styles.serviceItem}>
+              <h3 className="headingMedium">{service}</h3>
+              <span className={styles.chevron} />
+            </div>
           ))}
-        </Grid>
+        </div>
       </Container>
     </div>
   );

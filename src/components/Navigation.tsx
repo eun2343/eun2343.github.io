@@ -112,7 +112,7 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", pt: 2 }}>
       <List>
         {menuItems.map(renderMobileNavLink)}
-        <ListItem disablePadding>
+        <ListItem disablePadding sx={{ mt: 1.5 }}>
           <Box
             className="language-toggle"
             sx={{ textAlign: "center", width: "100%", py: 1 }}

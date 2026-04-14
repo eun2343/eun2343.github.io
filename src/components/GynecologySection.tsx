@@ -12,7 +12,7 @@ const GynecologySection = () => {
   return (
     <div className={styles.root}>
       <Container>
-        <h2 className="headingLarge textCenter mb-8">{translations.app.GynecologySection.title}</h2>
+        <h2 className={`headingLarge textCenter ${styles.sectionTitle}`}>{translations.app.GynecologySection.title}</h2>
         <Grid container spacing={2} className="mt-4">
           {gynecologyServices.map((service, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
