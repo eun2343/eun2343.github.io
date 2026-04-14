@@ -80,6 +80,35 @@
   line-height: 1.7;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .homepage-root .responsive-card {
+    max-width: 370px;
+    min-height: 212px;
+    border-radius: 26px;
+  }
+
+  .homepage-root .responsive-card-content {
+    padding: 34px 25px;
+  }
+
+  .homepage-root .responsive-card-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .homepage-root .responsive-card-list {
+    font-size: 1.18rem;
+    line-height: 1.6;
+  }
+
+  .homepage-root .responsive-card-list-item-centered {
+    max-width: 278px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 :root {
     color: #3D3B38;
     background-color: #fff;

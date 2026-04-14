@@ -41,7 +41,7 @@ export const de = {
       pregnancyItems: [
         "Schwangerschaftskomplikationen vorbeugen",
         "Steisslage",
-        "Einfache und sanfte Geburt",
+        "Geburtsvorbereitung",
         "Stillprobleme",
         "Nachsorge nach der Geburt",
       ],
@@ -83,7 +83,7 @@ export const de = {
       services: [
         "Schwangerschaftskomplikationen vorbeugen",
         "Beckenendlage",
-        "Einfache und sanfte Geburt",
+        "Geburtsvorbereitung",
         "Stillprobleme",
         "Nachsorge nach der Geburt",
       ],

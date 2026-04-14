@@ -4,10 +4,21 @@ import { useLanguage } from "../translation/useLanguage";
 import "../styles/utilities.css";
 import "../styles/variables.css";
 
+type PregnancyHeroSectionProps = {
+  isDescriptionOpen: boolean;
+  onToggleDescription: () => void;
+};
 
+const PregnancyHeroSection = ({
+  isDescriptionOpen,
+  onToggleDescription,
+}: PregnancyHeroSectionProps) => {
+  const { translations, language } = useLanguage();
+  const toggleLabel =
+    language === "de"
+      ? "Schwangerschaftsbeschreibung anzeigen oder ausblenden"
+      : "Show or hide pregnancy description";
 
-const PregnancyHeroSection = () => {
-  const { translations } = useLanguage();
   return (
     <div className={styles.root}>
       <Container>
@@ -21,19 +32,30 @@ const PregnancyHeroSection = () => {
                 </span>
               ))}
             </h1>
-            <p className={styles.smallText}>
-              {translations.app.PregnancyHeroSection.descriptionLines.map((line: string, index: number) => (
-                <span key={index}>
-                  {index > 0 && (
-                    <>
-                      <br />
-                      <br />
-                    </>
-                  )}
-                  {line}
-                </span>
-              ))}
-            </p>
+            <button
+              type="button"
+              className={styles.arrowButton}
+              onClick={onToggleDescription}
+              aria-expanded={isDescriptionOpen}
+              aria-label={toggleLabel}
+            >
+              <span className={`${styles.arrowIcon} ${isDescriptionOpen ? styles.open : ""}`} />
+            </button>
+            <div className={`${styles.descriptionPanel} ${isDescriptionOpen ? styles.panelOpen : ""}`}>
+              <p className={styles.smallText}>
+                {translations.app.PregnancyHeroSection.descriptionLines.map((line: string, index: number) => (
+                  <span key={index}>
+                    {index > 0 && (
+                      <>
+                        <br />
+                        <br />
+                      </>
+                    )}
+                    {line}
+                  </span>
+                ))}
+              </p>
+            </div>
           </div>
         </div>
       </Container>

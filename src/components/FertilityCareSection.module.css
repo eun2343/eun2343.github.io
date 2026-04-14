@@ -11,7 +11,7 @@
 }
 
 .root :global(.headingLarge) {
-  color: #FF6F61;
+  color: #000000;
 }
 
 .root :global(.card) {

@@ -67,12 +67,12 @@ export const en = {
       ],
     },
       GynecologyHeroSection: {
-        titleLine1: "Supporting women's hormonal health",
-        titleLine2: "at Every Stage of Life",
+        titleLine1: "Supporting Women's Hormonal health",
+        titleLine2: "at every stage of life",
         descriptionLines: [
           "Your hormonal health influences every stage of life - from menstrual cycles and fertility to pregnancy and menopause.",
           "Traditional Chinese Medicine (TCM) offers a holistic approach to gynecology, addressing the root causes of imbalance rather than only managing symptoms.",
-          "At our clinic, we combine centuries-old TCM wisdom with modern understanding of women's health to support hormonal balance, reproductive health, and overall wellbeing.",
+          "We combine centuries-old TCM wisdom with modern understanding of women's health to support hormonal balance, reproductive health, and overall wellbeing.",
           "Through personalized diagnosis and treatment, we aim to restore the natural balance of the body so that it can function optimally.",
         ],
       },
