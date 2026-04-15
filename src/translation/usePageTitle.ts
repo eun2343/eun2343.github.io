@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from './useLanguage';
+import { ROUTES } from '../utils/routes';
 
 // Helper function to set or create meta tag
 const setMetaTag = (name: string, content: string, property?: boolean) => {
@@ -49,35 +50,41 @@ export const usePageTitle = () => {
 
     let titleKey: keyof typeof translations.app.PageTitles = 'home';
 
-    // Handle translated URLs
-    switch (pagePath) {
-      case '/':
-        titleKey = 'home';
-        break;
-      case '/about':
-      case '/ueber-mich':
-        titleKey = 'about';
-        break;
-      case '/treatment':
-      case '/behandlung':
-        titleKey = 'treatment';
-        break;
-      case '/acupuncture':
-      case '/akupunktur':
-        titleKey = 'treatment'; // Use treatment descriptions for acupuncture page
-        break;
-      case '/fee':
-        titleKey = 'fee';
-        break;
-      case '/book-appointment':
-        titleKey = 'bookAppointment';
-        break;
-      case '/contact':
-      case '/kontakt':
-        titleKey = 'contact';
-        break;
-      default:
-        titleKey = 'home';
+    const routeToTitleKey: Partial<Record<keyof typeof ROUTES, keyof typeof translations.app.PageTitles>> = {
+      about: 'about',
+      treatment: 'treatment',
+      contact: 'contact',
+    };
+
+    for (const [routeKey, config] of Object.entries(ROUTES) as Array<[
+      keyof typeof ROUTES,
+      (typeof ROUTES)[keyof typeof ROUTES]
+    ]>) {
+      if (pagePath === config.en || pagePath === config.de) {
+        const mappedTitleKey = routeToTitleKey[routeKey];
+        if (mappedTitleKey) {
+          titleKey = mappedTitleKey;
+          break;
+        }
+      }
+    }
+
+    // Keep support for legacy / standalone routes not currently in ROUTES.
+    if (titleKey === 'home') {
+      switch (pagePath) {
+        case '/acupuncture':
+        case '/akupunktur':
+          titleKey = 'treatment';
+          break;
+        case '/fee':
+          titleKey = 'fee';
+          break;
+        case '/book-appointment':
+          titleKey = 'bookAppointment';
+          break;
+        default:
+          titleKey = 'home';
+      }
     }
 
     const title = translations.app.PageTitles[titleKey];

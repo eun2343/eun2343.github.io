@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { LanguageProvider } from "./translation/LanguageContext";
 import { usePageTitle } from "./translation/usePageTitle";
-import { getRouteClassName } from "./utils/routes";
+import { ROUTES, getRouteClassName } from "./utils/routes";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import TreatmentPage from "./pages/TreatmentPage";
@@ -17,6 +17,15 @@ import GynPage from "./pages/GynPage";
 import PregPage from "./pages/PregPage";
 import ContactPage from "./pages/ContactPage";
 import { useEffect } from "react";
+
+const NON_HOME_PAGE_ROUTES = [
+  { key: "about", element: <AboutPage /> },
+  { key: "treatment", element: <TreatmentPage /> },
+  { key: "fertility", element: <FertilityPage /> },
+  { key: "gynecology", element: <GynPage /> },
+  { key: "pregnancy", element: <PregPage /> },
+  { key: "contact", element: <ContactPage /> },
+] as const;
 
 // Component to handle route-based styling
 const AppWrapper = () => {
@@ -43,18 +52,20 @@ const AppWrapper = () => {
         {/* Redirect root to default language */}
         <Route path="/" element={<Navigate to="/en" replace />} />
         <Route path="/:lang" element={<HomePage />} />
-        <Route path="/:lang/about" element={<AboutPage />} />
-        <Route path="/:lang/ueber-mich" element={<AboutPage />} />
-        <Route path="/:lang/treatment" element={<TreatmentPage />} />
-        <Route path="/:lang/behandlung" element={<TreatmentPage />} />
-        <Route path="/:lang/fertility" element={<FertilityPage />} />
-        <Route path="/:lang/fruchtbarkeit" element={<FertilityPage />} />
-        <Route path="/:lang/gynecology" element={<GynPage />} />
-        <Route path="/:lang/gynaekologie" element={<GynPage />} />
-        <Route path="/:lang/pregnancy" element={<PregPage />} />
-        <Route path="/:lang/schwangerschaft" element={<PregPage />} />
-        <Route path="/:lang/contact" element={<ContactPage />} />
-        <Route path="/:lang/kontakt" element={<ContactPage />} />
+        {NON_HOME_PAGE_ROUTES.map(({ key, element }) => (
+          <Route
+            key={`route-${key}`}
+            path={`/:lang${ROUTES[key].en}`}
+            element={element}
+          />
+        ))}
+        {NON_HOME_PAGE_ROUTES.map(({ key, element }) => (
+          <Route
+            key={`route-${key}-de`}
+            path={`/:lang${ROUTES[key].de}`}
+            element={element}
+          />
+        ))}
       </Routes>
     </div>
   );

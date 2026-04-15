@@ -12,24 +12,24 @@ export const ROUTES: Record<string, RouteConfig> = {
     de: "/",
   },
   about: {
-    en: "/about",
-    de: "/ueber-mich",
+    en: "/fertility-specialist",
+    de: "/kinderwunschspezialistin",
   },
   treatment: {
-    en: "/treatment",
-    de: "/behandlung",
+    en: "/fertility-tcm",
+    de: "/kinderwunsch-tcm",
   },
   fertility: {
-    en: "/fertility",
-    de: "/fruchtbarkeit",
+    en: "/fertility-acupuncture",
+    de: "/kinderwunsch-akupunktur",
   },
   gynecology: {
-    en: "/gynecology",
-    de: "/gynaekologie",
+    en: "/pcos-endometriosis-acupuncture",
+    de: "/pcos-endometriose-akupunktur",
   },
   pregnancy: {
-    en: "/pregnancy",
-    de: "/schwangerschaft",
+    en: "/pregnancy-acupuncture",
+    de: "/schwangerschaft-akupunktur",
   },
   acupuncture: {
     en: "/acupuncture",
