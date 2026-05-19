@@ -23,7 +23,6 @@ export const en = {
         "Repeated miscarriage",
         "Male fertility",
         "Social freezing",
-        "Single mom / Same sex couple",
       ],
       gynecologyTitle: "Gynecology",
       gynecologyItems: [
@@ -63,7 +62,6 @@ export const en = {
         "Low AMH",
         "Repeated miscarriages",
         "Social freezing",
-        "Single mom / Same sex couple",
       ],
     },
       GynecologyHeroSection: {

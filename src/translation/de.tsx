@@ -24,7 +24,6 @@ export const de = {
         "Wiederholte Fehlgeburten",
         "Männliche Fruchtbarkeit",
         "Social Freezing",
-        "Alleinerziehende / Gleichgeschlechtliche Paare",
       ],
       gynecologyTitle: "Gynäkologie",
       gynecologyItems: [
@@ -65,7 +64,6 @@ export const de = {
         "Niedriges AMH",
         "Wiederholte Fehlgeburten",
         "Social Freezing",
-        "Alleinerziehende / Gleichgeschlechtliche Paare",
       ],
     },
       GynecologyHeroSection: {
