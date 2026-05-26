@@ -36,7 +36,7 @@ export const de = {
         "Stress und Angst",
         "Wechseljahre",
       ],
-      pregnancyTitle: "Prä- und Postnatal-Versorgung",
+      pregnancyTitle: "Schwangerschaftsbegleitung",
       pregnancyItems: [
         "Schwangerschaftskomplikationen vorbeugen",
         "Steisslage",
@@ -77,14 +77,27 @@ export const de = {
         ],
       },
     PrePostnatalCareSection: {
-      title: "Prä- und Postnatal-Versorgung",
+      title: "Schwangerschaftsbegleitung",
       services: [
+        "Unterstützung in der Frühschwangerschaft",
         "Schwangerschaftskomplikationen vorbeugen",
         "Beckenendlage",
         "Geburtsvorbereitung",
         "Stillprobleme",
         "Nachsorge nach der Geburt",
       ],
+      earlyPregnancyDescription:
+        "Das erste Trimester ist eine entscheidende Phase der Schwangerschaft. Bis zur 13. Woche bieten wir eine spezialisierte TCM-Behandlung zur Unterstützung Ihrer Frühschwangerschaft an. Diese Begleitung kann besonders hilfreich sein, wenn Sie eine Vorgeschichte mit Fehlgeburten haben, einen langen Weg bis zur Empfängnis hinter sich haben, durch IVF schwanger wurden, ein höheres mütterliches Alter haben oder unter PCOS leiden. Die TCM-Behandlung konzentriert sich darauf, die Ressourcen des Körpers zu stärken, eine gesunde Zirkulation zu fördern, frühe Schwangerschaftsbeschwerden zu lindern und Ihnen in dieser wichtigen Zeit mehr Sicherheit und Unterstützung zu geben.",
+      preventComplicationsDescription:
+        "Obwohl das zweite Trimester im Allgemeinen die stabilste Phase der Schwangerschaft ist, können in dieser Zeit einige Komplikationen auftreten, darunter Zervixinsuffizienz, Plazentaprobleme, Schwangerschaftsdiabetes, Präeklampsie und vorzeitige Wehen.| Wenn Sie eine Vorgeschichte mit Schwangerschaftskomplikationen oder andere Risikofaktoren haben, kann TCM eine unterstützende Begleitung bieten, um eine gesunde Schwangerschaft zu fördern und Faktoren zu reduzieren, die zu Komplikationen beitragen können, ergänzend zur konventionellen Schwangerschaftsvorsorge.",
+      breechPresentationDescription:
+        "Wenn der Kopf Ihres Babys in der 31. Schwangerschaftswoche noch nach oben zeigt, können wir mit Moxibustion und Akupunktur versuchen, das Baby auf natürliche Weise in die Schädellage zu unterstützen.| Auch der NHS empfiehlt diese sichere und wirksame TCM-Methode.",
+      easySmoothLaborDescription:
+        "Akupunktur kann die Geburt einleiten und die Geburtsdauer verkuerzen.| Fuer eine sanfte und reibungslose Geburt muessen die Muttermunderoeffnung, regelmaessige Uteruskontraktionen und das allmaehliche Tiefertreten des Babys ins Becken koordiniert ablaufen.| Ab der 34. Schwangerschaftswoche werden unsere Behandlungen individuell auf Ihren jeweiligen Stand der Geburtsvorbereitung abgestimmt. Sie zielen darauf ab, den Muttermund weicher zu machen und zu weiten, wirksame Uteruskontraktionen zu unterstuetzen und das Tiefertreten des Babys ins Becken zu foerdern.",
+      nursingIssuesDescription:
+        "TCM bietet sanfte Unterstützung bei häufigen Stillproblemen wie geringer Milchmenge, Brustbeschwerden, Erschöpfung und Stress und hilft zugleich, die Regeneration und das allgemeine Wohlbefinden nach der Geburt zu fördern.",
+      afterDeliveryCareDescription:
+        "Die Nachsorge nach der Geburt konzentriert sich darauf, Energie wiederherzustellen, die körperliche Erholung zu unterstützen, Hormone auszugleichen, das emotionale Wohlbefinden zu verbessern und dem Körper zu helfen, nach der Geburt auf natürliche Weise zu heilen.",
     },
     PregnancyHeroSection: {
       titleLines: [

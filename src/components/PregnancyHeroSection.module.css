@@ -1,7 +1,7 @@
 /* PregnancyHeroSection component-specific styles */
 .root {
   padding: 48px 20px;
-  background-color: #fff;
+  background-color: #F6F4F8;
 }
 
 .content {
@@ -40,7 +40,7 @@
   padding: 8px;
   border: none;
   border-radius: 999px;
-  background: rgba(166, 70, 61, 0.08);
+  background: rgba(107, 78, 113, 0.14);
   cursor: pointer;
   line-height: 1;
   transition: background-color 0.25s ease, transform 0.25s ease;
@@ -48,12 +48,12 @@
 
 .arrowButton:hover,
 .arrowButton:focus-visible {
-  background: rgba(166, 70, 61, 0.18);
+  background: rgba(107, 78, 113, 0.24);
   transform: translateY(1px);
 }
 
 .arrowButton:focus-visible {
-  outline: 2px solid #a6463d;
+  outline: 2px solid #6B4E71;
   outline-offset: 3px;
 }
 

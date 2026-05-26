@@ -75,14 +75,27 @@ export const en = {
         ],
       },
     PrePostnatalCareSection: {
-      title: "Pre-Postnatal care",
+      title: "Pregnancy Care",
       services: [
+        "Support early pregnancy",
         "Prevent pregnancy complications",
         "Breech presentation",
         "Easy and smooth Labor",
         "Nursing issues",
         "After delivery Care",
       ],
+      earlyPregnancyDescription:
+        "The first trimester is a crucial stage of pregnancy. Up to the 13th week, we offer specialized TCM treatment to support your early pregnancy.| This care may be particularly beneficial if you have a history of miscarriage, a long journey to conception, IVF conception, advanced maternal age, or PCOS.| TCM treatment focuses on nurturing the body's resources, supporting healthy circulation, easing early pregnancy symptoms, and helping you feel more confident and supported during this important time.",
+      preventComplicationsDescription:
+        "While the second trimester is generally the most stable phase of pregnancy, some complications can emerge during this period, including cervical insufficiency, placental issues, gestational diabetes, preeclampsia, and preterm labor.| If you have a history of pregnancy complications or other risk factors, TCM can offer supportive care to promote a healthy pregnancy and reduce factors that may contribute to complications, while working alongside conventional prenatal care.",
+      breechPresentationDescription:
+        "If your baby's head is still pointing upward at 31 weeks of pregnancy, we can try to encourage the baby to turn naturally into a head-down position using moxibustion and acupuncture.| The NHS also recommends this safe and effective TCM method.",
+      easySmoothLaborDescription:
+        "Acupuncture may induce labor and shorten labor durations.| For a smooth labor and delivery, cervical dilation, regular uterine contractions, and the baby's gradual descent into the pelvis need to occur in a coordinated way.| From the 34th week of pregnancy onward, our treatments are tailored to your individual stage of preparation for labor. They aim to soften and dilate the cervix, support effective uterine contractions, and encourage the baby's descent into the pelvis.",
+      nursingIssuesDescription:
+        "TCM offers gentle support for common breastfeeding concerns such as low milk supply, breast discomfort, fatigue, and stress while helping support recovery and overall postpartum wellbeing.",
+      afterDeliveryCareDescription:
+        "Postpartum care focuses on restoring energy, supporting physical recovery, balancing hormones, improving emotional wellbeing, and helping the body heal naturally after childbirth.",
     },
     PregnancyHeroSection: {
       titleLines: [
