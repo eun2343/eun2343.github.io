@@ -225,7 +225,7 @@ export const en = {
     ContactPage: {
       title: "Choi TCM contact form",
       subtitle:
-        "We accept new patients through this contact form only. Once you submit the form, we’ll get back to you within 1–2 business days.",
+        "We accept new patients through this contact form only.\nOnce you submit the form, we’ll get back to you within 1–2 business days.",
       firstName: "First Name",
       lastName: "Last Name",
       email: "Email Address",
@@ -365,7 +365,7 @@ export const en = {
       about: "About Choi TCM | Fertility Specialist",
       treatment: "Treatment Methods | Choi TCM",
       fee: "Pricing & Fees | Choi TCM",
-      bookAppointment: "Book Appointment | Choi TCM",
+      bookAppointment: "Choi TCM contact form | Choi TCM",
       contact: "Contact Us | Choi TCM",
     },
     PageDescriptions: {

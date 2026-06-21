@@ -224,9 +224,9 @@ export const de = {
       ],
     },
     ContactPage: {
-      title: "Kontaktieren Sie uns",
+      title: "Choi TCM Kontaktformular",
       subtitle:
-        "Wir nehmen neue Patienten nur über dieses Kontaktformular an. Nach dem Absenden des Formulars melden wir uns innerhalb von 1–2 Werktagen bei Ihnen.",
+        "Wir nehmen neue Patienten über dieses Kontaktformular an.\nSobald Sie das Formular abgesendet haben, melden wir uns innerhalb von 1–2 Werktagen bei Ihnen.",
       firstName: "Vorname",
       lastName: "Nachname",
       email: "E-Mail-Adresse",
@@ -366,7 +366,7 @@ export const de = {
       about: "Über Choi TCM | Fertilitätsspezialistin",
       treatment: "Behandlungsmethoden | Choi TCM",
       fee: "Preisgestaltung & Gebühren | Choi TCM",
-      bookAppointment: "Termin buchen | Choi TCM",
+      bookAppointment: "Choi TCM Kontaktformular | Choi TCM",
       contact: "Kontakt | Choi TCM",
     },
     PageDescriptions: {

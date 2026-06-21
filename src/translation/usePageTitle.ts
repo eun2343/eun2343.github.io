@@ -53,7 +53,7 @@ export const usePageTitle = () => {
     const routeToTitleKey: Partial<Record<keyof typeof ROUTES, keyof typeof translations.app.PageTitles>> = {
       about: 'about',
       treatment: 'treatment',
-      contact: 'contact',
+      contact: 'bookAppointment',
     };
 
     for (const [routeKey, config] of Object.entries(ROUTES) as Array<[

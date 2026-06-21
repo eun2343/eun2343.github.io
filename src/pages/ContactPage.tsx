@@ -1,142 +1,41 @@
-import {
-  Container,
-  Typography,
-  Box,
-  TextField,
-  Button,
-  FormControl,
-  FormLabel,
-  RadioGroup,
-  FormControlLabel,
-  Radio,
-  Grid,
-} from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import { useLanguage } from "../translation/useLanguage";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import { useState } from "react";
-
-// Declare gtag global function
-declare global {
-  function gtag(...args: any[]): void;
-}
+import { useEffect } from "react";
 
 const ContactPage = () => {
   const { translations, language } = useLanguage();
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    inquiryType: "fertility",
-    comments: "",
-  });
-
-  const [errors, setErrors] = useState({
-    firstName: false,
-    lastName: false,
-    email: false,
-    phone: false,
-  });
-
   const subtitle = translations.app.ContactPage.subtitle;
   const boldPrefix = "We accept new patients through this contact form only.";
-  const shouldBoldPrefix = subtitle.startsWith(boldPrefix);
-
-  const handleInputChange =
-    (field: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
-      setFormData((prev) => ({
-        ...prev,
-        [field]: event.target.value,
-      }));
-
-      // Clear error when user starts typing
-      if (errors[field as keyof typeof errors]) {
-        setErrors((prev) => ({
-          ...prev,
-          [field]: false,
-        }));
-      }
-    };
-
-  const validateForm = () => {
-    const newErrors = {
-      firstName: !formData.firstName.trim(),
-      lastName: !formData.lastName.trim(),
-      email: !formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email),
-      phone: !formData.phone.trim(),
-    };
-
-    setErrors(newErrors);
-    return !Object.values(newErrors).some((error) => error);
-  };
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-
-    // Create form data for Basin
-    const formDataToSubmit = new FormData();
-
-    formDataToSubmit.append("firstName", formData.firstName);
-    formDataToSubmit.append("lastName", formData.lastName);
-    formDataToSubmit.append("email", formData.email);
-    formDataToSubmit.append("phone", formData.phone);
-    formDataToSubmit.append("inquiryType", formData.inquiryType);
-    formDataToSubmit.append("comments", formData.comments);
-    formDataToSubmit.append(
-      "language",
-      language === "de" ? "Deutsch" : "English",
-    );
-
-    // Submit to Basin
-    fetch("https://usebasin.com/f/8264472cbd9b", {
-      method: "POST",
-      body: formDataToSubmit,
-    })
-      .then((response) => {
-        if (response.ok) {
-          // Send event to Google Analytics
-          if (typeof gtag !== "undefined") {
-            gtag("event", "form_submit", {
-              event_category: "contact_form",
-              event_label: formData.inquiryType,
-              value: 1,
-            });
-
-            gtag("event", "conversion", {
-              send_to: "AW-17871101395/0t1nCNX-yY0cENO7zclC",
-              value: 1.0,
-              currency: "CAD",
-            });
-          }
-
-          alert(translations.app.ContactPage.successMessage);
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            inquiryType: "fertility",
-            comments: "",
-          });
-        } else {
-          throw new Error("Network response was not ok");
+  const [leadingSentence, trailingText] = subtitle.split("\n");
+  const formConfig =
+    language === "de"
+      ? {
+          scriptSrc: "https://js-eu1.hsforms.net/forms/embed/147121459.js",
+          formId: "ee93addb-7231-44ba-8c10-3297ee71778c",
         }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert(translations.app.ContactPage.errorMessage);
-      });
-  };
+      : {
+          scriptSrc: "https://js-eu1.hsforms.net/forms/embed/147121459.js",
+          formId: "88af95cd-b6cc-43c1-8385-67c962ef5bc4",
+        };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.id = `hubspot-book-appointment-embed-${language}`;
+    script.src = formConfig.scriptSrc;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, [language, formConfig.scriptSrc]);
 
   return (
     <>
       <Navigation logoScale={0.8} barHeightScale={0.8} />
-      <Container sx={{ py: 4, minHeight: "88vh" }}>
+      <Container sx={{ py: { xs: 3, sm: 4 }, minHeight: "88vh" }}>
         <Typography
           variant="h2"
           component="h1"
@@ -147,16 +46,17 @@ const ContactPage = () => {
             fontWeight: 700,
             fontFamily: "'Lora', serif",
             color: "#000000",
-            mb: 4,
+            mt: { xs: 1.5, sm: 2.5 },
+            mb: { xs: 5, sm: 6 },
           }}
         >
           {translations.app.ContactPage.title}
         </Typography>
 
-        <Box sx={{ maxWidth: 600, mx: "auto" }}>
+        <Box sx={{ maxWidth: 960, mx: "auto" }}>
           <Box
             sx={{
-              p: 4,
+              p: { xs: 2, sm: 3, md: 4 },
               backgroundColor: "#FFF5F0",
               borderRadius: 2,
               border: "1px solid #e9ecef",
@@ -167,157 +67,20 @@ const ContactPage = () => {
               component="h2"
               gutterBottom
               align="center"
-              sx={{ mb: 3 }}
+              sx={{ mb: 3, lineHeight: 1.6, whiteSpace: "pre-line" }}
             >
-              {shouldBoldPrefix ? (
-                <>
-                  <strong>{boldPrefix}</strong>
-                  {subtitle.slice(boldPrefix.length)}
-                </>
-              ) : (
-                subtitle
-              )}
+              <strong style={{ color: "#1f5aa6" }}>{leadingSentence || boldPrefix}</strong>
+              {trailingText ? `\n${trailingText}` : ""}
             </Typography>
 
-            <Box component="form" onSubmit={handleSubmit} noValidate>
-              <Grid size={{ xs: 12 }}>
-                <FormControl component="fieldset" sx={{ mt: 2, mb: 3 }}>
-                  <FormLabel component="legend" sx={{ mb: 1 }}>
-                    {translations.app.ContactPage.inquiryType}
-                  </FormLabel>
-                  <RadioGroup
-                    value={formData.inquiryType}
-                    onChange={(event) =>
-                      setFormData((prev) => ({
-                        ...prev,
-                        inquiryType: event.target.value,
-                      }))
-                    }
-                  >
-                    <FormControlLabel
-                      value="fertility"
-                      control={<Radio />}
-                      label={translations.app.ContactPage.fertility}
-                    />
-                    <FormControlLabel
-                      value="gynecology"
-                      control={<Radio />}
-                      label={translations.app.ContactPage.gynecology}
-                    />
-                    <FormControlLabel
-                      value="other"
-                      control={<Radio />}
-                      label={translations.app.ContactPage.other}
-                    />
-                  </RadioGroup>
-                </FormControl>
-              </Grid>
-              <Grid container spacing={3}>
-                <Grid size={{ xs: 12, sm: 6 }}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="firstName"
-                    label={translations.app.ContactPage.firstName}
-                    value={formData.firstName}
-                    onChange={handleInputChange("firstName")}
-                    error={errors.firstName}
-                    helperText={
-                      errors.firstName
-                        ? translations.app.ContactPage.requiredField
-                        : ""
-                    }
-                  />
-                </Grid>
-                <Grid size={{ xs: 12, sm: 6 }}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="lastName"
-                    label={translations.app.ContactPage.lastName}
-                    value={formData.lastName}
-                    onChange={handleInputChange("lastName")}
-                    error={errors.lastName}
-                    helperText={
-                      errors.lastName
-                        ? translations.app.ContactPage.requiredField
-                        : ""
-                    }
-                  />
-                </Grid>
-                <Grid size={{ xs: 12 }}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="email"
-                    label={translations.app.ContactPage.email}
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange("email")}
-                    error={errors.email}
-                    helperText={
-                      errors.email
-                        ? translations.app.ContactPage.invalidEmail
-                        : ""
-                    }
-                  />
-                </Grid>
-                <Grid size={{ xs: 12 }}>
-                  <TextField
-                    required
-                    fullWidth
-                    id="phone"
-                    label={translations.app.ContactPage.phone}
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleInputChange("phone")}
-                    error={errors.phone}
-                    helperText={
-                      errors.phone
-                        ? translations.app.ContactPage.requiredField
-                        : ""
-                    }
-                  />
-                </Grid>
-                <Grid size={{ xs: 12 }}>
-                  <TextField
-                    fullWidth
-                    id="comments"
-                    label={translations.app.ContactPage.comments}
-                    multiline
-                    rows={4}
-                    value={formData.comments}
-                    onChange={handleInputChange("comments")}
-                    sx={{ mt: 2 }}
-                  />
-                </Grid>
-
-                <Grid size={{ xs: 12 }}>
-                  <Button
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    sx={{
-                      backgroundColor: "#A76456",
-                      color: "#FFFFFF",
-                      textTransform: "none",
-                      borderRadius: "24px",
-                      padding: "12px 24px",
-                      mt: 3,
-                      mb: 2,
-                      py: 1.5,
-                      fontSize: "1.1rem",
-                      "&:hover": {
-                        backgroundColor: "#A76456",
-                        color: "#FFFFFF",
-                      },
-                    }}
-                    className="fontAlt"
-                  >
-                    {translations.app.ContactPage.submit}
-                  </Button>
-                </Grid>
-              </Grid>
+            <Box className="iframe-container" sx={{ mt: 3 }}>
+              <div
+                key={formConfig.formId}
+                className="hs-form-frame"
+                data-region="eu1"
+                data-form-id={formConfig.formId}
+                data-portal-id="147121459"
+              ></div>
             </Box>
           </Box>
         </Box>

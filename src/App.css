@@ -8,8 +8,9 @@
   min-height: 100vh;
 }
 
-/* Remove horizontal padding from Container on book appointment page */
-.route-book-appointment .MuiContainer-root {
+/* Remove horizontal padding from Container on appointment pages */
+.route-book-appointment .MuiContainer-root,
+.route-contact .MuiContainer-root {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -20,8 +21,9 @@
   padding-right: 0 !important;
 }
 
-/* Style the iframe container on book appointment page */
-.route-book-appointment .iframe-container {
+/* Style the iframe container on appointment pages */
+.route-book-appointment .iframe-container,
+.route-contact .iframe-container {
   width: 100%;
   overflow: hidden;
   margin: 0;
