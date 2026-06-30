@@ -170,12 +170,51 @@ a:hover {
   color: #535bf2;
 }
 
-a.navlink > * {  
-  transition: color 0.1s;
-} 
+a.navlink {
+  position: relative;
+}
 
-a.navlink:hover > * {
-  color:gray;
+a.navlink > * {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #a6463d;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+a.navlink:hover > *,
+a.navlink:focus-visible > * {
+  color: #a6463d;
+  transform: translateY(-1px);
+}
+
+a.navlink:hover::after,
+a.navlink:focus-visible::after {
+  transform: scaleX(1);
+}
+
+a.navlink-mobile {
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+a.navlink-mobile:hover,
+a.navlink-mobile:focus-visible {
+  background-color: #fff5f0;
+}
+
+a.navlink-mobile:hover .MuiTypography-root,
+a.navlink-mobile:focus-visible .MuiTypography-root {
+  color: #a6463d;
 }
 
 button {

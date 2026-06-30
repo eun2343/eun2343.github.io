@@ -81,6 +81,7 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
   const renderMobileNavLink = (item: { path: string; label: string }) => (
     <ListItem key={item.path} disablePadding>
       <Link
+        className="navlink-mobile"
         to={item.path}
         style={{ textDecoration: "none", width: "100%" }}
         onClick={(e) => {
@@ -165,9 +166,12 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
               padding: "10px 24px",
               fontSize: "1.2rem !important",
               mx: "auto",
+              transition: "background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease",
               "&:hover": {
-                backgroundColor: "#A6463D",
+                backgroundColor: "#7F2F28",
                 color: "#FFFFFF",
+                transform: "translateY(-1px)",
+                boxShadow: "0 10px 22px rgba(166, 70, 61, 0.35)",
               },
             }}
             className="fontMain"
@@ -279,9 +283,12 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
                 textTransform: "none",
                 borderRadius: "12px",
                 padding: "10px 24px",
+                transition: "background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease",
                 "&:hover": {
-                    backgroundColor: "#A6463D",
+                    backgroundColor: "#7F2F28",
                   color: "#FFFFFF",
+                  transform: "translateY(-1px)",
+                  boxShadow: "0 10px 22px rgba(166, 70, 61, 0.35)",
                 },
               }}
               className="fontMain"

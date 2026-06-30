@@ -1,7 +1,9 @@
 
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useLanguage } from "../translation/useLanguage";
+import { getLocalizedPath } from "../utils/routes";
 import styles from "./PrePostnatalCareSection.module.css";
 import "../styles/utilities.css";
 import "../styles/variables.css";
@@ -370,6 +372,26 @@ const PrePostnatalCareSection = () => {
               )}
             </div>
           ))}
+        </div>
+        <div className={styles.bookButtonWrapper}>
+          <Button
+            component={Link}
+            to={getLocalizedPath("contact", language)}
+            variant="contained"
+            sx={{
+              backgroundColor: "#A6463D",
+              color: "#FFFFFF",
+              textTransform: "none",
+              borderRadius: "12px",
+              padding: "10px 24px",
+              width: { xs: "80%", sm: "200px" },
+              fontSize: "1rem !important",
+              "&:hover": { backgroundColor: "#8f3830" },
+            }}
+            className="fontMain"
+          >
+            {translations.app.Navigation.bookAppointment}
+          </Button>
         </div>
       </Container>
     </div>
