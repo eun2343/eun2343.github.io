@@ -22,7 +22,7 @@ export const en = {
         "Low AMH",
         "Repeated miscarriage",
         "Male fertility",
-        "Social freezing",
+        "Egg freezing",
       ],
       gynecologyTitle: "Gynecology",
       gynecologyItems: [
@@ -61,7 +61,7 @@ export const en = {
         "Male fertility",
         "Low AMH",
         "Repeated miscarriages",
-        "Social freezing",
+        "Egg freezing",
       ],
     },
       GynecologyHeroSection: {

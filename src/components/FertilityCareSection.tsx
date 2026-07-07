@@ -104,7 +104,7 @@ const FertilityCareSection = () => {
     language === "de"
       ? [
           "Das Einfrieren von Eizellen ist eine grosse Entscheidung.",
-          "Ob Sie fur den kunftigen Familienaufbau vorausplanen oder Ihre Fruchtbarkeit aus personlichen Grunden erhalten mochten: TCM kann Ihren Korper vor und wahrend dem Social Freezing unterstutzen. Die Behandlungen konzentrieren sich darauf, die reproduktive Gesundheit zu optimieren, Stress zu reduzieren und den Korper auf den Einfrierprozess vorzubereiten.",
+          "Ob Sie fur den kunftigen Familienaufbau vorausplanen oder Ihre Fruchtbarkeit aus personlichen Grunden erhalten mochten: TCM kann Ihren Korper vor und wahrend dem Eizelleneinfrieren unterstutzen. Die Behandlungen konzentrieren sich darauf, die reproduktive Gesundheit zu optimieren, Stress zu reduzieren und den Korper auf den Einfrierprozess vorzubereiten.",
         ]
       : [
           "Freezing your eggs is a big decision.",

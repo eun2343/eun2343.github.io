@@ -23,7 +23,7 @@ export const de = {
         "Niedriges AMH",
         "Wiederholte Fehlgeburten",
         "Männliche Fruchtbarkeit",
-        "Social Freezing",
+        "Eizelleneinfrieren",
       ],
       gynecologyTitle: "Gynäkologie",
       gynecologyItems: [
@@ -63,7 +63,7 @@ export const de = {
         "Männliche Fruchtbarkeit",
         "Niedriges AMH",
         "Wiederholte Fehlgeburten",
-        "Social Freezing",
+        "Eizelleneinfrieren",
       ],
     },
       GynecologyHeroSection: {
