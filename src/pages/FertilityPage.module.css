@@ -1,0 +1,8 @@
+.heroFlow {
+  background-image:
+    linear-gradient(rgba(255, 245, 240, 0.72), rgba(255, 245, 240, 0.72)),
+    url("/images/bgfertility.png?v=20260707-3");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
