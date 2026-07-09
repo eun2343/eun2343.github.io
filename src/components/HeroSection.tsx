@@ -37,7 +37,7 @@ const HeroSection = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: 6,
+          marginTop: 9,
         }}
       >
         <Typography

@@ -1,7 +1,12 @@
 /* PregnancyHeroSection component-specific styles */
 .root {
-  padding: 48px 20px;
-  background-color: #F6F4F8;
+  padding: 144px 20px 48px;
+  background-image:
+    linear-gradient(rgba(246, 244, 248, 0.72), rgba(246, 244, 248, 0.72)),
+    url("/images/bgpreg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
@@ -34,21 +39,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 46px;
+  height: 46px;
   margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
-  padding: 8px;
-  border: none;
+  padding: 0;
+  border: 2px solid rgba(107, 78, 113, 0.85);
   border-radius: 999px;
   background: rgba(107, 78, 113, 0.14);
+  box-shadow: 0 6px 16px rgba(36, 22, 18, 0.22);
   cursor: pointer;
   line-height: 1;
-  transition: background-color 0.25s ease, transform 0.25s ease;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .arrowButton:hover,
 .arrowButton:focus-visible {
   background: rgba(107, 78, 113, 0.24);
+  box-shadow: 0 8px 18px rgba(36, 22, 18, 0.28);
   transform: translateY(1px);
 }
 
@@ -61,8 +70,8 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  border-right: 2px solid var(--color-dark);
-  border-bottom: 2px solid var(--color-dark);
+  border-right: 2.5px solid #3b1914;
+  border-bottom: 2.5px solid #3b1914;
   transform: rotate(45deg);
   transition: transform 0.6s ease;
   animation: chevronNudgeDown 1.2s ease-in-out 0.4s 3;
@@ -99,7 +108,7 @@
 
 @media (max-width: 900px) {
   .root {
-    padding: 40px 16px;
+    padding: 120px 16px 40px;
   }
 
   .largeText {
@@ -114,7 +123,7 @@
 
 @media (max-width: 600px) {
   .root {
-    padding: 32px 12px;
+    padding: 96px 12px 32px;
   }
 
   .content {

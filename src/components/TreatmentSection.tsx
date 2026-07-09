@@ -9,6 +9,7 @@ import "../styles/variables.css";
 
 const TreatmentSection = () => {
   const { translations, language } = useLanguage();
+  const treatmentImageVersion = "20260709-1";
   const acupunctureDescriptionLines = translations.app.TreatmentSection.treatments.acupuncture.description
     .split("|")
     .map((line) => line.trim())
@@ -46,7 +47,7 @@ const TreatmentSection = () => {
           <div className={styles.leftColumn}>
             {/* Acupuncture */}
             <div className="card">
-              <img src="/images/acu.png" alt="Acupuncture" className={styles.cardImage} />
+              <img src={`/images/acu.png?v=${treatmentImageVersion}`} alt="Acupuncture" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.acupuncture.title}</h3>
               <div className={`textBlack ${styles.cardDescription}`}>
                 <p className={styles.cardLead}>{acupunctureLead}</p>
@@ -61,7 +62,7 @@ const TreatmentSection = () => {
             </div>
             {/* Herbal Medicine */}
             <div className="card">
-              <img src="/images/herb.png" alt="Herbal medicine" className={styles.cardImage} />
+              <img src={`/images/herb.png?v=${treatmentImageVersion}`} alt="Herbal medicine" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.herbalMedicine.title}</h3>
               <div className={`textBlack ${styles.cardDescription}`}>
                 {herbalDescriptionLines.map((line, index) => (
@@ -75,7 +76,7 @@ const TreatmentSection = () => {
           <div className={styles.rightColumn}>
             {/* Blood Analysis */}
             <div className="card">
-              <img src="/images/test.png" alt="Analysis of fertility test results" className={styles.cardImage} />
+              <img src={`/images/test.png?v=${treatmentImageVersion}`} alt="Analysis of fertility test results" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.bloodAnalysis.title}</h3>
               {bloodAnalysisDescriptionLines.length > 0 && (
                 <div className={`textBlack ${styles.cardDescription}`}>
@@ -87,7 +88,7 @@ const TreatmentSection = () => {
             </div>
             {/* Supplements */}
             <div className="card">
-              <img src="/images/supple.png" alt="Supplements recommendation" className={styles.cardImage} />
+              <img src={`/images/supple.png?v=${treatmentImageVersion}`} alt="Supplements recommendation" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.supplements.title}</h3>
               {supplementsDescriptionLines.length > 0 && (
                 <div className={`textBlack ${styles.cardDescription}`}>
@@ -99,7 +100,7 @@ const TreatmentSection = () => {
             </div>
             {/* Fertility Awareness */}
             <div className="card">
-              <img src="/images/bbt.png" alt="Fertility awareness practice" className={styles.cardImage} />
+              <img src={`/images/bbt.png?v=${treatmentImageVersion}`} alt="Fertility awareness practice" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.fertilityAwareness.title}</h3>
               {fertilityAwarenessDescriptionLines.length > 0 && (
                 <div className={`textBlack ${styles.cardDescription}`}>
@@ -111,7 +112,7 @@ const TreatmentSection = () => {
             </div>
             {/* Diet and Lifestyle */}
             <div className="card">
-              <img src="/images/diet.png" alt="Diet and lifestyle adjustment" className={styles.cardImage} />
+              <img src={`/images/diet.png?v=${treatmentImageVersion}`} alt="Diet and lifestyle adjustment" className={styles.cardImage} />
               <h3 className="headingMedium mb-4 textInherit">{translations.app.TreatmentSection.treatments.dietLifestyle.title}</h3>
               {dietLifestyleDescriptionLines.length > 0 && (
                 <div className={`textBlack ${styles.cardDescription}`}>

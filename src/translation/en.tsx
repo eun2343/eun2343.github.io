@@ -35,7 +35,7 @@ export const en = {
         "Stress and Anxiety",
         "Menopause",
       ],
-      pregnancyTitle: "Pre - Postnatal Care",
+      pregnancyTitle: "Pre-Postnatal Care",
       pregnancyItems: [
         "Prevent pregnancy complications",
         "Breech presentation",
