@@ -31,6 +31,7 @@ export const en = {
         "Endometriosis, Myoma",
         "PMS",
         "Premature ovarian failure",
+          "Recurrent UTI, vaginal infections",
         "Thyroid dysfunction",
         "Stress and Anxiety",
         "Menopause",

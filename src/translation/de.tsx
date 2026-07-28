@@ -32,6 +32,7 @@ export const de = {
         "Endometriose, Myom",
         "PMS",
         "Vorzeitiges Eierstockversagen",
+          "Wiederkehrende Harnwegsinfekte, Vaginalinfektionen",
         "Schilddrüsenstörung",
         "Stress und Angst",
         "Wechseljahre",

@@ -8,17 +8,13 @@ import styles from "./GynecologySection.module.css";
 import "../styles/utilities.css";
 import "../styles/variables.css";
 
+const RECURRENT_UTI_STUDY_LINK =
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11380642/";
+
 const GynecologySection = () => {
   const { translations, language } = useLanguage();
   const gynecologyServices = translations.app.HomePage.gynecologyItems;
-  const [isPainfulPeriodOpen, setIsPainfulPeriodOpen] = useState(false);
-  const [isPCOSOpen, setIsPCOSOpen] = useState(false);
-  const [isEndometriosisMyomaOpen, setIsEndometriosisMyomaOpen] = useState(false);
-  const [isPMSOpen, setIsPMSOpen] = useState(false);
-  const [isPrematureOvarianFailureOpen, setIsPrematureOvarianFailureOpen] = useState(false);
-  const [isThyroidDysfunctionOpen, setIsThyroidDysfunctionOpen] = useState(false);
-  const [isStressAnxietyOpen, setIsStressAnxietyOpen] = useState(false);
-  const [isMenopauseOpen, setIsMenopauseOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const painfulPeriodDescription =
     language === "de"
@@ -98,6 +94,19 @@ const GynecologySection = () => {
           "By regulating this metabolic foundation and reducing autoimmune inflammation, we help stabilize your energy, moods, and hormonal health.",
         ];
 
+  const recurrentUtiDescription =
+    language === "de"
+      ? [
+          "Wiederkehrende Harnwegsinfekte oder Vaginalinfektionen sind oft ein Zeichen dafür, dass das lokale Gleichgewicht im Beckenbereich gestört ist und der Körper nicht vollständig zur Ruhe kommt.",
+          "In der TCM betrachten wir diese Beschwerden häufig im Zusammenhang mit Feuchtigkeit, Hitze oder einer geschwächten Abwehrenergie, die die Schleimhäute anfälliger macht.",
+          "Unsere Behandlungen zielen darauf ab, Entzündungsneigung zu beruhigen, das innere Milieu auszugleichen und die Widerstandskraft des Körpers zu stärken, damit Infekte seltener wiederkehren.",
+        ]
+      : [
+          "Recurrent UTIs or vaginal infections are often a sign that the local pelvic environment is out of balance and the body is not fully resolving irritation or inflammation.",
+          "Studies show that Acupuncture can effectively prevent or reduce recurrence of UTIs of vaginal infections and help manage symptoms.",
+          "Our treatments focus on calming inflammation, restoring internal balance, and strengthening the body's resilience so infections are less likely to keep returning.",
+        ];
+
   const stressAnxietyDescription =
     language === "de"
       ? [
@@ -124,31 +133,44 @@ const GynecologySection = () => {
           "Our treatments focus on gently cooling off that internal heat, replenishing your body's deep reserves, and smoothing out hormonal fluctuations so you can navigate this transition with grace, comfort, and vitality.",
         ];
 
+  const services = [
+    { title: gynecologyServices[0], description: painfulPeriodDescription },
+    { title: gynecologyServices[1], description: pcosDescription },
+    { title: gynecologyServices[2], description: endometriosisMyomaDescription },
+    { title: gynecologyServices[3], description: pmsDescription },
+    { title: gynecologyServices[4], description: prematureOvarianFailureDescription },
+    { title: gynecologyServices[5], description: recurrentUtiDescription },
+    { title: gynecologyServices[6], description: thyroidDysfunctionDescription },
+    { title: gynecologyServices[7], description: stressAnxietyDescription },
+    { title: gynecologyServices[8], description: menopauseDescription },
+  ];
+
   const handleServiceClick = (index: number) => {
-    if (index === 0) {
-      setIsPainfulPeriodOpen((prev) => !prev);
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
+  const renderDescriptionParagraph = (serviceTitle: string, paragraph: string) => {
+    if (
+      language === "en" &&
+      serviceTitle === gynecologyServices[5] &&
+      paragraph === recurrentUtiDescription[1]
+    ) {
+      return (
+        <>
+          Studies show that{" "}
+          <a
+            href={RECURRENT_UTI_STUDY_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acupuncture can effectively prevent or reduce recurrence of UTIs of vaginal infections
+          </a>{" "}
+          and help manage symptoms.
+        </>
+      );
     }
-    if (index === 1) {
-      setIsPCOSOpen((prev) => !prev);
-    }
-    if (index === 2) {
-      setIsEndometriosisMyomaOpen((prev) => !prev);
-    }
-    if (index === 3) {
-      setIsPMSOpen((prev) => !prev);
-    }
-    if (index === 4) {
-      setIsPrematureOvarianFailureOpen((prev) => !prev);
-    }
-    if (index === 5) {
-      setIsThyroidDysfunctionOpen((prev) => !prev);
-    }
-    if (index === 6) {
-      setIsStressAnxietyOpen((prev) => !prev);
-    }
-    if (index === 7) {
-      setIsMenopauseOpen((prev) => !prev);
-    }
+
+    return paragraph;
   };
 
   return (
@@ -156,157 +178,35 @@ const GynecologySection = () => {
       <Container>
         <h2 className={`headingLarge textCenter ${styles.sectionTitle}`}>{translations.app.GynecologySection.title}</h2>
         <div className={styles.serviceList}>
-          {gynecologyServices.map((service, index) => (
+          {services.map((service, index) => (
             <div key={index}>
               <div
-                className={`${styles.serviceItem} ${
-                  (index === 0 && isPainfulPeriodOpen) ||
-                  (index === 1 && isPCOSOpen) ||
-                  (index === 2 && isEndometriosisMyomaOpen) ||
-                  (index === 3 && isPMSOpen) ||
-                  (index === 4 && isPrematureOvarianFailureOpen) ||
-                  (index === 5 && isThyroidDysfunctionOpen) ||
-                  (index === 6 && isStressAnxietyOpen) ||
-                  (index === 7 && isMenopauseOpen)
-                    ? styles.expanded
-                    : ""
-                }`}
-                role={index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5 || index === 6 || index === 7 ? "button" : undefined}
-                tabIndex={index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5 || index === 6 || index === 7 ? 0 : -1}
+                className={`${styles.serviceItem} ${openIndex === index ? styles.expanded : ""}`}
+                role="button"
+                tabIndex={0}
                 onClick={() => handleServiceClick(index)}
                 onKeyDown={(event) => {
-                  if ((index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5 || index === 6 || index === 7) && (event.key === "Enter" || event.key === " ")) {
+                  if (event.key === "Enter" || event.key === " ") {
                     event.preventDefault();
                     handleServiceClick(index);
                   }
                 }}
-                aria-expanded={
-                  index === 0
-                    ? isPainfulPeriodOpen
-                    : index === 1
-                    ? isPCOSOpen
-                    : index === 2
-                    ? isEndometriosisMyomaOpen
-                    : index === 3
-                    ? isPMSOpen
-                    : index === 4
-                    ? isPrematureOvarianFailureOpen
-                    : index === 5
-                    ? isThyroidDysfunctionOpen
-                    : index === 6
-                    ? isStressAnxietyOpen
-                    : index === 7
-                    ? isMenopauseOpen
-                    : undefined
-                }
+                aria-expanded={openIndex === index}
               >
-                <h3 className="headingMedium">{service}</h3>
+                <h3 className="headingMedium">{service.title}</h3>
                 <span className={styles.chevron} />
               </div>
-              {index === 0 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isPainfulPeriodOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{painfulPeriodDescription[0]}</p>
-                    <p>{painfulPeriodDescription[1]}</p>
-                    <p>{painfulPeriodDescription[2]}</p>
-                  </div>
+              <div
+                className={`${styles.descriptionWrapper} ${
+                  openIndex === index ? styles.descriptionOpen : ""
+                }`}
+              >
+                <div className={styles.descriptionContent}>
+                  {service.description.map((paragraph) => (
+                    <p key={paragraph}>{renderDescriptionParagraph(service.title, paragraph)}</p>
+                  ))}
                 </div>
-              )}
-              {index === 1 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isPCOSOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{pcosDescription[0]}</p>
-                    <p>{pcosDescription[1]}</p>
-                    <p>{pcosDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 2 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isEndometriosisMyomaOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{endometriosisMyomaDescription[0]}</p>
-                    <p>{endometriosisMyomaDescription[1]}</p>
-                    <p>{endometriosisMyomaDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 3 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isPMSOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{pmsDescription[0]}</p>
-                    <p>{pmsDescription[1]}</p>
-                    <p>{pmsDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 4 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isPrematureOvarianFailureOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{prematureOvarianFailureDescription[0]}</p>
-                    <p>{prematureOvarianFailureDescription[1]}</p>
-                    <p>{prematureOvarianFailureDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 5 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isThyroidDysfunctionOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{thyroidDysfunctionDescription[0]}</p>
-                    <p>{thyroidDysfunctionDescription[1]}</p>
-                    <p>{thyroidDysfunctionDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 6 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isStressAnxietyOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{stressAnxietyDescription[0]}</p>
-                    <p>{stressAnxietyDescription[1]}</p>
-                    <p>{stressAnxietyDescription[2]}</p>
-                  </div>
-                </div>
-              )}
-              {index === 7 && (
-                <div
-                  className={`${styles.descriptionWrapper} ${
-                    isMenopauseOpen ? styles.descriptionOpen : ""
-                  }`}
-                >
-                  <div className={styles.descriptionContent}>
-                    <p>{menopauseDescription[0]}</p>
-                    <p>{menopauseDescription[1]}</p>
-                    <p>{menopauseDescription[2]}</p>
-                  </div>
-                </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
