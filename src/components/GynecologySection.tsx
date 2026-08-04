@@ -97,9 +97,9 @@ const GynecologySection = () => {
   const recurrentUtiDescription =
     language === "de"
       ? [
-          "Wiederkehrende Harnwegsinfekte oder Vaginalinfektionen sind oft ein Zeichen dafür, dass das lokale Gleichgewicht im Beckenbereich gestört ist und der Körper nicht vollständig zur Ruhe kommt.",
-          "In der TCM betrachten wir diese Beschwerden häufig im Zusammenhang mit Feuchtigkeit, Hitze oder einer geschwächten Abwehrenergie, die die Schleimhäute anfälliger macht.",
-          "Unsere Behandlungen zielen darauf ab, Entzündungsneigung zu beruhigen, das innere Milieu auszugleichen und die Widerstandskraft des Körpers zu stärken, damit Infekte seltener wiederkehren.",
+          "Wiederkehrende Harnwegsinfekte oder Vaginalinfektionen sind oft ein Zeichen dafür, dass das lokale Milieu im Beckenbereich aus dem Gleichgewicht geraten ist und der Körper Reizung oder Entzündung nicht vollständig ausheilt.",
+          "Studien zeigen, dass Akupunktur das Wiederauftreten von Harnwegs- oder Vaginalinfektionen wirksam verhindern oder verringern und bei der Linderung der Symptome helfen kann.",
+          "Unsere Behandlungen konzentrieren sich darauf, Entzündungen zu beruhigen, das innere Gleichgewicht wiederherzustellen und die Widerstandskraft des Körpers zu stärken, damit Infektionen seltener wiederkehren.",
         ]
       : [
           "Recurrent UTIs or vaginal infections are often a sign that the local pelvic environment is out of balance and the body is not fully resolving irritation or inflammation.",
@@ -151,21 +151,24 @@ const GynecologySection = () => {
 
   const renderDescriptionParagraph = (serviceTitle: string, paragraph: string) => {
     if (
-      language === "en" &&
       serviceTitle === gynecologyServices[5] &&
       paragraph === recurrentUtiDescription[1]
     ) {
       return (
         <>
-          Studies show that{" "}
+          {language === "de" ? "Studien zeigen, dass " : "Studies show that "}
           <a
             href={RECURRENT_UTI_STUDY_LINK}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Acupuncture can effectively prevent or reduce recurrence of UTIs of vaginal infections
+            {language === "de"
+              ? "Akupunktur das Wiederauftreten von Harnwegs- oder Vaginalinfektionen wirksam verhindern oder verringern"
+              : "Acupuncture can effectively prevent or reduce recurrence of UTIs of vaginal infections"}
           </a>{" "}
-          and help manage symptoms.
+          {language === "de"
+            ? "und bei der Linderung der Symptome helfen kann."
+            : "and help manage symptoms."}
         </>
       );
     }

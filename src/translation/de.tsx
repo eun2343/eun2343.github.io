@@ -227,7 +227,7 @@ export const de = {
     ContactPage: {
       title: "Choi TCM Kontaktformular",
       subtitle:
-        "Wir nehmen neue Patienten über dieses Kontaktformular an.\nSobald Sie das Formular abgesendet haben, melden wir uns innerhalb von 1–2 Werktagen bei Ihnen.",
+        "Wir nehmen neue Patienten über dieses Kontaktformular an.\nNachdem Sie dieses Formular abgeschickt haben, kontaktieren wir Sie innerhalb von 1-2 Werktagen per SMS, um ein kurzes Einführungsgespräch zu vereinbaren.",
       firstName: "Vorname",
       lastName: "Nachname",
       email: "E-Mail-Adresse",

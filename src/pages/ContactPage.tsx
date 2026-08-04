@@ -9,6 +9,15 @@ const ContactPage = () => {
   const subtitle = translations.app.ContactPage.subtitle;
   const boldPrefix = "We accept new patients through this contact form only.";
   const [leadingSentence, trailingText] = subtitle.split("\n");
+  const hasSms = trailingText?.includes("SMS") ?? false;
+  const trailingTextParts = hasSms ? trailingText.split("SMS") : [trailingText ?? ""];
+  const trailingAfterSms = trailingTextParts.slice(1).join("SMS");
+  const arrangeToken = " to arrange";
+  const arrangeIndex = language === "de" ? -1 : trailingAfterSms.indexOf(arrangeToken);
+  const beforeArrange =
+    arrangeIndex >= 0 ? trailingAfterSms.slice(0, arrangeIndex) : trailingAfterSms;
+  const fromArrange =
+    arrangeIndex >= 0 ? trailingAfterSms.slice(arrangeIndex + 1) : "";
   const formConfig =
     language === "de"
       ? {
@@ -67,10 +76,37 @@ const ContactPage = () => {
               component="h2"
               gutterBottom
               align="center"
-              sx={{ mb: 3, lineHeight: 1.6, whiteSpace: "pre-line" }}
+              sx={{ mb: 3, lineHeight: 1.6 }}
             >
-              <strong style={{ color: "#1f5aa6" }}>{leadingSentence || boldPrefix}</strong>
-              {trailingText ? `\n${trailingText}` : ""}
+              <Box
+                component="strong"
+                sx={{ color: "#1f5aa6", display: "block", mb: 1.25 }}
+              >
+                {leadingSentence || boldPrefix}
+              </Box>
+              {trailingText ? (
+                <>
+                  {hasSms ? (
+                    <>
+                      {trailingTextParts[0]}
+                      <strong style={{ color: "#1f5aa6" }}>SMS</strong>
+                      {beforeArrange}
+                      {fromArrange ? (
+                        <>
+                          <br />
+                          {fromArrange}
+                        </>
+                      ) : (
+                        ""
+                      )}
+                    </>
+                  ) : (
+                    trailingText
+                  )}
+                </>
+              ) : (
+                ""
+              )}
             </Typography>
 
             <Box className="iframe-container" sx={{ mt: 3 }}>
