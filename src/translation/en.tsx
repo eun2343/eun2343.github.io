@@ -1,7 +1,7 @@
 export const en = {
   app: {
     Navigation: {
-      menuItems: ["About", "Fertility", "Gynecology", "Pregnancy", "Treatment"],
+      menuItems: ["About", "Fertility", "Gynecology", "Pregnancy", "Treatment", "Fees"],
       language: "de",
       bookAppointment: "Book Appointment",
       contact: "Contact",
@@ -331,7 +331,7 @@ export const en = {
     FeePage: {
       title: "Price",
       subtitle:
-        "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung).| Please check with your insurer in advance.",
+        "If you have supplementary insurance (Zusatzversicherung), our treatments will be covered by your insurance provider. | | Coverage depends on your individual policy, so we recommend checking with your insurance provider in advance.",
       services: [
         {
           name: "Initial Appointment ",

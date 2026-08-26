@@ -54,6 +54,7 @@ export const usePageTitle = () => {
       about: 'about',
       treatment: 'treatment',
       contact: 'bookAppointment',
+      fee: 'fee',
     };
 
     for (const [routeKey, config] of Object.entries(ROUTES) as Array<[

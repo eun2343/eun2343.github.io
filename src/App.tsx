@@ -16,6 +16,7 @@ import FertilityPage from "./pages/FertilityPage";
 import GynPage from "./pages/GynPage";
 import PregPage from "./pages/PregPage";
 import ContactPage from "./pages/ContactPage";
+import FeePage from "./pages/FeePage";
 import { useEffect } from "react";
 
 const NON_HOME_PAGE_ROUTES = [
@@ -25,6 +26,7 @@ const NON_HOME_PAGE_ROUTES = [
   { key: "gynecology", element: <GynPage /> },
   { key: "pregnancy", element: <PregPage /> },
   { key: "contact", element: <ContactPage /> },
+  { key: "fee", element: <FeePage /> },
 ] as const;
 
 // Component to handle route-based styling

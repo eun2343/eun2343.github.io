@@ -50,6 +50,7 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
     { path: getLocalizedPath("gynecology", language), label: translations.app.Navigation.menuItems[2] },
     { path: getLocalizedPath("pregnancy", language), label: translations.app.Navigation.menuItems[3] },
     { path: getLocalizedPath("treatment", language), label: translations.app.Navigation.menuItems[4] },
+    { path: getLocalizedPath("fee", language), label: translations.app.Navigation.menuItems[5] },
   ];
 
   const renderDesktopNavLink = (item: { path: string; label: string }) => (
@@ -70,7 +71,7 @@ const Navigation = ({ logoScale = 1, barHeightScale = 1 }: NavigationProps) => {
         className="textDark fontMain"
         sx={{
           cursor: "pointer",
-          fontSize: "1.15rem",
+          fontSize: "1rem",
         }}
       >
         {item.label}

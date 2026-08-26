@@ -27,10 +27,12 @@ const FeeSection = () => {
         <div className={`mb-8 textDark lineHeightNormal ${styles.headingOffset}`}>
           {translations.app.FeePage.subtitle
             .split("|")
-            .map((line: string, lineIndex: number) => (
+            .map((line: string, lineIndex: number, lines: string[]) => (
               <span key={lineIndex}>
-                {line}
-                {lineIndex < translations.app.FeePage.subtitle.split("|").length - 1 && <br />}
+                {line.split(/(Zusatzversicherung)/g).map((part, partIndex) =>
+                  part === "Zusatzversicherung" ? <strong key={partIndex}>{part}</strong> : part
+                )}
+                {lineIndex < lines.length - 1 && <br />}
               </span>
             ))}
         </div>

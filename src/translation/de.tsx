@@ -1,7 +1,7 @@
 export const de = {
   app: {
     Navigation: {
-      menuItems: ["Über uns", "Kinderwunsch", "Gynäkologie", "Schwangerschaft", "Behandlung"],
+      menuItems: ["Über uns", "Kinderwunsch", "Gynäkologie", "Schwangerschaft", "Behandlung", "Kosten"],
       language: "english",
       bookAppointment: "Termin buchen",
       contact: "Kontakt",
@@ -332,7 +332,7 @@ export const de = {
     FeePage: {
       title: "Preis",
       subtitle:
-        "Wir werden von den meisten Versicherungsgesellschaften akzeptiert. | Die Versicherungsdeckung hängt jedoch von Ihrem Zusatzversicherungsplan ab. | Bitte klären Sie dies im Voraus mit Ihrer Versicherung.",
+        "Wenn Sie eine Zusatzversicherung haben, werden unsere Behandlungen von Ihrer Versicherung übernommen. | | Die Deckung hängt von Ihrer individuellen Police ab. Daher empfehlen wir, dies im Voraus mit Ihrer Versicherung zu prüfen.",
       services: [
         {
           name: "Ersttermin",

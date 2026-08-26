@@ -39,6 +39,10 @@ export const ROUTES: Record<string, RouteConfig> = {
     en: "/contact",
     de: "/kontakt", 
   },
+  fee: {
+    en: "/fee",
+    de: "/gebuehren",
+  },
 };
 
 // Helper function to get full URL with language prefix
