@@ -1,6 +1,6 @@
 /* FeeSection component-specific styles */
 .root {
-  background-color: #F6F6F6;
+  background-color: transparent;
   margin-top: 32px;
   margin-bottom: 0;
   min-height: 60vh;
