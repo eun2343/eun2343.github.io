@@ -90,7 +90,7 @@ export const usePageTitle = () => {
     const title = translations.app.PageTitles[titleKey];
     const description = translations.app.PageDescriptions[titleKey];
     const keywords = translations.app.SeoKeywords[titleKey];
-    const currentUrl = `https://choitcm.com${location.pathname}`;
+    const currentUrl = `https://www.choi-tcm.ch${location.pathname}`;
     const canonicalUrl = currentUrl;
 
     // Update page title
@@ -124,7 +124,7 @@ export const usePageTitle = () => {
     setMetaTag('og:url', currentUrl, true);
     setMetaTag('og:site_name', 'Choi TCM', true);
     setMetaTag('og:locale', language === 'en' ? 'en_US' : 'de_CH', true);
-    setMetaTag('og:image', 'https://choitcm.com/images/logo-normal.png', true);
+    setMetaTag('og:image', 'https://www.choi-tcm.ch/images/logo-normal.png', true);
     setMetaTag('og:image:width', '800', true);
     setMetaTag('og:image:height', '600', true);
     setMetaTag('og:image:alt', 'Choi TCM - Fertility & Traditional Chinese Medicine', true);
@@ -133,7 +133,7 @@ export const usePageTitle = () => {
     setMetaTag('twitter:card', 'summary_large_image');
     setMetaTag('twitter:title', title);
     setMetaTag('twitter:description', description);
-    setMetaTag('twitter:image', 'https://choitcm.com/images/logo-normal.png');
+    setMetaTag('twitter:image', 'https://www.choi-tcm.ch/images/logo-normal.png');
     setMetaTag('twitter:image:alt', 'Choi TCM - Fertility & Traditional Chinese Medicine');
 
     // Canonical URL
@@ -144,8 +144,8 @@ export const usePageTitle = () => {
     const alternateEnUrl = `/en${basePath === '/' ? '' : basePath}`;
     const alternateDeUrl = `/de${basePath === '/' ? '' : basePath}`;
     
-    setLinkTag('alternate', `https://choitcm.com${alternateEnUrl}`, 'en');
-    setLinkTag('alternate', `https://choitcm.com${alternateDeUrl}`, 'de');
+    setLinkTag('alternate', `https://www.choi-tcm.ch${alternateEnUrl}`, 'en');
+    setLinkTag('alternate', `https://www.choi-tcm.ch${alternateDeUrl}`, 'de');
 
     // Schema.org structured data for medical practice
     const existingSchema = document.querySelector('#structured-data');
@@ -158,9 +158,9 @@ export const usePageTitle = () => {
       "@type": "MedicalBusiness",
       "name": "Choi TCM",
       "description": "Traditional Chinese Medicine clinic specializing in fertility treatments, acupuncture, and herbal medicine",
-      "url": "https://choitcm.com",
-      "logo": "https://choitcm.com/images/logo-normal.png",
-      "image": "https://choitcm.com/images/logo-normal.png",
+      "url": "https://www.choi-tcm.ch",
+      "logo": "https://www.choi-tcm.ch/images/logo-normal.png",
+      "image": "https://www.choi-tcm.ch/images/logo-normal.png",
       "telephone": "+41-XX-XXX-XXXX", // Replace with actual phone
       "email": "info@choitcm.com", // Replace with actual email
       "address": [
