@@ -17,6 +17,34 @@
     <meta property="og:site_name" content="Choi TCM" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://choitcm.com/images/logo-normal.png" />
+
+    <!-- Restore the route encoded by GitHub Pages' 404 fallback before React starts. -->
+    <script>
+      (function () {
+        var search = window.location.search;
+        if (search.startsWith("?/") || search.startsWith("?%2F")) {
+          var encodedRoute = search.startsWith("?%2F")
+            ? decodeURIComponent(search.slice(1))
+            : search.slice(1);
+          var separator = encodedRoute.indexOf("&");
+          var route = separator === -1
+            ? encodedRoute
+            : encodedRoute.slice(0, separator);
+          var query = separator === -1
+            ? ""
+            : "?" + encodedRoute.slice(separator + 1);
+
+          window.history.replaceState(
+            null,
+            "",
+            window.location.pathname.slice(0, -1) +
+              route.replace(/~and~/g, "&") +
+              query +
+              window.location.hash
+          );
+        }
+      })();
+    </script>
     
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

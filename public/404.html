@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Choi TCM</title>
+    <script>
+      (function () {
+        var location = window.location;
+        var route = location.pathname.replace(/^\/+/, "").replace(/&/g, "~and~");
+        var query = location.search ? "&" + location.search.slice(1) : "";
+        var redirect =
+          location.origin + "/?/" + route + query + location.hash;
+
+        location.replace(redirect);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
