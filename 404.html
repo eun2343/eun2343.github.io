@@ -6,6 +6,16 @@
     <script>
       (function () {
         var location = window.location;
+        if (location.hostname.toLowerCase() === "choi-tcm.ch") {
+          location.replace(
+            "https://www.choi-tcm.ch" +
+              location.pathname +
+              location.search +
+              location.hash
+          );
+          return;
+        }
+
         var route = location.pathname.replace(/^\/+/, "").replace(/&/g, "~and~");
         var query = location.search ? "&" + location.search.slice(1) : "";
         var redirect =
