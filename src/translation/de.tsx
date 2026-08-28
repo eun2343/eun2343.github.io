@@ -332,7 +332,7 @@ export const de = {
     FeePage: {
       title: "Preis",
       subtitle:
-        "Wir werden von den meisten Versicherungsgesellschaften akzeptiert. | Die Versicherungsdeckung hängt jedoch von Ihrem Zusatzversicherungsplan ab. | Bitte klären Sie dies im Voraus mit Ihrer Versicherung.",
+        "Unsere Behandlungen werden abgedeckt, wenn Sie eine Zusatzversicherung haben. | | Die Abdeckung hängt von Ihrer individuellen Versicherungspolice ab. | Bitte prüfen Sie dies vorher mit Ihrem Versicherer.",
       services: [
         {
           name: "Ersttermin",

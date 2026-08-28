@@ -20,6 +20,21 @@ const FeeSection = () => {
     .map((line) => line.trim())
     .filter(Boolean);
 
+  const renderSubtitleWithBold = (text: string) => {
+    const boldText = "Zusatzversicherung";
+    if (text.includes(boldText)) {
+      const [before, after] = text.split(boldText);
+      return (
+        <>
+          {before}
+          <strong>{boldText}</strong>
+          {after}
+        </>
+      );
+    }
+    return text;
+  };
+
   return (
     <Container className={styles.root}>
       <div className={styles.content}>
@@ -29,7 +44,7 @@ const FeeSection = () => {
             .split("|")
             .map((line: string, lineIndex: number) => (
               <span key={lineIndex}>
-                {line}
+                {renderSubtitleWithBold(line.trim())}
                 {lineIndex < translations.app.FeePage.subtitle.split("|").length - 1 && <br />}
               </span>
             ))}

@@ -331,7 +331,7 @@ export const en = {
     FeePage: {
       title: "Price",
       subtitle:
-        "We're accepted by most of the insurance companies. | But insurance coverage depends on your supplemental plan (Zusatzversicherung).| Please check with your insurer in advance.",
+        "Our treatments will be covered if you have supplementary insurance (Zusatzversicherung). | | Coverage depends on your individual insurance policy. | Please check with your insurance provider in advance.",
       services: [
         {
           name: "Initial Appointment ",
