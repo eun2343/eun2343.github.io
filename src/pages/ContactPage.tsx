@@ -41,6 +41,23 @@ const ContactPage = () => {
     };
   }, [language, formConfig.scriptSrc]);
 
+  // Set up GTM tracking for HubSpot form submission
+  useEffect(() => {
+    const handleFormSubmissionSuccess = (event: any) => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'hubspot_form_success',
+        'hsFormId': event.detail.formId
+      });
+    };
+
+    window.addEventListener("hs-form-event:on-submission:success", handleFormSubmissionSuccess);
+
+    return () => {
+      window.removeEventListener("hs-form-event:on-submission:success", handleFormSubmissionSuccess);
+    };
+  }, []);
+
   return (
     <>
       <Navigation logoScale={0.8} barHeightScale={0.8} />
